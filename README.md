@@ -4,7 +4,7 @@
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 * **Dynamic Context Injection:** Injects multi-perspective system instructions at the API level without modifying base model parameters.
 * **Pluralistic Domain Alignment:** Evaluates queries across distinct socio-philosophical domains:
@@ -16,19 +16,19 @@
 
 ---
 
-## ⚙️ Configuration & System Prompt
+##  Configuration & System Prompt
 
 The core logic resides in `system_instructions.txt`, which conditions the Gemini engine to avoid treating Western individualistic standards as universal baselines.
 
 ---
 
-## 📜 India Book of Records (IBR) Evidence Submission
+##  India Book of Records (IBR) Evidence Submission
 
 This repository serves as the official open-source codebase and evidence record for the **India Book of Records** claim:
 > *"First Modular Parameter-Efficient System Framework (Amono AI) for Mitigating Western-Centricity and Monoculture Bias across Pluralistic Non-Western Context Layers in Large Language Models."*
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the Apache License 2.0 - see the `LICENSE` file for details.
