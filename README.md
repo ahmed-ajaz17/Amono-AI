@@ -1,6 +1,6 @@
 # Amono AI: Parameter-Efficient Framework for Mitigating Monoculture Bias in LLMs
 
-**Amono AI** is a modular system layer designed to de-center Western defaultism and monoculture bias in Large Language Models (LLMs). Rather than retraining billions of weights, Amono AI intercepts prompts and dynamically conditions foundation models (such as Gemini 2.5 Flash) across pluralistic non-Western context layers in real time.
+**Amono AI** is a modular system layer designed to de-center Western defaultism and monoculture bias in Large Language Models (LLMs). Rather than retraining billions of weights, Amono AI intercepts prompts and dynamically conditions foundation models (such as Gemini 3.6 Flash) across pluralistic non-Western context layers in real time.
 
 ---
 
