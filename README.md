@@ -32,3 +32,16 @@ This repository serves as the official open-source codebase and evidence record 
 ##  License
 
 This project is licensed under the Apache License 2.0 - see the `LICENSE` file for details.
+
+##  Operational Modes
+
+Amono AI supports two parameter-efficient execution modes:
+
+| Mode | Word Limit | Trigger | Best For |
+| :--- | :--- | :--- | :--- |
+| **Compact (Default)** | $\le 100\text{ words}$ | Standard prompt | Real-time edge inference, low token consumption |
+| **Analytic** | $\le 250\text{ words}$ | Prepend `[Mode: Analytic]` | Deep research, ethical deliberation, academic case studies |
+
+### Example Usage:
+* **Compact Query:** `"Is personal career ambition more important than family duty?"`
+* **Analytic Query:** `"[Mode: Analytic] Is personal career ambition more important than family duty?"`
