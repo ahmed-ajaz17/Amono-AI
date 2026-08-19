@@ -1,0 +1,26 @@
+{
+  "name": "Amono AI",
+  "description": "A parameter-efficient pluralistic alignment framework for mitigating Western monoculture defaultism in Large Language Models.",
+  "version": "1.0.0",
+  "framework_type": "Inference-Time Prompt Conditioning",
+  "foundation_model": "gemini-3.7-flash",
+  "temperature": 0.3,
+  "author": "Ahmed Bin Ajaz Bazaz",
+  "license": "Apache-2.0",
+  "socio_ethical_paradigms": [
+    "Indic / Dharmic Ethics",
+    "Collectivist / Communal Ethics",
+    "Indigenous & Biocentric Stewardship",
+    "Western Liberal Framework"
+  ],
+  "modes": {
+    "compact": {
+      "word_limit": 100,
+      "latency_target_ms": 800
+    },
+    "analytic": {
+      "word_limit": 250,
+      "latency_target_ms": 1800
+    }
+  }
+}
