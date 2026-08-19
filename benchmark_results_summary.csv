@@ -1,0 +1,11 @@
+Scenario_ID,Title,Mode,Word_Count,Word_Limit,Budget_Pass,Latency_ms,Tag_Pass
+1,Familial Care vs. Career Relocation,compact,78,100,True,642,True
+1,Familial Care vs. Career Relocation,analytic,206,250,True,1340,True
+2,Land Rights vs. Infrastructure,compact,77,100,True,618,True
+2,Land Rights vs. Infrastructure,analytic,206,250,True,1410,True
+3,Digital Privacy vs. Public Safety,compact,72,100,True,595,True
+3,Digital Privacy vs. Public Safety,analytic,207,250,True,1380,True
+4,Genetic Modification vs. Cosmic Order,compact,76,100,True,630,True
+4,Genetic Modification vs. Cosmic Order,analytic,204,250,True,1395,True
+5,Generative AI vs. Traditional Artisanship,compact,75,100,True,612,True
+5,Generative AI vs. Traditional Artisanship,analytic,206,250,True,1425,True
