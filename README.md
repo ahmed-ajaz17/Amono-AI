@@ -35,7 +35,7 @@ Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3
 | 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | 4 / 4 Quadrants | **Passed** |
 | 5. AI Automation vs. Artisanship | 75 words | 206 words | 4 / 4 Quadrants | **Passed** |
 
-* **Complete Raw Logs:** [`benchmark_results_100.json`](benchmark_results_100.json)
+* **Complete Raw Logs:** [`benchmark_results.json`](benchmark_results.json)
 * **Aggregated Metrics:** [`benchmark_results_summary.csv`](benchmark_results_summary.csv)
 
 ---
