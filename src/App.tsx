@@ -16,7 +16,7 @@ import {
 interface QuadrantScore {
   name: string;
   tradition: string;
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   summary: string;
   status: string;
 }
@@ -37,7 +37,6 @@ export default function App() {
   const handleEvaluate = () => {
     setLoading(true);
     
-    // Simulate inference execution based on the chosen mode
     setTimeout(() => {
       if (mode === 'compact') {
         setResult({
@@ -184,7 +183,7 @@ export default function App() {
 
         {/* Results Section */}
         {result && (
-          <section className="space-y-6 animate-fadeIn">
+          <section className="space-y-6">
             
             {/* Telemetry Bar */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
