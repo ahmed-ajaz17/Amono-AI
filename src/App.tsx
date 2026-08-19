@@ -41,6 +41,11 @@ const PRESETS: Preset[] = [
     id: 'crispr-dharma',
     label: 'CRISPR vs. Cosmic Dharma',
     query: 'Should human germline genetic modification be permitted for hereditary disease eradication and biological enhancement?'
+  },
+  {
+    id: 'ai-artisanship',
+    label: 'AI Automation vs. Traditional Craft',
+    query: 'How should the automation of indigenous artisanal craft patterns by generative AI models be governed?'
   }
 ];
 
@@ -170,11 +175,11 @@ export default function App() {
           </div>
         </section>
 
-        {/* 4 Scenario Presets Chips */}
+        {/* 5 Scenario Presets Chips */}
         <section className="space-y-2">
           <div className="flex items-center space-x-2 text-xs font-medium text-slate-400">
             <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-            <span>Contested Empirical Presets</span>
+            <span>Contested Empirical Presets (5 Scenarios)</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {PRESETS.map((preset) => (
