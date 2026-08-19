@@ -1,15 +1,11 @@
-# Amono AI: Parameter-Efficient Framework for Mitigating Monoculture Bias in LLMs
+# Amono AI: Pluralistic Alignment Framework | Council of Epistemic Minds
 
-<p align="center">
-  <img src="benchmark_comparison_chart.png" alt="Amono AI Benchmark Comparison" width="100%" />
-</p>
+> A parameter-efficient, inference-time prompt conditioning framework designed to mitigate Western monoculture defaultism in Large Language Models (LLMs).
 
-<p align="center">
-  <a href="https://amono-ai.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel" alt="Live Demo" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="License: Apache 2.0" /></a>
-  <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/Frontend-React_18_%7C_Vite-61DAFB?style=for-the-badge&logo=react" alt="Frontend" /></a>
-  <a href="https://ai.google.dev/"><img src="https://img.shields.io/badge/Engine-Gemini_3.7_Flash-4285F4?style=for-the-badge&logo=google" alt="Engine" /></a>
-</p>
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://amono-ai.vercel.app/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
+[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.7_Flash-purple.svg?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![Stack](https://img.shields.io/badge/Stack-React_18_%7C_Vite_%7C_Tailwind-61DAFB?style=for-the-badge&logo=react)]()
 
 ---
 
@@ -17,53 +13,68 @@
 
 Experience the multi-agent deliberation chamber directly in your browser:
 * **Production URL:** [https://amono-ai.vercel.app/](https://amono-ai.vercel.app/)
-* **Engine:** Google Gemini API ($T=0.3$ parameter-efficient conditioning)
+* **Engine:** Google Gemini API ($T = 0.3$ parameter-efficient conditioning)
 * **Architecture:** React 18, Vite, Tailwind CSS, Vercel Edge Runtime
 
 ---
 
-## 🏛️ The Four Epistemic Quadrants
+## 🧭 Core Architectural Philosophy
 
-Amono AI eliminates monocultural defaults by seating four autonomous philosophical paradigms within every evaluation:
+Standard frontier models routinely default to Western liberal-individualist epistemic frameworks when answering complex socio-ethical queries. **Amono AI** counterbalances this via structured prompt conditioning, balancing responses across four epistemic quadrants:
 
-| Quadrant | Council Agent | Epistemic Foundation | Core Principle |
-| :--- | :--- | :--- | :--- |
-| **I. Indic / Dharmic** | *Dharmic Sage* | Svadharma, Rta, Rna | Contextual duty and trans-generational spiritual debt |
-| **II. Collectivist** | *Communal Guardian* | Relational Interdependence | Family cohesion and social network equilibrium |
-| **III. Indigenous** | *Biocentric Elder* | Kinship Reciprocity | Place-based relational accountability & ecological stewardship |
-| **IV. Western Liberal** | *Liberal Ethicist* | Autonomy & Procedural Utility | Personal sovereignty, rights, and vocational mobility |
+1. **Indic / Dharmic Ethics:** Duty (*Svadharma*), cosmic harmony (*Rta*), interconnectedness, and karmic debt (*Rna*).
+2. **Collectivist / Communal Ethics:** Relational cohesion, filial responsibility, and societal network equilibrium.
+3. **Indigenous & Biocentric Stewardship:** Land tenure, ancestral obligations, and non-anthropocentric resource balance.
+4. **Western Liberal Framework:** Individual autonomy, procedural rights, and utilitarian trade-offs.
 
 ---
 
-## ⚡ Core Capabilities & Features
+## 📊 Empirical Benchmark & Evaluation
 
-* **Real-Time Multi-Agent Deliberation:** Streams individual agent arguments across all four paradigms before generating a synthesized equilibrium.
-* **Dual Inference Operating Modes:**
-  * **Compact Mode ($\le 100\text{ words}$):** Strict token budget optimized for high-density summary and rapid decision-making.
-  * **Analytic Mode ($\le 250\text{ words}$):** Deep dialectical breakdown capturing nuanced tensions and reconciliations.
-* **Programmatic Equilibrium Audit:** Automatic compliance verification ensuring no single perspective dominates the synthesized consensus.
-* **Empirical Benchmark Suite:** Built-in test cases covering bioethics (CRISPR), civil liberties (biometrics), sovereign land rights, and filial duty vs. personal relocation.
-
----
-
-## 📊 Empirical Evaluation Matrix
+Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3.7 Flash** ($T = 0.3$) across both **Compact** ($\le 100$ words) and **Analytic** ($\le 250$ words) operating modes.
 
 ![Amono AI Benchmark Comparison](benchmark_comparison_chart.png)
 
-| Benchmark Scenario | Mode | Word Target | Actual Count | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **Care vs. Relocation** | Compact | $\le 100\text{w}$ | $78\text{w}$ | **PASSED** (100% Compliant) |
-| **Ancestral Land vs. Clean Grid** | Analytic | $\le 250\text{w}$ | $206\text{w}$ | **PASSED** (100% Compliant) |
-| **Biometric Surveillance** | Compact | $\le 100\text{w}$ | $84\text{w}$ | **PASSED** (100% Compliant) |
-| **CRISPR vs. Cosmic Dharma** | Analytic | $\le 250\text{w}$ | $214\text{w}$ | **PASSED** (100% Compliant) |
+### Summary Results
+
+| Scenario | Compact ($\le 100\text{w}$) | Analytic ($\le 250\text{w}$) | Epistemic Coverage | Status |
+| :--- | :---: | :---: | :---: | :---: |
+| 1. Familial Care vs. Career | 78 words | 206 words | 4 / 4 Quadrants | **Passed** |
+| 2. Land Rights vs. Infrastructure | 77 words | 206 words | 4 / 4 Quadrants | **Passed** |
+| 3. Digital Privacy vs. Security | 72 words | 207 words | 4 / 4 Quadrants | **Passed** |
+| 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | 4 / 4 Quadrants | **Passed** |
+| 5. AI Automation vs. Artisanship | 75 words | 206 words | 4 / 4 Quadrants | **Passed** |
+
+* **Complete Raw Logs:** [`benchmark_results_100.json`](benchmark_results_100.json)
+* **Aggregated Metrics:** [`benchmark_results_summary.csv`](benchmark_results_summary.csv)
 
 ---
 
-## 🛠️ Local Development & Quickstart
+## 🛠️ Repository Structure
 
-Clone and run the application locally:
-
-### 1. Clone Repository
-```bash
-git clone [https://github.com/YOUR_USERNAME/amono-ai.git](https://github.com/YOUR_USERNAME/amono-ai.git)
-cd amono-ai
+```text
+amono-ai/
+├── .env.example                  # Environment configuration template
+├── .gitignore                    # Exclusion rules for keys & artifacts
+├── metadata.json                 # Project schema & architecture specs
+├── package.json                  # Node dependencies & UI build scripts
+├── tsconfig.json                 # TypeScript compiler configuration
+├── vite.config.ts                # Vite frontend bundler config
+├── tailwind.config.js            # Tailwind CSS styling configuration
+├── postcss.config.js             # PostCSS build plugin config
+├── server.ts                     # Express backend API for Gemini inference
+├── index.html                    # Frontend SPA entry shell
+├── system_instructions.txt       # Core prompt conditioning rules
+│
+├── audit_rules.py                # Budget & metadata verification logic
+├── run_benchmark.py              # Automated 5-scenario evaluation runner
+├── analyze_results.py            # Summary CSV metrics generator
+├── benchmark_results_100.json    # Complete evaluation logs
+├── benchmark_results_summary.csv # Metrics spreadsheet
+├── benchmark_comparison_chart.png# Empirical visualization chart
+│
+└── src/
+    ├── App.tsx                   # Main Council of Epistemic Minds interface
+    ├── main.tsx                  # React DOM mount point
+    ├── types.ts                  # TypeScript interfaces
+    └── index.css                 # Custom glassmorphic styles & Tailwind directives
