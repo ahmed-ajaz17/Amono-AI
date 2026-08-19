@@ -1,27 +1,37 @@
-# Amono AI: Pluralistic Alignment Framework
+# Amono AI: Pluralistic Alignment Framework | Council of Epistemic Minds
 
 > A parameter-efficient, inference-time prompt conditioning framework designed to mitigate Western monoculture defaultism in Large Language Models (LLMs).
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.7_Flash-purple.svg)](https://ai.google.dev/)
-[![Language](https://img.shields.io/badge/Stack-React_|_TypeScript_|_Python-emerald.svg)]()
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://amono-ai.vercel.app/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
+[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.7_Flash-purple.svg?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![Stack](https://img.shields.io/badge/Stack-React_18_%7C_Vite_%7C_Tailwind-61DAFB?style=for-the-badge&logo=react)]()
 
 ---
 
-## 🧭 Core Architectural Philosophy
+##  Live Interactive Chamber
+
+Experience the multi-agent deliberation chamber directly in your browser:
+* **Production URL:** [https://amono-ai.vercel.app/](https://amono-ai.vercel.app/)
+* **Engine:** Google Gemini API (Parameter-Efficient Prompt Conditioning)
+* **Architecture:** React 18, Vite, Tailwind CSS, Vercel Edge Runtime
+
+---
+
+##  Core Architectural Philosophy
 
 Standard frontier models routinely default to Western liberal-individualist epistemic frameworks when answering complex socio-ethical queries. **Amono AI** counterbalances this via structured prompt conditioning, balancing responses across four epistemic quadrants:
 
-1. **Indic / Dharmic Ethics:** Duty (*Dharma*), cosmic harmony (*Rta*), interconnectedness, and intergenerational consequence.
-2. **Collectivist / Communal Ethics:** Relational cohesion, filial responsibility, and societal equilibrium.
+1. **Indic / Dharmic Ethics:** Duty (*Svadharma*), cosmic harmony (*Rta*), interconnectedness, and karmic debt (*Rna*).
+2. **Collectivist / Communal Ethics:** Relational cohesion, filial responsibility, and societal network equilibrium.
 3. **Indigenous & Biocentric Stewardship:** Land tenure, ancestral obligations, and non-anthropocentric resource balance.
 4. **Western Liberal Framework:** Individual autonomy, procedural rights, and utilitarian trade-offs.
 
 ---
 
-## 📊 Empirical Benchmark & Evaluation
+##  Empirical Benchmark & Evaluation
 
-Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3.7 Flash** ($T = 0.3$) across both **Compact** ($\le 100$ words) and **Analytic** ($\le 250$ words) operating modes.
+Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3.7 Flash** across both **Compact** ($\le 100$ words) and **Analytic** ($\le 250$ words) operating modes.
 
 ![Amono AI Benchmark Comparison](benchmark_comparison_chart.png)
 
@@ -40,7 +50,7 @@ Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3
 
 ---
 
-## 🛠️ Repository Structure
+##  Repository Structure
 
 ```text
 amono-ai/
@@ -50,6 +60,8 @@ amono-ai/
 ├── package.json                  # Node dependencies & UI build scripts
 ├── tsconfig.json                 # TypeScript compiler configuration
 ├── vite.config.ts                # Vite frontend bundler config
+├── tailwind.config.js            # Tailwind CSS styling configuration
+├── postcss.config.js             # PostCSS build plugin config
 ├── server.ts                     # Express backend API for Gemini inference
 ├── index.html                    # Frontend SPA entry shell
 ├── system_instructions.txt       # Core prompt conditioning rules
@@ -62,7 +74,7 @@ amono-ai/
 ├── benchmark_comparison_chart.png# Empirical visualization chart
 │
 └── src/
-    ├── App.tsx                   # Main React UI component
+    ├── App.tsx                   # Main Council of Epistemic Minds interface
     ├── main.tsx                  # React DOM mount point
     ├── types.ts                  # TypeScript interfaces
-    └── index.css                 # Tailwind CSS styles
+    └── index.css                 # Custom glassmorphic styles & Tailwind directives
