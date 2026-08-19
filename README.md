@@ -1,26 +1,30 @@
-# Amono AI | Council of Epistemic Minds
+# Amono AI: Parameter-Efficient Framework for Mitigating Monoculture Bias in LLMs
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://amono-ai.vercel.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Framework: React_18](https://img.shields.io/badge/Frontend-React_18_%7C_Vite-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![Model: Gemini_3.7_Flash](https://img.shields.io/badge/Engine-Gemini_3.7_Flash-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
+<p align="center">
+  <img src="benchmark_comparison_chart.png" alt="Amono AI Benchmark Comparison" width="100%" />
+</p>
 
-> **Amono AI** is a parameter-efficient, multi-paradigm AI alignment framework engineered to mitigate monocultural bias in large language models through four-quadrant epistemic governance and dialectical consensus deliberation.
+<p align="center">
+  <a href="https://amono-ai.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel" alt="Live Demo" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="License: Apache 2.0" /></a>
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/Frontend-React_18_%7C_Vite-61DAFB?style=for-the-badge&logo=react" alt="Frontend" /></a>
+  <a href="https://ai.google.dev/"><img src="https://img.shields.io/badge/Engine-Gemini_3.7_Flash-4285F4?style=for-the-badge&logo=google" alt="Engine" /></a>
+</p>
 
 ---
 
-##  Live Interactive Chamber
+## 🌐 Live Interactive Chamber
 
 Experience the multi-agent deliberation chamber directly in your browser:
-* **Production Web URL:** [https://amono-ai.vercel.app/](https://amono-ai.vercel.app/)
+* **Production URL:** [https://amono-ai.vercel.app/](https://amono-ai.vercel.app/)
 * **Engine:** Google Gemini API ($T=0.3$ parameter-efficient conditioning)
 * **Architecture:** React 18, Vite, Tailwind CSS, Vercel Edge Runtime
 
 ---
 
-##  The Four Epistemic Quadrants
+## 🏛️ The Four Epistemic Quadrants
 
-Amono AI eliminates single-lens monocultural defaults by seating four autonomous philosophical paradigms within every evaluation:
+Amono AI eliminates monocultural defaults by seating four autonomous philosophical paradigms within every evaluation:
 
 | Quadrant | Council Agent | Epistemic Foundation | Core Principle |
 | :--- | :--- | :--- | :--- |
@@ -31,7 +35,7 @@ Amono AI eliminates single-lens monocultural defaults by seating four autonomous
 
 ---
 
-##  Core Capabilities & Features
+## ⚡ Core Capabilities & Features
 
 * **Real-Time Multi-Agent Deliberation:** Streams individual agent arguments across all four paradigms before generating a synthesized equilibrium.
 * **Dual Inference Operating Modes:**
@@ -42,9 +46,9 @@ Amono AI eliminates single-lens monocultural defaults by seating four autonomous
 
 ---
 
-##  Empirical Benchmarks
+## 📊 Empirical Evaluation Matrix
 
-Evaluation metrics recorded across standard test suites:
+![Amono AI Benchmark Comparison](benchmark_comparison_chart.png)
 
 | Benchmark Scenario | Mode | Word Target | Actual Count | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -55,7 +59,7 @@ Evaluation metrics recorded across standard test suites:
 
 ---
 
-##  Local Development & Quickstart
+## 🛠️ Local Development & Quickstart
 
 Clone and run the application locally:
 
