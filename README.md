@@ -57,7 +57,7 @@ amono-ai/
 ├── audit_rules.py                # Budget & metadata verification logic
 ├── run_benchmark.py              # Automated 5-scenario evaluation runner
 ├── analyze_results.py            # Summary CSV metrics generator
-├── benchmark_results_100.json    # Complete evaluation logs
+├── benchmark_results.json        # Complete evaluation logs
 ├── benchmark_results_summary.csv # Metrics spreadsheet
 ├── benchmark_comparison_chart.png# Empirical visualization chart
 │
