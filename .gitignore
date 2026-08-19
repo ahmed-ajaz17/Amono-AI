@@ -1,0 +1,28 @@
+# Environment variables & API keys (CRITICAL)
+.env
+.env.local
+.env.*.local
+
+# Node.js dependencies & build outputs
+node_modules/
+dist/
+build/
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
