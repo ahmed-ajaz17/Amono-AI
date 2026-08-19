@@ -16,12 +16,11 @@ import {
 interface QuadrantScore {
   name: string;
   tradition: string;
-  icon: React.ComponentType<{ className?: string }>;
   summary: string;
   status: string;
 }
 
-export default function App() {
+export const App: React.FC = () => {
   const [query, setQuery] = useState(
     'Should an individual prioritize familial care obligations over personal career relocation?'
   );
@@ -48,28 +47,24 @@ export default function App() {
             {
               name: 'Indic / Dharmic',
               tradition: 'Svadharma & Rta',
-              icon: Compass,
               summary: 'Contextual duty and filial debt prioritized.',
               status: 'Balanced'
             },
             {
               name: 'Collectivist',
               tradition: 'Communal Cohesion',
-              icon: Scale,
               summary: 'Family network stability over individual pursuit.',
               status: 'Balanced'
             },
             {
               name: 'Indigenous / Biocentric',
               tradition: 'Kinship Reciprocity',
-              icon: Leaf,
               summary: 'Generational care obligations anchored in place.',
               status: 'Balanced'
             },
             {
               name: 'Western Liberal',
               tradition: 'Autonomy & Utility',
-              icon: Globe,
               summary: 'Individual freedom of movement and career growth.',
               status: 'Balanced'
             }
@@ -85,28 +80,24 @@ export default function App() {
             {
               name: 'Indic / Dharmic',
               tradition: 'Svadharma & Rta',
-              icon: Compass,
               summary: 'Karmic debt (Rna) and trans-generational duty.',
               status: 'Integrated'
             },
             {
               name: 'Collectivist',
               tradition: 'Social Cohesion',
-              icon: Scale,
               summary: 'Relational stability and inter-dependence.',
               status: 'Integrated'
             },
             {
               name: 'Indigenous / Biocentric',
               tradition: 'Relational Accountability',
-              icon: Leaf,
               summary: 'Ancestral stewardship within living kin networks.',
               status: 'Integrated'
             },
             {
               name: 'Western Liberal',
               tradition: 'Autonomy & Rights',
-              icon: Globe,
               summary: 'Self-actualization and personal vocational agency.',
               status: 'Integrated'
             }
@@ -114,7 +105,20 @@ export default function App() {
         });
       }
       setLoading(false);
-    }, 650);
+    }, 600);
+  };
+
+  const getQuadrantIcon = (index: number) => {
+    switch (index) {
+      case 0:
+        return ;
+      case 1:
+        return ;
+      case 2:
+        return ;
+      default:
+        return ;
+    }
   };
 
   return (
@@ -145,7 +149,7 @@ export default function App() {
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              Compact (≤ 100w)
+              Compact {"(<= 100w)"}
             
              setMode('analytic')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
@@ -154,7 +158,7 @@ export default function App() {
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              Analytic (≤ 250w)
+              Analytic {"(<= 250w)"}
             
           
         
@@ -171,6 +175,7 @@ export default function App() {
           />
           <div className="flex justify-end">
             <button
+              type="button"
               onClick={handleEvaluate}
               disabled={loading || !query.trim()}
               className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-indigo-600/20"
@@ -246,30 +251,27 @@ export default function App() {
                 Epistemic Quadrant Coverage Breakdown
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {result.quadrants.map((q, idx) => {
-                  const Icon = q.icon;
-                  return (
-                    <div
-                      key={idx}
-                      className="bg-slate-900/40 border border-slate-800/80 rounded-xl p-4 flex items-start gap-3.5 hover:border-slate-700 transition"
-                    >
-                      <div className="p-2 bg-slate-800 rounded-lg text-indigo-400 mt-0.5">
-                        <Icon className="w-4 h-4" />
-                      </div>
-                      <div className="space-y-1">
-                        <div className="flex items-center gap-2">
-                          <h3 className="text-sm font-bold text-slate-100">{q.name}</h3>
-                          <span className="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">
-                            {q.tradition}
-                          </span>
-                        </div>
-                        <p className="text-xs text-slate-400 leading-relaxed">
-                          {q.summary}
-                        </p>
-                      </div>
+                {result.quadrants.map((q, idx) => (
+                  <div
+                    key={q.name}
+                    className="bg-slate-900/40 border border-slate-800/80 rounded-xl p-4 flex items-start gap-3.5 hover:border-slate-700 transition"
+                  >
+                    <div className="p-2 bg-slate-800 rounded-lg text-indigo-400 mt-0.5">
+                      {getQuadrantIcon(idx)}
                     </div>
-                  );
-                })}
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-bold text-slate-100">{q.name}</h3>
+                        <span className="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">
+                          {q.tradition}
+                        </span>
+                      </div>
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        {q.summary}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -279,4 +281,6 @@ export default function App() {
       </div>
     </div>
   );
-}
+};
+
+export default App;
