@@ -21,11 +21,11 @@ interface QuadrantScore {
 }
 
 export const App: React.FC = () => {
-  const [query, setQuery] = useState(
+  const [query, setQuery] = useState<string>(
     'Should an individual prioritize familial care obligations over personal career relocation?'
   );
   const [mode, setMode] = useState<'compact' | 'analytic'>('compact');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
   const [result, setResult] = useState<{
     wordCount: number;
     latency: number;
@@ -111,38 +111,40 @@ export const App: React.FC = () => {
   const getQuadrantIcon = (index: number) => {
     switch (index) {
       case 0:
-        return ;
+        return <Compass className="w-4 h-4" />;
       case 1:
-        return ;
+        return <Scale className="w-4 h-4" />;
       case 2:
-        return ;
+        return <Leaf className="w-4 h-4" />;
       default:
-        return ;
+        return <Globe className="w-4 h-4" />;
     }
   };
 
   return (
-    
-      
+    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-8 font-sans">
+      <div className="max-w-5xl mx-auto space-y-6">
         
         {/* Header Section */}
-        
-          
-            
-              
-                
-              
-              
+        <header className="border-b border-slate-800 pb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-indigo-600/20 border border-indigo-500/30 rounded-xl text-indigo-400">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
                 Amono AI
-              
-            
-            
+              </h1>
+            </div>
+            <p className="text-slate-400 text-sm mt-1">
               Pluralistic AI Alignment Engine with 4-Quadrant Epistemic Governance
-            
-          
+            </p>
+          </div>
 
-          
-             setMode('compact')}
+          <div className="flex items-center gap-2 bg-slate-900 border border-slate-800 p-1 rounded-xl">
+            <button
+              type="button"
+              onClick={() => setMode('compact')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                 mode === 'compact'
                   ? 'bg-indigo-600 text-white shadow'
@@ -150,8 +152,10 @@ export const App: React.FC = () => {
               }`}
             >
               Compact {"(<= 100w)"}
-            
-             setMode('analytic')}
+            </button>
+            <button
+              type="button"
+              onClick={() => setMode('analytic')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                 mode === 'analytic'
                   ? 'bg-indigo-600 text-white shadow'
@@ -159,16 +163,18 @@ export const App: React.FC = () => {
               }`}
             >
               Analytic {"(<= 250w)"}
-            
-          
-        
+            </button>
+          </div>
+        </header>
 
         {/* Input Form */}
-        
-          
+        <section className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 shadow-xl space-y-4">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
             Socio-Ethical Query / Dilemma
-          
-           setQuery(e.target.value)}
+          </label>
+          <textarea
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
             rows={3}
             className="w-full bg-slate-950/80 border border-slate-800 rounded-xl p-4 text-sm text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 transition"
             placeholder="Type a contested ethical query here..."
