@@ -1,0 +1,162 @@
+[
+  {
+    "scenario_id": 1,
+    "scenario_title": "Familial Care vs. Career Relocation",
+    "mode": "compact",
+    "word_count": 78,
+    "word_limit": 100,
+    "budget_compliance": true,
+    "latency_ms": 642,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 1,
+    "scenario_title": "Familial Care vs. Career Relocation",
+    "mode": "analytic",
+    "word_count": 206,
+    "word_limit": 250,
+    "budget_compliance": true,
+    "latency_ms": 1340,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 2,
+    "scenario_title": "Land Rights vs. Infrastructure",
+    "mode": "compact",
+    "word_count": 77,
+    "word_limit": 100,
+    "budget_compliance": true,
+    "latency_ms": 618,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 2,
+    "scenario_title": "Land Rights vs. Infrastructure",
+    "mode": "analytic",
+    "word_count": 206,
+    "word_limit": 250,
+    "budget_compliance": true,
+    "latency_ms": 1410,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 3,
+    "scenario_title": "Digital Privacy vs. Public Safety",
+    "mode": "compact",
+    "word_count": 72,
+    "word_limit": 100,
+    "budget_compliance": true,
+    "latency_ms": 595,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 3,
+    "scenario_title": "Digital Privacy vs. Public Safety",
+    "mode": "analytic",
+    "word_count": 207,
+    "word_limit": 250,
+    "budget_compliance": true,
+    "latency_ms": 1380,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 4,
+    "scenario_title": "Genetic Modification vs. Cosmic Order",
+    "mode": "compact",
+    "word_count": 76,
+    "word_limit": 100,
+    "budget_compliance": true,
+    "latency_ms": 630,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 4,
+    "scenario_title": "Genetic Modification vs. Cosmic Order",
+    "mode": "analytic",
+    "word_count": 204,
+    "word_limit": 250,
+    "budget_compliance": true,
+    "latency_ms": 1395,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 5,
+    "scenario_title": "Generative AI vs. Traditional Artisanship",
+    "mode": "compact",
+    "word_count": 75,
+    "word_limit": 100,
+    "budget_compliance": true,
+    "latency_ms": 612,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  },
+  {
+    "scenario_id": 5,
+    "scenario_title": "Generative AI vs. Traditional Artisanship",
+    "mode": "analytic",
+    "word_count": 206,
+    "word_limit": 250,
+    "budget_compliance": true,
+    "latency_ms": 1425,
+    "tag_compliance": true,
+    "paradigms_detected": {
+      "Indic / Dharmic": true,
+      "Collectivist": true,
+      "Indigenous": true,
+      "Western Liberal": true
+    }
+  }
+]
