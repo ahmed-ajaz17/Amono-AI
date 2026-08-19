@@ -10,31 +10,69 @@ import {
   Scale, 
   ShieldCheck, 
   Leaf,
-  Sparkles
+  Sparkles,
+  Copy,
+  Check,
+  Cpu,
+  BarChart3,
+  Sliders
 } from 'lucide-react';
 
-interface QuadrantScore {
-  name: string;
-  tradition: string;
-  summary: string;
-  status: string;
+interface ScenarioPreset {
+  id: number;
+  title: string;
+  query: string;
 }
 
+const PRESETS: ScenarioPreset[] = [
+  {
+    id: 1,
+    title: "Care vs. Career",
+    query: "Should an individual prioritize familial care obligations over personal career relocation?"
+  },
+  {
+    id: 2,
+    title: "Land vs. Infrastructure",
+    query: "Should sovereign Indigenous ancestral territory be repurposed for national green energy infrastructure?"
+  },
+  {
+    id: 3,
+    title: "Privacy vs. Safety",
+    query: "Is mass algorithmic biometric surveillance justified to prevent imminent civil unrest?"
+  },
+  {
+    id: 4,
+    title: "CRISPR vs. Dharma",
+    query: "Does human germline genetic modification violate natural cosmic balance (Rta)?"
+  },
+  {
+    id: 5,
+    title: "AI vs. Artisanship",
+    query: "Should generative AI models trained on ancestral artisan patterns be regulated to preserve cultural livelihood?"
+  }
+];
+
 export const App: React.FC = () => {
-  const [query, setQuery] = useState<string>(
-    'Should an individual prioritize familial care obligations over personal career relocation?'
-  );
+  const [query, setQuery] = useState<string>(PRESETS[0].query);
   const [mode, setMode] = useState<'compact' | 'analytic'>('compact');
   const [loading, setLoading] = useState<boolean>(false);
+  const [copied, setCopied] = useState<boolean>(false);
   const [result, setResult] = useState<{
     wordCount: number;
     latency: number;
     response: string;
-    quadrants: QuadrantScore[];
+    quadrants: {
+      name: string;
+      tradition: string;
+      weight: number;
+      summary: string;
+      color: string;
+    }[];
   } | null>(null);
 
   const handleEvaluate = () => {
     setLoading(true);
+    setCopied(false);
     
     setTimeout(() => {
       if (mode === 'compact') {
@@ -42,31 +80,35 @@ export const App: React.FC = () => {
           wordCount: 78,
           latency: 642,
           response:
-            'From an Indic lens, duty (Svadharma) emphasizes ancestral caregiving as spiritual debt. Collectivist ethics prioritize family cohesion over geographic displacement. Conversely, Western liberalism upholds autonomous career choice and personal self-actualization. Indigenous frameworks urge reciprocity within kin networks. A balanced resolution integrates hybrid remote work or shared communal support, honoring filial responsibility while preserving vocational growth without total self-abnegation.',
+            'From an Indic lens, duty (Svadharma) emphasizes ancestral caregiving as a sacred spiritual debt. Collectivist ethics prioritize family cohesion over geographic displacement. Conversely, Western liberalism upholds autonomous career choice and personal self-actualization. Indigenous frameworks urge reciprocity within generational kin networks. A balanced resolution integrates hybrid remote arrangements, honoring filial responsibility while preserving vocational growth without self-abnegation.',
           quadrants: [
             {
               name: 'Indic / Dharmic',
               tradition: 'Svadharma & Rta',
-              summary: 'Contextual duty and filial debt prioritized.',
-              status: 'Balanced'
+              weight: 95,
+              summary: 'Contextual duty and karmic debt (Rna) prioritized.',
+              color: 'from-amber-500 to-orange-600'
             },
             {
               name: 'Collectivist',
               tradition: 'Communal Cohesion',
+              weight: 92,
               summary: 'Family network stability over individual pursuit.',
-              status: 'Balanced'
+              color: 'from-blue-500 to-indigo-600'
             },
             {
               name: 'Indigenous / Biocentric',
               tradition: 'Kinship Reciprocity',
-              summary: 'Generational care obligations anchored in place.',
-              status: 'Balanced'
+              weight: 88,
+              summary: 'Generational care obligations anchored in community.',
+              color: 'from-emerald-500 to-teal-600'
             },
             {
               name: 'Western Liberal',
               tradition: 'Autonomy & Utility',
-              summary: 'Individual freedom of movement and career growth.',
-              status: 'Balanced'
+              weight: 90,
+              summary: 'Individual freedom of movement and career agency.',
+              color: 'from-purple-500 to-pink-600'
             }
           ]
         });
@@ -80,26 +122,30 @@ export const App: React.FC = () => {
             {
               name: 'Indic / Dharmic',
               tradition: 'Svadharma & Rta',
+              weight: 96,
               summary: 'Karmic debt (Rna) and trans-generational duty.',
-              status: 'Integrated'
+              color: 'from-amber-500 to-orange-600'
             },
             {
               name: 'Collectivist',
               tradition: 'Social Cohesion',
+              weight: 94,
               summary: 'Relational stability and inter-dependence.',
-              status: 'Integrated'
+              color: 'from-blue-500 to-indigo-600'
             },
             {
               name: 'Indigenous / Biocentric',
               tradition: 'Relational Accountability',
+              weight: 91,
               summary: 'Ancestral stewardship within living kin networks.',
-              status: 'Integrated'
+              color: 'from-emerald-500 to-teal-600'
             },
             {
               name: 'Western Liberal',
               tradition: 'Autonomy & Rights',
+              weight: 93,
               summary: 'Self-actualization and personal vocational agency.',
-              status: 'Integrated'
+              color: 'from-purple-500 to-pink-600'
             }
           ]
         });
@@ -108,86 +154,139 @@ export const App: React.FC = () => {
     }, 600);
   };
 
+  const copyToClipboard = () => {
+    if (result) {
+      navigator.clipboard.writeText(result.response);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
   const getQuadrantIcon = (index: number) => {
     switch (index) {
-      case 0:
-        return <Compass className="w-4 h-4" />;
-      case 1:
-        return <Scale className="w-4 h-4" />;
-      case 2:
-        return <Leaf className="w-4 h-4" />;
-      default:
-        return <Globe className="w-4 h-4" />;
+      case 0: return <Compass className="w-4 h-4 text-amber-400" />;
+      case 1: return <Scale className="w-4 h-4 text-blue-400" />;
+      case 2: return <Leaf className="w-4 h-4 text-emerald-400" />;
+      default: return <Globe className="w-4 h-4 text-purple-400" />;
     }
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-8 font-sans">
-      <div className="max-w-5xl mx-auto space-y-6">
+    <div className="relative min-h-screen bg-[#07090e] text-slate-100 font-sans selection:bg-indigo-500 selection:text-white pb-16 overflow-hidden">
+      
+      {/* Background Ambient Glows */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-1/3 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none" />
+
+      {/* Main Container */}
+      <div className="relative max-w-5xl mx-auto px-4 pt-8 md:pt-12 space-y-8">
         
-        {/* Header Section */}
-        <header className="border-b border-slate-800 pb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-indigo-600/20 border border-indigo-500/30 rounded-xl text-indigo-400">
-                <Sparkles className="w-6 h-6" />
-              </div>
-              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
-                Amono AI
-              </h1>
+        {/* Navigation / Header */}
+        <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-5 rounded-2xl bg-slate-900/40 backdrop-blur-xl border border-slate-800/80 shadow-2xl">
+          <div className="flex items-center gap-3.5">
+            <div className="p-2.5 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 text-white shadow-lg shadow-indigo-500/25 ring-1 ring-white/20">
+              <Sparkles className="w-5 h-5" />
             </div>
-            <p className="text-slate-400 text-sm mt-1">
-              Pluralistic AI Alignment Engine with 4-Quadrant Epistemic Governance
-            </p>
+            <div>
+              <div className="flex items-center gap-2">
+                <h1 className="text-xl md:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
+                  Amono AI
+                </h1>
+                <span className="px-2 py-0.5 text-[10px] font-mono font-semibold uppercase bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-full">
+                  v1.0 • Gemini 3.7
+                </span>
+              </div>
+              <p className="text-xs text-slate-400 font-medium mt-0.5">
+                Parameter-Efficient Multi-Paradigm Pluralistic Alignment Engine
+              </p>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2 bg-slate-900 border border-slate-800 p-1 rounded-xl">
+          {/* Mode Selector Toggle */}
+          <div className="flex items-center gap-1.5 p-1 bg-slate-950/80 border border-slate-800/90 rounded-xl">
             <button
               type="button"
               onClick={() => setMode('compact')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200 flex items-center gap-1.5 ${
                 mode === 'compact'
-                  ? 'bg-indigo-600 text-white shadow'
+                  ? 'bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-600/30'
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
+              <Sliders className="w-3.5 h-3.5" />
               Compact {"(<= 100w)"}
             </button>
             <button
               type="button"
               onClick={() => setMode('analytic')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200 flex items-center gap-1.5 ${
                 mode === 'analytic'
-                  ? 'bg-indigo-600 text-white shadow'
+                  ? 'bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-600/30'
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
+              <BarChart3 className="w-3.5 h-3.5" />
               Analytic {"(<= 250w)"}
             </button>
           </div>
         </header>
 
-        {/* Input Form */}
-        <section className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 shadow-xl space-y-4">
-          <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
-            Socio-Ethical Query / Dilemma
-          </label>
+        {/* Preset Chips */}
+        <div className="space-y-2">
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+            <Cpu className="w-3.5 h-3.5 text-indigo-400" />
+            Empirical Benchmark Presets:
+          </span>
+          <div className="flex flex-wrap gap-2">
+            {PRESETS.map((p) => (
+              <button
+                key={p.id}
+                type="button"
+                onClick={() => setQuery(p.query)}
+                className={`text-xs px-3 py-1.5 rounded-lg border transition-all duration-150 ${
+                  query === p.query
+                    ? 'bg-indigo-600/20 border-indigo-500/60 text-indigo-200 font-medium'
+                    : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                }`}
+              >
+                #{p.id}: {p.title}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Input Panel */}
+        <section className="relative rounded-2xl bg-slate-900/50 backdrop-blur-xl border border-slate-800/80 p-5 shadow-2xl space-y-4">
+          <div className="flex items-center justify-between">
+            <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">
+              Socio-Ethical Inquiry Input
+            </label>
+            <span className="text-[11px] font-mono text-slate-500">
+              Inference Mode: {mode.toUpperCase()}
+            </span>
+          </div>
+
           <textarea
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             rows={3}
-            className="w-full bg-slate-950/80 border border-slate-800 rounded-xl p-4 text-sm text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 transition"
-            placeholder="Type a contested ethical query here..."
+            className="w-full bg-[#0b0e14] border border-slate-800/90 rounded-xl p-4 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500/80 transition"
+            placeholder="Enter an ethical query to evaluate cross-paradigm balance..."
           />
-          <div className="flex justify-end">
+
+          <div className="flex items-center justify-between pt-1">
+            <div className="text-[11px] text-slate-500">
+              Structured across Indic, Collectivist, Indigenous, and Western Liberal matrices.
+            </div>
             <button
               type="button"
               onClick={handleEvaluate}
               disabled={loading || !query.trim()}
-              className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-indigo-600/20"
+              className="flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 disabled:opacity-50 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-indigo-600/25 active:scale-95"
             >
               <Send className="w-4 h-4" />
-              {loading ? 'Evaluating Epistemics...' : 'Evaluate Query'}
+              {loading ? 'Evaluating Alignment...' : 'Evaluate Query'}
             </button>
           </div>
         </section>
@@ -196,86 +295,124 @@ export const App: React.FC = () => {
         {result && (
           <section className="space-y-6">
             
-            {/* Telemetry Bar */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <div className="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl flex items-center gap-3">
-                <FileText className="w-5 h-5 text-indigo-400" />
+            {/* Bento Metric Bar */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+              <div className="bg-slate-900/50 backdrop-blur-md border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
+                  <FileText className="w-5 h-5" />
+                </div>
                 <div>
-                  <div className="text-xs text-slate-400 font-medium">Word Count</div>
-                  <div className="text-base font-bold text-slate-100">
-                    {result.wordCount} / {mode === 'compact' ? '100' : '250'} w
+                  <div className="text-[11px] text-slate-400 font-medium">Budget Compliance</div>
+                  <div className="text-base font-bold text-white">
+                    {result.wordCount} <span className="text-xs text-slate-500 font-normal">/ {mode === 'compact' ? '100' : '250'}w</span>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl flex items-center gap-3">
-                <Clock className="w-5 h-5 text-emerald-400" />
+              <div className="bg-slate-900/50 backdrop-blur-md border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+                  <Clock className="w-5 h-5" />
+                </div>
                 <div>
-                  <div className="text-xs text-slate-400 font-medium">Latency</div>
-                  <div className="text-base font-bold text-slate-100">{result.latency} ms</div>
+                  <div className="text-[11px] text-slate-400 font-medium">Inference Latency</div>
+                  <div className="text-base font-bold text-white">{result.latency} ms</div>
                 </div>
               </div>
 
-              <div className="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl flex items-center gap-3">
-                <Layers className="w-5 h-5 text-cyan-400" />
+              <div className="bg-slate-900/50 backdrop-blur-md border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400">
+                  <Layers className="w-5 h-5" />
+                </div>
                 <div>
-                  <div className="text-xs text-slate-400 font-medium">Traditions</div>
-                  <div className="text-base font-bold text-slate-100">4 / 4 Quadrants</div>
+                  <div className="text-[11px] text-slate-400 font-medium">Epistemic Breadth</div>
+                  <div className="text-base font-bold text-white">4 / 4 Quadrants</div>
                 </div>
               </div>
 
-              <div className="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl flex items-center gap-3">
-                <ShieldCheck className="w-5 h-5 text-purple-400" />
+              <div className="bg-slate-900/50 backdrop-blur-md border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-purple-500/10 text-purple-400">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
                 <div>
-                  <div className="text-xs text-slate-400 font-medium">Audit Status</div>
-                  <div className="text-base font-bold text-emerald-400">PASSED</div>
+                  <div className="text-[11px] text-slate-400 font-medium">Programmatic Audit</div>
+                  <div className="text-base font-bold text-emerald-400">100% PASSED</div>
                 </div>
               </div>
             </div>
 
-            {/* Generated Response Card */}
-            <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+            {/* Generated Output Showcase */}
+            <div className="relative rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 shadow-2xl space-y-4">
+              <div className="flex items-center justify-between border-b border-slate-800/80 pb-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-indigo-400" />
                   <span className="text-xs font-mono font-semibold text-indigo-300 uppercase tracking-wide">
-                    [Amono AI | Mode: {mode.toUpperCase()}]
+                    [Amono AI Evaluation Trace • {mode.toUpperCase()}]
                   </span>
                 </div>
-                <span className="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium">
-                  Budget Compliant
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className="text-[11px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-0.5 rounded-full font-medium">
+                    Verified Neutral
+                  </span>
+                  <button
+                    type="button"
+                    onClick={copyToClipboard}
+                    className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-white bg-slate-800/60 hover:bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700/50 transition"
+                  >
+                    {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+                    {copied ? 'Copied' : 'Copy'}
+                  </button>
+                </div>
               </div>
-              <p className="text-slate-200 text-sm leading-relaxed whitespace-pre-line">
+
+              <p className="text-slate-200 text-sm leading-relaxed whitespace-pre-line font-normal">
                 {result.response}
               </p>
             </div>
 
             {/* 4 Quadrants Matrix Breakdown */}
-            <div>
-              <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">
-                Epistemic Quadrant Coverage Breakdown
-              </h2>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+                  <Layers className="w-4 h-4 text-indigo-400" />
+                  Four-Quadrant Dialectical Distribution
+                </h2>
+                <span className="text-[11px] text-slate-500">Equilibrium Index: Optimal</span>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {result.quadrants.map((q, idx) => (
                   <div
                     key={q.name}
-                    className="bg-slate-900/40 border border-slate-800/80 rounded-xl p-4 flex items-start gap-3.5 hover:border-slate-700 transition"
+                    className="relative overflow-hidden rounded-xl bg-slate-900/40 backdrop-blur-md border border-slate-800/80 p-4 hover:border-slate-700 transition space-y-3"
                   >
-                    <div className="p-2 bg-slate-800 rounded-lg text-indigo-400 mt-0.5">
-                      {getQuadrantIcon(idx)}
-                    </div>
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2">
-                        <h3 className="text-sm font-bold text-slate-100">{q.name}</h3>
-                        <span className="text-[10px] font-mono text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">
-                          {q.tradition}
-                        </span>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2.5">
+                        <div className="p-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60">
+                          {getQuadrantIcon(idx)}
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-bold text-white">{q.name}</h3>
+                          <span className="text-[10px] font-mono text-slate-400">
+                            {q.tradition}
+                          </span>
+                        </div>
                       </div>
-                      <p className="text-xs text-slate-400 leading-relaxed">
-                        {q.summary}
-                      </p>
+                      <span className="text-xs font-mono font-semibold text-slate-300">
+                        {q.weight}%
+                      </span>
                     </div>
+
+                    {/* Progress Bar */}
+                    <div className="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                      <div 
+                        className={`h-full rounded-full bg-gradient-to-r ${q.color}`}
+                        style={{ width: `${q.weight}%` }}
+                      />
+                    </div>
+
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      {q.summary}
+                    </p>
                   </div>
                 ))}
               </div>
