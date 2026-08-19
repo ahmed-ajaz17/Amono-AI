@@ -84,7 +84,8 @@ const PRESETS = [
   { id: 1, label: "Filial Duty vs. Relocation", query: "Should an individual prioritize familial care obligations over personal career relocation?" },
   { id: 2, label: "Indigenous Land vs. Green Grid", query: "Should sovereign Indigenous ancestral territory be repurposed for national green energy infrastructure?" },
   { id: 3, label: "Biometric Surveillance vs. Safety", query: "Is mass algorithmic biometric surveillance justified to prevent imminent civil unrest?" },
-  { id: 4, label: "CRISPR vs. Cosmic Dharma", query: "Does human germline genetic modification violate natural cosmic balance (Rta)?" }
+  { id: 4, label: "CRISPR vs. Cosmic Dharma", query: "Does human germline genetic modification violate natural cosmic balance (Rta)?" },
+  { id: 5, label: "AI Automation vs. Traditional Craft", query: "How should the automation of indigenous artisanal craft patterns by generative AI models be governed?" }
 ];
 
 export const App: React.FC = () => {
