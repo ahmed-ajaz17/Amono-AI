@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   Compass, 
-  Layers, 
   Clock, 
-  FileText, 
   Send, 
   CheckCircle2, 
   Globe, 
@@ -12,12 +10,9 @@ import {
   Leaf,
   Sparkles,
   Users,
-  Cpu,
   Terminal,
-  Activity,
   Copy,
   Check,
-  ChevronRight,
   MessageSquare
 } from 'lucide-react';
 
@@ -96,7 +91,7 @@ export const App: React.FC = () => {
   const [query, setQuery] = useState(PRESETS[0].query);
   const [mode, setMode] = useState<'compact' | 'analytic'>('compact');
   const [phase, setPhase] = useState<'idle' | 'deliberating' | 'synthesizing' | 'complete'>('idle');
-  const [activeTab, setActiveTab] = useState<'synthesis' | 'agents' | 'audit'>('synthesis');
+  const [activeTab, setActiveTab] = useState<'synthesis' | 'agents'>('synthesis');
   const [copied, setCopied] = useState(false);
   const [streamedSynthesis, setStreamedSynthesis] = useState('');
 
@@ -109,12 +104,10 @@ export const App: React.FC = () => {
     setStreamedSynthesis('');
     setActiveTab('agents');
 
-    // Phase 1: Deliberating across agents
     setTimeout(() => {
       setPhase('synthesizing');
       setActiveTab('synthesis');
 
-      // Phase 2: Stream consensus
       let i = 0;
       const interval = setInterval(() => {
         if (i <= fullSynthesis.length) {
@@ -125,7 +118,7 @@ export const App: React.FC = () => {
           setPhase('complete');
         }
       }, 20);
-    }, 1800);
+    }, 1600);
   };
 
   const copySynthesis = () => {
@@ -145,38 +138,40 @@ export const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25 ring-1 ring-white/20">
-              <Users className="w-5 h-5" />
+              <Sparkles className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="font-bold text-base md:text-lg tracking-tight text-white">Council of Epistemic Minds</h1>
+                <h1 className="font-bold text-base md:text-lg tracking-tight text-white">
+                  Amono AI <span className="text-slate-400 font-normal">|</span> Council of Epistemic Minds
+                </h1>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400">
-                  Amono AI v1.0
+                  Pluralistic Engine
                 </span>
               </div>
-              <p className="text-[11px] text-slate-400">4-Agent Autonomous Deliberation Network</p>
+              <p className="text-[11px] text-slate-400">4-Quadrant Epistemic Governance & Deliberation Network</p>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="text-slate-300 font-mono text-[11px]">4 Agents Seated</span>
+              <span className="text-slate-300 font-mono text-[11px]">4 Agents Active</span>
             </div>
             <div className="flex items-center bg-slate-900 border border-slate-800 rounded-lg p-0.5">
               <button
                 type="button"
                 onClick={() => setMode('compact')}
-                className={`px-2.5 py-1 rounded text-xs font-medium transition ${mode === 'compact' ? 'bg-indigo-600 text-white' : 'text-slate-400'}`}
+                className={`px-2.5 py-1 rounded text-xs font-medium transition ${mode === 'compact' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200'}`}
               >
-                Compact
+                Compact (≤100w)
               </button>
               <button
                 type="button"
                 onClick={() => setMode('analytic')}
-                className={`px-2.5 py-1 rounded text-xs font-medium transition ${mode === 'analytic' ? 'bg-indigo-600 text-white' : 'text-slate-400'}`}
+                className={`px-2.5 py-1 rounded text-xs font-medium transition ${mode === 'analytic' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200'}`}
               >
-                Analytic
+                Analytic (≤250w)
               </button>
             </div>
           </div>
@@ -216,9 +211,9 @@ export const App: React.FC = () => {
           })}
         </div>
 
-        {/* Preset Queries */}
+        {/* Preset Dilemma Queries */}
         <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-          <span className="text-[11px] font-mono text-slate-400 uppercase shrink-0">Dilemmas:</span>
+          <span className="text-[11px] font-mono text-slate-400 uppercase shrink-0">Test Presets:</span>
           {PRESETS.map((preset) => (
             <button
               key={preset.id}
@@ -240,10 +235,10 @@ export const App: React.FC = () => {
           <div className="flex items-center justify-between">
             <label className="text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
               <Terminal className="w-3.5 h-3.5 text-indigo-400" />
-              Inquiry for Council Deliberation
+              Inquiry for Amono Council Deliberation
             </label>
             <span className="text-[11px] font-mono text-slate-400">
-              Budget: {mode === 'compact' ? '≤ 100 words' : '≤ 250 words'}
+              Target Budget: {mode === 'compact' ? '≤ 100 words' : '≤ 250 words'}
             </span>
           </div>
 
@@ -258,17 +253,17 @@ export const App: React.FC = () => {
           <div className="flex items-center justify-between pt-1">
             <div className="text-[11px] text-slate-400 flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              Multi-Paradigm Dialectical Synthesis
+              Cross-Paradigm Equilibrium Synthesis
             </div>
 
             <button
               type="button"
               onClick={handleStartCouncil}
               disabled={phase === 'deliberating' || !query.trim()}
-              className="flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 disabled:opacity-50 text-white font-semibold px-6 py-2.5 rounded-xl text-xs shadow-lg shadow-indigo-600/30 active:scale-95 transition"
+              className="flex items-center gap-2 bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 disabled:opacity-50 text-white font-semibold px-6 py-2.5 rounded-xl text-xs shadow-lg shadow-indigo-600/30 active:scale-95 transition"
             >
               <Send className="w-3.5 h-3.5" />
-              {phase === 'deliberating' ? 'Council Deliberating...' : 'Convene Council'}
+              {phase === 'deliberating' ? 'Amono Council Deliberating...' : 'Convene Amono Council'}
             </button>
           </div>
         </section>
@@ -298,7 +293,7 @@ export const App: React.FC = () => {
                   }`}
                 >
                   <MessageSquare className="w-3.5 h-3.5" />
-                  Individual Agent Arguments
+                  Individual Agent Positions
                 </button>
               </div>
 
@@ -321,11 +316,11 @@ export const App: React.FC = () => {
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                     <span className="text-xs font-mono font-bold text-indigo-300 uppercase">
-                      Council Master Synthesis • Mode: {mode.toUpperCase()}
+                      Amono AI Synthesis Output • Mode: {mode.toUpperCase()}
                     </span>
                   </div>
                   <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
-                    Equilibrium Reached
+                    Dialectical Equilibrium Verified
                   </span>
                 </div>
 
@@ -346,7 +341,7 @@ export const App: React.FC = () => {
                     Traditions: <span className="text-white font-bold">4 / 4 Represented</span>
                   </div>
                   <div className="text-xs text-slate-400">
-                    Audit: <span className="text-emerald-400 font-bold">PASSED</span>
+                    Audit Status: <span className="text-emerald-400 font-bold">100% PASSED</span>
                   </div>
                 </div>
               </div>
