@@ -1,61 +1,68 @@
-# Amono AI: Parameter-Efficient Framework for Mitigating Monoculture Bias in LLMs
+# Amono AI: Pluralistic Alignment Framework
 
-**Amono AI** is a modular system layer designed to de-center Western defaultism and monoculture bias in Large Language Models (LLMs). Rather than retraining billions of weights, Amono AI intercepts prompts and dynamically conditions foundation models (such as Gemini 3.6 Flash) across pluralistic non-Western context layers in real time.
+> A parameter-efficient, inference-time prompt conditioning framework designed to mitigate Western monoculture defaultism in Large Language Models (LLMs).
 
----
-
-##  Key Features
-
-* **Dynamic Context Injection:** Injects multi-perspective system instructions at the API level without modifying base model parameters.
-* **Pluralistic Domain Alignment:** Evaluates queries across distinct socio-philosophical domains:
-  1. **Indic / Dharmic Ethics:** Duty-centric (*Dharma*) and relational responsibility.
-  2. **Collectivist / Communal Ethics:** Social balance, filial responsibility, and community welfare.
-  3. **Indigenous & Biocentric Stewardship:** Non-anthropocentric nature rights and customary ecology.
-  4. **Western Liberal Framework:** Presented as *one* regional perspective among equals.
-* **Strict Output Constraints:** Configured with an operational **100-word response limit** for concise, high-efficiency comparisons.
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.7_Flash-purple.svg)](https://ai.google.dev/)
+[![Language](https://img.shields.io/badge/Stack-React_|_TypeScript_|_Python-emerald.svg)]()
 
 ---
 
-##  Configuration & System Prompt
+##  Core Architectural Philosophy
 
-The core logic resides in `system_instructions.txt`, which conditions the Gemini engine to avoid treating Western individualistic standards as universal baselines.
+Standard frontier models routinely default to Western liberal-individualist epistemic frameworks when answering complex socio-ethical queries. **Amono AI** counterbalances this via structured prompt conditioning, balancing responses across four epistemic quadrants:
 
----
-
-##  India Book of Records (IBR) Evidence Submission
-
-This repository serves as the official open-source codebase and evidence record for the **India Book of Records** claim:
-> *"First Modular Parameter-Efficient System Framework (Amono AI) for Mitigating Western-Centricity and Monoculture Bias across Pluralistic Non-Western Context Layers in Large Language Models."*
+1. **Indic / Dharmic Ethics:** Duty (*Dharma*), cosmic harmony (*Rta*), interconnectedness, and intergenerational consequence.
+2. **Collectivist / Communal Ethics:** Relational cohesion, filial responsibility, and societal equilibrium.
+3. **Indigenous & Biocentric Stewardship:** Land tenure, ancestral obligations, and non-anthropocentric resource balance.
+4. **Western Liberal Framework:** Individual autonomy, procedural rights, and utilitarian trade-offs.
 
 ---
 
-##  License
+##  Empirical Benchmark & Evaluation
 
-This project is licensed under the Apache License 2.0 - see the `LICENSE` file for details.
-
-##  Operational Modes
-
-Amono AI supports two parameter-efficient execution modes:
-
-| Mode | Word Limit | Trigger | Best For |
-| :--- | :--- | :--- | :--- |
-| **Compact (Default)** | $\le 100\text{ words}$ | Standard prompt | Real-time edge inference, low token consumption |
-| **Analytic** | $\le 250\text{ words}$ | Prepend `[Mode: Analytic]` | Deep research, ethical deliberation, academic case studies |
-
-### Example Usage:
-* **Compact Query:** `"Is personal career ambition more important than family duty?"`
-* **Analytic Query:** `"[Mode: Analytic] Is personal career ambition more important than family duty?"`
-
-* ## Empirical Benchmark & Evaluation
-
-Amono AI was evaluated across five multi-paradigm dilemmas on Gemini 3.7 Flash ($T = 0.3$) to measure word budget compliance and multi-epistemic coverage.
+Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3.7 Flash** ($T = 0.3$) across both **Compact** ($\le 100$ words) and **Analytic** ($\le 250$ words) operating modes.
 
 ![Amono AI Benchmark Comparison](benchmark_comparison_chart.png)
 
-| Scenario | Compact ($\le 100\text{w}$) | Analytic ($\le 250\text{w}$) | Status |
-| :--- | :---: | :---: | :---: |
-| 1. Familial Care vs. Career | 78 words | 206 words | Passed |
-| 2. Land Rights vs. Infrastructure | 77 words | 206 words | Passed |
-| 3. Digital Privacy vs. Security | 72 words | 207 words | Passed |
-| 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | Passed |
-| 5. AI Automation vs. Artisanship | 75 words | 206 words | Passed |
+### Summary Results
+
+| Scenario | Compact ($\le 100\text{w}$) | Analytic ($\le 250\text{w}$) | Epistemic Coverage | Status |
+| :--- | :---: | :---: | :---: | :---: |
+| 1. Familial Care vs. Career | 78 words | 206 words | 4 / 4 Quadrants | **Passed** |
+| 2. Land Rights vs. Infrastructure | 77 words | 206 words | 4 / 4 Quadrants | **Passed** |
+| 3. Digital Privacy vs. Security | 72 words | 207 words | 4 / 4 Quadrants | **Passed** |
+| 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | 4 / 4 Quadrants | **Passed** |
+| 5. AI Automation vs. Artisanship | 75 words | 206 words | 4 / 4 Quadrants | **Passed** |
+
+* **Complete Raw Logs:** [`benchmark_results_100.json`](benchmark_results_100.json)
+* **Aggregated Metrics:** [`benchmark_results_summary.csv`](benchmark_results_summary.csv)
+
+---
+
+##  Repository Structure
+
+```text
+amono-ai/
+├── .env.example                  # Environment configuration template
+├── .gitignore                    # Exclusion rules for keys & artifacts
+├── metadata.json                 # Project schema & architecture specs
+├── package.json                  # Node dependencies & UI build scripts
+├── tsconfig.json                 # TypeScript compiler configuration
+├── vite.config.ts                # Vite frontend bundler config
+├── server.ts                     # Express backend API for Gemini inference
+├── index.html                    # Frontend SPA entry shell
+├── system_instructions.txt       # Core prompt conditioning rules
+│
+├── audit_rules.py                # Budget & metadata verification logic
+├── run_benchmark.py              # Automated 5-scenario evaluation runner
+├── analyze_results.py            # Summary CSV metrics generator
+├── benchmark_results_100.json    # Complete evaluation logs
+├── benchmark_results_summary.csv # Metrics spreadsheet
+├── benchmark_comparison_chart.png# Empirical visualization chart
+│
+└── src/
+    ├── App.tsx                   # Main React UI component
+    ├── main.tsx                  # React DOM mount point
+    ├── types.ts                  # TypeScript interfaces
+    └── index.css                 # Tailwind CSS styles
