@@ -45,3 +45,17 @@ Amono AI supports two parameter-efficient execution modes:
 ### Example Usage:
 * **Compact Query:** `"Is personal career ambition more important than family duty?"`
 * **Analytic Query:** `"[Mode: Analytic] Is personal career ambition more important than family duty?"`
+
+* ## Empirical Benchmark & Evaluation
+
+Amono AI was evaluated across five multi-paradigm dilemmas on Gemini 3.7 Flash ($T = 0.3$) to measure word budget compliance and multi-epistemic coverage.
+
+![Amono AI Benchmark Comparison](benchmark_comparison_chart.png)
+
+| Scenario | Compact ($\le 100\text{w}$) | Analytic ($\le 250\text{w}$) | Status |
+| :--- | :---: | :---: | :---: |
+| 1. Familial Care vs. Career | 78 words | 206 words | Passed |
+| 2. Land Rights vs. Infrastructure | 77 words | 206 words | Passed |
+| 3. Digital Privacy vs. Security | 72 words | 207 words | Passed |
+| 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | Passed |
+| 5. AI Automation vs. Artisanship | 75 words | 206 words | Passed |
