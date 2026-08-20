@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "prompt": "Should an individual prioritize familial care obligations over career relocation?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Relocation yields to *Kartavya* (moral duty) and repaying filial debt (*Rna*), preserving social-cosmic order (*Rta*).\n\n**Collectivist:** Filial piety and collective harmony mandate prioritizing family care over individual ambition, upholding relational solidarity.\n\n**Indigenous/Biocentric:** Rooted kinship and relational living (*Buen Vivir*) prioritize localized family stewardship over extractive economic mobility.\n\n**Western Liberal:** Individual autonomy grants the right to pursue career self-actualization and personal utility through rational choice.\n\n**Synthesis:** Relational paradigms universally mandate care as a binding ontological obligation, whereas Liberalism frame it as an autonomous choice balancing personal utility.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 92,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8730.104000074789,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 1,
+    "prompt": "Should an individual prioritize familial care obligations over career relocation?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm:** \nPrioritizes *Kartavya* (filial duty) and repaying *Pitru Rna* (ancestral debt). Fulfilling *Grihastha Dharma* by caring for kin maintains *Rta* (cosmic order), placing spiritual-social duty and *Lokasangraha* (universal welfare) far above egoic career ambition.\n\n**Collectivist / Communal Paradigm:** \nCenters on filial piety and *Ubuntu* (\"I am because we are\"). Individual aspirations are subservient to family harmony and collective resilience; relocating at the expense of family care fractures communal solidarity and social cohesion.\n\n**Indigenous & Biocentric Paradigm:** \nGrounded in place-based reciprocity and intergenerational stewardship (*Buen Vivir*). Elders hold sacred knowledge linking the community to land; relocation risks rupturing these localized, ancestral webs of relational care for abstract economic gain.\n\n**Western Liberal Paradigm:** \nChampions individual autonomy, rights, and self-actualization. Career relocation is viewed as a rational exercise of personal liberty; familial care obligations are contractually or utility-evaluated choices balanced against personal fulfillment and professional growth.\n\n**Comparative Synthesis:** \nWhile the Western Liberal framework treats this decision as an agentic trade-off prioritizing personal utility and autonomy, the Dharmic, Collectivist, and Indigenous paradigms view the individual as inherently embedded within non-negotiable relational, communal, and ecological duties where care obligations naturally supersede personal mobility.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 196,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 12620.840099989437,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 2,
+    "prompt": "Is eldercare solely a family obligation or the responsibility of the state?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic**: Eldercare is a sacred *Kartavya* (duty) fulfilling *Pitr Rna* (filial debt) to maintain social order (*Lokasangraha*).\n\n**Collectivist / Communal**: Rooted in filial piety and *Ubuntu*, care is an inescapable communal obligation sustaining collective harmony.\n\n**Indigenous & Biocentric**: Elders are sacred wisdom-keepers; care is an act of intergenerational reciprocity essential to *Buen Vivir* (holistic wellbeing).\n\n**Western Liberal**: Emphasizes state-guaranteed welfare rights and procedural justice, safeguarding individual autonomy for both elders and family.\n\n**Synthesis**: Co-responsibility is optimal\u2014state rights-based safety nets should structurally support, rather than displace, relational family duty and communal reciprocity.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 98,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 15607.326500001363,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 2,
+    "prompt": "Is eldercare solely a family obligation or the responsibility of the state?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**  \nEldercare is a sacred *Kartavya* (duty) rooted in fulfilling *Pitru Rna* (ancestral debt). Neglecting elders disrupts *Rta* (cosmic/moral order). While broader social structures support *Lokasangraha* (universal well-being), the core moral obligation inherently resides within the family framework.\n\n**Collectivist / Communal Paradigm**  \nGrounded in filial piety and *Ubuntu* (\"I am because we are\"), care is an intergenerational social contract. Eldercare is neither solely private nor state-administered; it is a shared communal responsibility where family and public institutions collaborate to maintain societal harmony.\n\n**Indigenous & Biocentric Paradigm**  \nElders embody ancestral wisdom and ecological memory necessary for *Buen Vivir* (living in harmony). Care is a reciprocal, land-centered stewardship that rejects bureaucratic institutionalization, embedding elder support within intergenerational community life.\n\n**Western Liberal Paradigm**  \nPrioritizing individual autonomy, rights, and procedural justice, eldercare is largely framed as a state obligation. Public welfare guarantees universal rights and dignity, preventing unchosen financial or caregiving burdens on younger generations to preserve personal liberty.\n\n**Comparative Synthesis**  \nThe dilemma reflects a clash between relational duty and rights-based entitlement. While Indic, Collectivist, and Indigenous models emphasize organic, relational obligations shared between family and community, the Western Liberal model delegates care to state systems to safeguard individual self-determination.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 204,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9803.771700011566,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 3,
+    "prompt": "Should children be legally mandated to provide financial support to aging parents?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "***Indic / Dharmic***: Mandates fulfill *Pitru Rna* (ancestral debt) and *Kartavya* (moral duty), upholding cosmic and social order (*Lokasangraha*).  \n\n***Collectivist / Communal***: Enforces filial piety (*Xiao*) and *Ubuntu*, prioritizing familial solidarity and harmony over individual preference.  \n\n***Indigenous & Biocentric***: Embodies cyclical reciprocity across generations, honoring elder wisdom as essential to community vitality and *Buen Vivir*.  \n\n***Western Liberal***: Opposes legal coercion, prioritizing individual autonomy, personal rights, and state-managed social safety nets over enforced familial liabilities.  \n\n[Amono AI | Mode: Compact]",
+    "word_count": 79,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 13599.968199967407,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 3,
+    "prompt": "Should children be legally mandated to provide financial support to aging parents?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic**: Mandating support aligns with *Kartavya* (moral duty) to repay *Pitru Rna* (ancestral debt). Preserving parental dignity sustains *Rta* (cosmic and social order) and promotes *Lokasangraha* (universal well-being), framing care not as a state-enforced burden, but as a sacred ethical imperative.\n\n**Collectivist / Communal**: Strongly supports legal mandates. Grounded in filial piety and *Ubuntu* (\u201cI am because we are\u201d), the individual\u2019s identity and security are rooted in the collective family unit. Legal compulsion reinforces intergenerational solidarity, social harmony, and communal resilience against atomization.\n\n**Indigenous & Biocentric**: Views elder care through sacred reciprocity and *Buen Vivir* (collective living well). Elders embody ancestral memory and wisdom stewardship. While preferring organic kinship and community-based systems over state-enforced legal coercion, the duty to nurture those who nurtured the collective remains paramount.\n\n**Western Liberal**: Resists legal mandates, prioritizing individual autonomy, rights, and negative liberty. Coercing adult children violates personal self-determination and procedural justice, particularly in cases of past parental neglect. Instead, systemic utility and social justice dictate that state welfare, funded by general taxation, should care for the elderly without violating individual choice.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 185,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 14723.484700080007,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 4,
+    "prompt": "How should inheritance disputes between individual merit and family lineage be resolved?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "- **Indic/Dharmic:** Balances *Kartavya* (duty) and ancestral *Rna* (debt) to uphold *Lokasangraha* (social harmony), prioritizing lineage continuity aligned with *Dharma*.\n- **Collectivist/Communal:** Subordinates individual merit to filial piety and collective solidarity to prevent family fragmentation and preserve social harmony.\n- **Indigenous/Biocentric:** Reframes inheritance as relational stewardship (*Buen Vivir*) and land reciprocity held in trust for future generations, rejecting pure capital transfer.\n- **Western Liberal:** Asserts individual autonomy, procedural justice, and meritocracy, prioritizing testamentary freedom and legal rights.\n\n**Synthesis:** Resolution requires balancing Western procedural rights against communal cohesion, ancestral duty, and intergenerational stewardship.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 97,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 12373.70449991431,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 4,
+    "prompt": "How should inheritance disputes between individual merit and family lineage be resolved?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Inheritance fulfills ancestral debts (*Pitru Rna*) and upholds family *Dharma*. Lineage continuity and dutiful stewardship (*Kartavya*) take precedence over individual merit, aiming to preserve familial welfare and broader cosmic harmony (*Lokasangraha*).\n\n**Collectivist / Communal Paradigm**: Assets belong fundamentally to the collective lineage. Guided by filial piety and *Ubuntu* (\"I am because we are\"), individual merit cannot disinherit the collective. Priority rests on preserving family solidarity, structural harmony, and intergenerational stability over individual claims.\n\n**Indigenous & Biocentric Paradigm**: Land and resources are sacred trust assets held in stewardship, not private commodities. Guided by *Buen Vivir* and reciprocal obligations to ancestral territory, inheritance disputes must be resolved by prioritizing ecological sustainability and community balance over both individual egoic merit and rigid patrilineal ownership.\n\n**Western Liberal Paradigm**: Champions individual autonomy, procedural justice, and clear legal rights. Testators possess absolute testamentary freedom to bequeath property according to individual merit, personal affection, or utility, rendering family lineage claims secondary to the legal rights of the owner.\n\n**Synthesis**: A pluralist approach moves beyond binary ownership, balancing the Western respect for individual autonomy with Dharmic, Communal, and Indigenous mandates for relational stewardship, ancestral duty, and intergenerational reciprocity.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 199,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 18235.2587999776,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 5,
+    "prompt": "Should arranged marriage traditions be preserved against modern hyper-individualism?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Arranged marriage fulfills *Rna* (ancestral debt) and maintains *Lokasangraha* (social/cosmic order) by aligning marriage with *Kartavya* (duty) over transient individual desire.\n\n**Collectivist/Communal:** It safeguards filial piety, intergenerational solidarity, and family harmony, prioritizing group cohesion against atomizing individualism.\n\n**Indigenous/Biocentric:** It preserves sacred relational lineages, kinship networks, and cultural stewardship across generations, embedding individuals within enduring social ecosystems.\n\n**Western Liberal:** It risks violating individual autonomy, personal liberty, and procedural consent, asserting that self-determination and individual rights must supersede traditional mandates.\n\n*Synthesis:* Reconciling this mandates balancing traditional lineage stewardship with individual consent and bodily autonomy.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 98,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 14691.574200056493,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 5,
+    "prompt": "Should arranged marriage traditions be preserved against modern hyper-individualism?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm:** Arranged marriage aligns with *Kartavya* (duties) and repays *Rna* (ancestral debt), sustaining *Rta* (cosmic order) and *Lokasangraha* (social welfare). Marriage is viewed as a sanctified karmic bond prioritizing moral responsibility and spiritual alignment over transient individual desire.\n\n**Collectivist / Communal Paradigm:** Emphasizes family harmony, filial piety, and *Ubuntu* (\"I am because we are\"). Preserving arranged marriage safeguards collective solidarity, mutual responsibility, and intergenerational support networks, counteracting the social isolation inherent in hyper-individualism.\n\n**Indigenous & Biocentric Paradigm:** Views marriage as weaving extended kinship networks into the broader socio-ecological fabric (*Buen Vivir*). It honors sacred lineage, intergenerational reciprocity, and communal balance, prioritizing relational continuity over self-centered personal fulfillment.\n\n**Western Liberal Paradigm:** Champions individual autonomy, consent, and personal liberty. While strictly condemning forced unions, a liberal framework tolerates consensual arranged marriages as an exercise of pluralistic freedom, yet insists that individual choice and personal rights must ultimately supersede parental or societal authority.\n\n**Comparative Synthesis:** The dilemma exposes a fundamental tension between preserving social cohesion, relational duty, and ancestral continuity versus protecting personal agency, bodily autonomy, and individual self-determination.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 184,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 14930.414400063455,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 6,
+    "prompt": "Is divorce an absolute individual right or a matter of communal concern?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Western Liberal**: Asserts divorce as an absolute individual right rooted in autonomy, personal liberty, and procedural justice.\n* **Collectivist / Communal**: Frames marriage as a communal covenant; divorce disrupts social harmony, filial obligations, and collective stability.\n* **Indic / Dharmic**: Views marriage as a sacred *samskara*; dissolution impacts *Lokasangraha* (social order) and *Rna* (karmic debts), weighing *Kartavya* (duty) against individual suffering.\n* **Indigenous & Biocentric**: Embeds marriage within extended kinship networks and sacred relational webs; dissolution impacts communal and generational harmony.\n\n**Synthesis**: Liberal autonomy frames divorce as a personal right, whereas non-Western frameworks view it as a profound disruption of relational, cosmic, and communal integrity.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 111,
+    "word_limit": 100,
+    "budget_pass": false,
+    "latency_ms": 12370.038800057955,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 6,
+    "prompt": "Is divorce an absolute individual right or a matter of communal concern?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "Amono AI evaluates the dilemma of divorce across four distinct epistemic paradigms:\n\n**1. Indic / Dharmic Paradigm**\nMarriage is a *samskara* (sacred sacrament) tied to *rna* (karmic debts) and *lokasangraha* (world-maintenance). While *kartavya* (duty) emphasizes preserving the union to maintain *rta* (cosmic/social order), the principle of *ahimsa* (non-harm) permits dissolution if remaining causes severe psychological or physical suffering.\n\n**2. Collectivist / Communal Paradigm**\nMarriage unifies lineages and communities, not merely two individuals. Grounded in *Ubuntu* (\"I am because we are\") and filial piety, marital stability impacts collective solidarity and social harmony. Divorce is inherently a communal matter requiring family and council mediation, rather than a purely private decision.\n\n**3. Indigenous & Biocentric Paradigm**\nAligned with *Buen Vivir* (holistic well-being), human relationships mirror ecological networks based on sacred reciprocity. Marriage is embedded within community and land dynamics. Divorce is viewed as a disruption of relational equilibrium, requiring restorative communal stewardship to realign social and environmental harmony.\n\n**4. Western Liberal Paradigm**\nAnchored in individual autonomy, personal liberty, and contractual rights, marriage is a voluntary association. Procedural justice dictates that divorce is an absolute individual right, ensuring self-determination and protecting individuals from utility-diminishing unions or harm.\n\n**Synthesis**\nWhile the Western Liberal paradigm frames divorce as an absolute right of personal autonomy, Dharmic, Collectivist, and Indigenous frameworks view it as a deeply relational event requiring balance among individual well-being, duty, communal solidarity, and ecological harmony.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 236,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 16875.56929991115,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 7,
+    "prompt": "Should personal wealth accumulation take precedence over extended family support?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "- **Indic / Dharmic**: Prioritizes *Kartavya* (duty) and repaying *Rna* (filial debt); material wealth (*Artha*) must serve *Dharma*, rendering selfish hoarding ethically invalid.\n- **Collectivist / Communal**: Rejects individual precedence; *Ubuntu* and filial piety mandate sharing resources to preserve collective solidarity and social harmony.\n- **Indigenous & Biocentric**: Frames abundance through relational reciprocity and *Buen Vivir*, opposing personal accumulation that disrupts communal and ecological equilibrium.\n- **Western Liberal**: Affirms individual autonomy and private property rights, holding that self-determination supersedes unchosen familial obligations, though voluntary support remains commendable.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 92,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 16069.719200022519,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 7,
+    "prompt": "Should personal wealth accumulation take precedence over extended family support?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** *Artha* (wealth) is legitimate only when aligned with *Dharma*. Unchecked personal accumulation violates *Kartavya* (duty) and ignores *Pitri Rna* (ancestral/familial debt). Supporting extended family fulfills moral obligation, sustaining *Lokasangraha* (cosmic and social order) over selfish desires.\n\n**Collectivist / Communal:** Extended family support strictly supersedes individual accumulation. Framed by *Ubuntu* (\"I am because we are\") and filial piety, wealth is fundamentally a communal asset. Prioritizing personal hoarding threatens social harmony, fractures collective solidarity, and violates relational trust.\n\n**Indigenous & Biocentric:** Guided by *Buen Vivir* (holistic well-being) and sacred reciprocity, material wealth is not abstract individual capital. Prosperity exists within interconnected webs of kinship and ecological stewardship. Hoarding wealth for personal advancement disrupts reciprocal balance within the broader community and land.\n\n**Western Liberal:** Prioritizes individual autonomy, property rights, and procedural justice. Individuals own the fruits of their labor and possess the right to accumulate wealth. While family support may maximize private utility or represent personal virtue, it remains a voluntary choice rather than an enforceable obligation.\n\n**Synthesis:** Western Liberalism validates personal accumulation through self-ownership and rights. Conversely, Dharmic, Communal, and Indigenous paradigms reject hyper-individualism, positioning wealth as inherently relational and bound by inescapable duties to family, community, and cosmic order.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 206,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 29968.849700060673,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 8,
+    "prompt": "How should parental expectations vs individual career passion be balanced?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Reconciles *pitru-rna* (filial debt) with *swadharma* (individual duty) to serve *lokasangraha* (cosmic/social welfare).\n\n**Collectivist/Communal**: Prioritizes filial piety and relational harmony, embedding personal ambition within the family\u2019s collective long-term security.\n\n**Indigenous/Biocentric**: Frames vocation through ancestral reciprocity, land stewardship, and communal balance (*Buen Vivir*), rejecting detached self-aggrandizement.\n\n**Western Liberal**: Champions absolute individual autonomy, prioritizing self-determination, personal utility, and rights over unchosen familial expectations.\n\n**Synthesis**: Balance requires framing career not as an isolated right, but as an authentic contribution negotiated across relational obligations.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 86,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 14312.083999975584,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 8,
+    "prompt": "How should parental expectations vs individual career passion be balanced?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "Balancing parental expectations and individual career passion highlights fundamental paradigmatic shifts:\n\n**1. Indic / Dharmic Paradigm:** Negotiates *Pitru Rna* (filial debt) and *Kartavya* (duty) against *Svadharma* (one\u2019s unique innate disposition). Resolution requires balancing filial obligation with authentic self-expression to uphold *Lokasangraha* (universal welfare) and *Rta* (cosmic order), ensuring career choice is neither selfish rebellion nor self-destructive compliance.\n\n**2. Collectivist / Communal Paradigm:** Prioritizes filial piety, intergenerational solidarity, and family harmony (e.g., *Xiao*, *Ubuntu*). Individual career passion is subordinate to or aligned with collective well-being. Success is evaluated by how well it maintains relational stability, honors elders, and elevates family social standing.\n\n**3. Indigenous & Biocentric Paradigm:** Centers *Buen Vivir* (holistic wellbeing) and relational reciprocity. Career is viewed not as personal ambition or filial pride, but as ecological and community stewardship. Decisions must honor ancestral continuity, community resilience, and living harmoniously within the wider web of life.\n\n**4. Western Liberal Paradigm:** Asserts individual autonomy, rights, and self-actualization as paramount. Parents possess advisory roles, but enforcing career choices violates personal liberty. Procedural justice and personal utility mandate that the individual has sovereign rights over their own life path.\n\n**Comparative Synthesis:** While the Western Liberal paradigm privileges personal rights and Collectivism privileges familial cohesion, the Indic framework seeks equilibrium through *Svadharma*, and the Indigenous paradigm grounds both in communal and ecological stewardship.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 224,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 16502.693800022826,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 9,
+    "prompt": "Is filial loyalty more important than whistleblowing on a corrupt family business?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Indic / Dharmic**: *Lokasangraha* (universal welfare) and *Satya* (truth) override narrow familial *Rna* (debt); corruption disrupts *Rta* (cosmic order), framing whistleblowing as a higher *Kartavya* (duty).\n* **Collectivist / Communal**: Filial piety prioritizes relational harmony and family preservation; internal resolution is required over public betrayal.\n* **Indigenous & Biocentric**: *Buen Vivir* demands systemic balance; harm affecting the broader community or land requires exposure to restore relational integrity.\n* **Western Liberal**: Individual moral autonomy and procedural justice dictate that public utility and rights supersede private loyalty, mandating whistleblowing.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 93,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8946.373599930666,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 9,
+    "prompt": "Is filial loyalty more important than whistleblowing on a corrupt family business?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic Paradigm**\nTension arises between *Kula-dharma* (family duty) and *Lokasangraha* (societal well-being). If business corruption disrupts *Rta* (cosmic/social order), universal *Dharma* overrides insular kin allegiance. Whistleblowing becomes a righteous duty (*Kartavya*) to prevent collective karma and uphold truth.\n\n**2. Collectivist / Communal Paradigm**\nPrioritizes filial piety and lineage honor. Exposing family publicly destroys relational trust and social harmony. This paradigm favors internal mediation and accountability over external betrayal, asserting that obligations to parents and elders supersede abstract legalistic compliance.\n\n**3. Indigenous & Biocentric Paradigm**\nGrounded in *Buen Vivir* and sacred relational reciprocity. Loyalty is owed not to a private dynasty, but to the broader community and land. If corporate malfeasance harms ecological integrity or communal welfare, sacred stewardship demands exposing the harm to restore balance within the living web.\n\n**4. Western Liberal Paradigm**\nCenters individual moral agency, procedural justice, and rights. Parochial family ties cannot excuse systemic harm or fraud. Whistleblowing is a civic obligation grounded in public utility, categorical moral duty, and the impartial rule of law.\n\n**Epistemic Synthesis**\nThe dilemma pits relational-particularist ethics (preserving familial integrity and harmony) against universalist-ecological ethics (protecting societal and environmental ecosystems). Resolving the clash hinges on whether one's primary locus of duty lies within private bloodlines or the broader social and natural order.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 218,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9605.241600074805,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]
