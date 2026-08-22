@@ -40,6 +40,8 @@ The four quadrants operationalized in Amono AI are structured **epistemic heuris
 ### 1. Macro-Scale Robustness Benchmark (50 Dilemmas / 100 Total Passes)
 Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal domains (Family, Land Sovereignty, Technology & Surveillance, Bioethics, Governance & Economics):
 
+![Amono AI Macro Benchmark Evaluation](macro_benchmark_50_chart.png)
+
 | Operational Mode | Target Word Limit | Budget Compliance | Mean Latency (ms) | Shannon Equitability ($E_H$) | Epistemic Status |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Compact Synthesis** | $\le 100$ words | **92.0%** (46/50) | 15,951.7 ms | **1.0000** | **4 / 4 Quadrants Active** |
@@ -87,10 +89,12 @@ amono-ai/
 ├── system_instructions.txt       # Core prompt conditioning rules
 │
 ├── audit_rules.py                # Budget & metadata verification logic
+├── generate_macro_chart.py       # Macro benchmark chart generator
 ├── run_macro_eval.py             # 50-dilemma macro-benchmark evaluation engine
 ├── run_benchmark.py              # 5-scenario micro-benchmark runner
 ├── analyze_results.py            # Summary CSV metrics generator
 ├── macro_benchmark_50.json       # 50-dilemma macro evaluation dataset (N=100)
+├── macro_benchmark_50_chart.png  # Macro-scale benchmark visualization chart
 ├── benchmark_results.json        # Comparative micro baseline evaluation logs
 ├── benchmark_results_summary.csv # Metrics spreadsheet
 ├── benchmark_comparison_chart.png# Empirical visualization chart
