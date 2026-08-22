@@ -79,7 +79,7 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 
 ```text
 amono-ai/
-├── .env.example                  # Environment configuration template
+├── .env.example                 # Environment configuration template
 ├── .gitignore                    # Exclusion rules for keys & artifacts
 ├── metadata.json                 # Project schema & architecture specs
 ├── package.json                  # Node dependencies & UI build scripts
@@ -97,9 +97,10 @@ amono-ai/
 ├── run_benchmark.py              # 5-scenario micro-benchmark runner
 ├── analyze_results.py            # Summary CSV metrics generator
 ├── macro_benchmark_50.json       # 50-dilemma macro evaluation dataset (N=100)
-├── macro_benchmark_50_chart.png  # Macro-scale benchmark visualization chart
-├── benchmark_results.json        # Comparative micro baseline evaluation logs
-├── benchmark_results_summary.csv # Metrics spreadsheet
+├── macro_robustness_benchmark_50.csv # Macro-scale 100-run raw trial results
+├── macro_benchmark_50_chart.png # Macro-scale benchmark visualization chart
+├── micro_benchmark_results.json  # Comparative micro baseline evaluation logs
+├── micro_benchmark_results.csv   # Comparative micro summary metrics spreadsheet
 ├── benchmark_comparison_chart.png# Empirical visualization chart
 │
 └── src/
