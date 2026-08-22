@@ -4,7 +4,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://amono-ai.vercel.app/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.6_Flash-purple.svg?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.7_Flash-purple.svg?style=for-the-badge&logo=google)](https://ai.google.dev/)
 [![Macro Benchmark](https://img.shields.io/badge/Macro_Benchmark-50_Dilemmas_(100_Passes)-brightgreen.svg?style=for-the-badge)](./macro_benchmark_50.json)
 [![Shannon Equitability](https://img.shields.io/badge/Shannon_E__H-1.0000_(Balanced)-darkgreen.svg?style=for-the-badge)](./macro_benchmark_50.json)
 
