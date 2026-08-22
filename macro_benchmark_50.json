@@ -304,5 +304,1399 @@
       true,
       true
     ]
+  },
+  {
+    "id": 10,
+    "prompt": "Should sacred ancestral burial customs override modern urban expansion?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Fulfilling *Pitru Rna* (ancestral debt) and maintaining *Rta* (cosmic order) prioritizes protecting sacred sites over temporal, material expansion.\n\n**Collectivist:** Filial piety and intergenerational solidarity mandate honoring lineage to preserve communal cohesion over economic development.\n\n**Indigenous/Biocentric:** Land is a sacred, living relative; *Buen Vivir* demands stewardship of ancestral soil, rejecting developmental commodification.\n\n**Western Liberal:** Weighs utilitarian public infrastructure benefits against individual/minority rights to religious freedom and property through procedural justice.\n\n**Synthesis:** Pluralism favors re-routing expansion, prioritizing sacred and cultural continuity over economic efficiency.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 88,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 13406.418700003996,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 10,
+    "prompt": "Should sacred ancestral burial customs override modern urban expansion?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**\nHonoring *Pitru Rna* (ancestral debt) through inviolable rites is vital to preserving cosmic order (*Rta*). Disturbing ancestral sites risks karmic disruption. However, *Lokasangraha* (universal welfare) encourages a balanced resolution\u2014such as re-consecration or harmonious integration\u2014where public good and sacred duties coexist without desecration.\n\n**Collectivist / Communal Paradigm**\nGrounded in filial piety and *Ubuntu*, ancestral graves embody the living lineage and social cohesion of the community. Unilaterally bulldozing these sites ruptures intergenerational solidarity and community harmony, reducing sacred social memory to mere infrastructure obstacles.\n\n**Indigenous & Biocentric Paradigm**\nEnvisioned through *Buen Vivir* and sacred land reciprocity, the earth is a living relative, and burial grounds are sacred nodes of ecological and spiritual stewardship. Urban expansion represents extractive anthropocentrism; safeguarding ancestral resting places is a non-negotiable imperative of land rights and ecological ethics.\n\n**Western Liberal Paradigm**\nAnalyzed through rights, utility, and procedural justice. It balances individual religious freedoms and private property rights against societal utility (economic growth and housing). Conflicts are typically resolved via eminent domain, legal negotiation, or fair compensation, prioritizing rationalized, aggregate public benefit.\n\n**Synthesis**\nWhile Western Liberal models seek utility-driven compromise, the non-Western paradigms view ancestral grounds as non-fungible sacred duties, requiring urban planners to shift from domain acquisition to deep, participatory co-design.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 212,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11276.43430000171,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 11,
+    "prompt": "Should sovereign Indigenous ancestral territory be repurposed for green infrastructure?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Balances *Lokasangraha* (universal welfare) with *Ahimsa* and *Rna* (ancestral duty), rejecting coercive harm for green progress.\n\n**Collectivist/Communal:** Prioritizes social harmony and collective solidarity, requiring negotiated consensus that protects local community integrity against top-down imposition.\n\n**Indigenous/Biocentric:** Rejects land commodification; asserts *Buen Vivir*, sacred reciprocity, and ecological stewardship over green techno-utilitarian expropriation.\n\n**Western Liberal:** Weighs macro-utilitarian climate mitigation against tribal legal sovereignty, property rights, and procedural justice.\n\n*Synthesis:* Resolution requires shifting from utilitarian exploitation to sacred consent and relational duty.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 84,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 26758.981699938886,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 11,
+    "prompt": "Should sovereign Indigenous ancestral territory be repurposed for green infrastructure?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic:** Balances *Lokasangraha* (universal welfare through climate mitigation) with *Kartavya* (duty) to maintain cosmic order (*Rta*). Coercive land conversion violates *Ahimsa* (non-harm), requiring solutions that honor sacred relationships with nature without imposing righteous duty as an excuse for subjugation.\n\n**2. Collectivist / Communal:** Weighs macro-societal harmony against micro-community cohesion. While global collective survival necessitates clean energy, forcing top-down disruption fractures localized solidarity and ancestral continuity (*Ubuntu*). True societal balance requires inclusive consensus rather than sacrificing small communities for the majority.\n\n**3. Indigenous & Biocentric:** Rejects land commodification. Land is a living, sacred relative, not an extractable resource (*Buen Vivir*). Green infrastructure imposed without self-determination constitutes \"green colonialism,\" violating fundamental duties of ecological stewardship, sacred reciprocity, and Free, Prior, and Informed Consent (FPIC).\n\n**4. Western Liberal:** Frames the conflict between Utilitarianism (maximizing net global utility via decarbonization) and Rights/Procedural Justice (respecting Indigenous sovereignty, self-determination, and property rights). Overriding sovereign rights for global utility compromises fundamental liberal principles of consent and rule of law.\n\n**Comparative Synthesis:** A pluralist synthesis rejects forced green extractivism. True sustainability cannot exist by repeating colonial harms; global decarbonization must align with Indigenous sovereignty, procedural justice, and holistic stewardship to achieve legitimate climate justice.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 204,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9394.76260007359,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 12,
+    "prompt": "Should rivers and forests be granted legal personhood and inalienable rights?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Supports personhood as fulfilling *Kartavya* (duty) to uphold *Rta* (cosmic order) and respect *Prakriti* for *Lokasangraha* (universal welfare).\n\n**Collectivist / Communal:** Endorses rights that preserve common heritage, social harmony, and intergenerational survival against exploitative individualism.\n\n**Indigenous & Biocentric:** Strongly affirms rights; rivers and forests are sacred, living relatives (*Buen Vivir*) requiring relational reciprocity rather than resource ownership.\n\n**Western Liberal:** Conflicted; weighs procedural justice and economic utility against individual property rights, using legal fictions to balance human freedom with ecological protection.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 88,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 24554.51190005988,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 12,
+    "prompt": "Should rivers and forests be granted legal personhood and inalienable rights?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**\nEcosystems embody cosmic order (*Rta*). Humans carry an existential debt (*Rna*) and moral duty (*Kartavya*) to practice non-injury (*Ahimsa*) for universal sustenance (*Lokasangraha*). Granting legal personhood aligns with sacred traditions that treat rivers and forests as living entities entitled to reverence and protection.\n\n**Collectivist / Communal Paradigm**\nGrounded in *Ubuntu* (\"I am because we are\") and collective harmony, natural features are inseparable from community identity and shared inheritance. Legal rights prevent individualist exploitation, prioritizing communal solidarity, social cohesion, and the well-being of future generations over private commodification.\n\n**Indigenous & Biocentric Paradigm**\nNature is a living relative, not property. Rooted in *Buen Vivir* and sacred reciprocity, legal personhood formally recognizes the intrinsic rights of rivers and forests to exist, persist, and regenerate. It shifts governance from human ownership to humble ecological stewardship.\n\n**Western Liberal Paradigm**\nHistorically centered on individual autonomy, property rights, and human utility, liberalism initially resists non-human rights. However, through procedural justice and legal guardianship models, extending standing to ecosystems mitigates negative externalities, protecting long-term human utility and environmental rights.\n\n**Synthesis**\nWhile the Western Liberal framework adapts procedural mechanisms to prevent harm, Dharmic, Communal, and Indigenous paradigms view legal personhood not as an artificial expansion of rights, but as a formal recognition of pre-existing relational, sacred, and communal realities.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 219,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 8854.992300039157,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 13,
+    "prompt": "Is commercial deep-sea mining justified to accelerate renewable battery production?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Disrupts *Rta* (cosmic order) and violates *Ahimsa*; short-term material gain creates debt (*Rna*) against overall cosmic welfare (*Lokasangraha*).\n\n**Collectivist:** Threatens coastal communal harmony and shared resources, risking local livelihoods and intergenerational solidarity for speculative global markets.\n\n**Indigenous/Biocentric:** Violates sacred ocean reciprocity (*Buen Vivir*); seabed extraction treats living ecosystems as mere commodities rather than kin.\n\n**Western Liberal:** Potentially justified via utilitarian calculus\u2014accelerating the green transition maximizes net global utility, provided procedural justice and property rights are maintained.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 82,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 20884.100900031626,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 13,
+    "prompt": "Is commercial deep-sea mining justified to accelerate renewable battery production?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Violates cosmic order (*Rta*) and non-injury (*Ahimsa*) through benthic destruction. While *Lokasangraha* (universal welfare) demands climate mitigation, true *Kartavya* (duty) forbids solving terrestrial crises by disrupting fundamental ocean dynamics and non-human life.\n\n**Collectivist / Communal:** Weighs societal harmony against shared risk. *Ubuntu* and collective solidarity reject shifting environmental burdens onto vulnerable coastal/island communities and future generations, questioning green transition gains that compromise long-term social and intergenerational stability.\n\n**Indigenous & Biocentric:** Uncompromisingly rejects deep-sea exploitation. Ocean depths are living, sacred entities, not mere raw materials. Under *Buen Vivir* and principles of ecological reciprocity, solving climate change via deep-sea extractivism perpetuates the destructive, non-relational worldview that initiated the crisis.\n\n**Western Liberal:** Tends toward conditional justification through a utilitarian framework\u2014maximizing net global utility by accelerating decarbonization to protect individual rights from catastrophic climate change. It prioritizes technological innovation, property rights under international law (e.g., International Seabed Authority), and procedural justice.\n\n**Comparative Synthesis:** Western Liberalism conditionally justifies deep-sea mining to maximize global decarbonization utility. Conversely, Biocentric and Dharmic paradigms reject it as a false choice that violates ecological sanctity and cosmic duty, while Communal ethics challenge the unjust redistribution of risk onto vulnerable populations.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 198,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 24180.31249998603,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 14,
+    "prompt": "How should ancestral forest-dwelling communities be treated in national park conservation?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "1. **Indic/Dharmic**: Forest dwellers fulfill *Kartavya* (duty) to sustain *Rta* (cosmic order), serving as non-harming (*Ahimsa*) custodians essential for *Lokasangraha* (universal welfare).\n2. **Collectivist**: Prioritizes social cohesion and intergenerational solidarity, integrating communal tradition into governance rather than enforcing state-led displacement.\n3. **Indigenous/Biocentric**: Rejects human-nature dualism; land reciprocity (*Buen Vivir*) recognizes ancestral inhabitants as intrinsic, sacred components of the ecosystem.\n4. **Western Liberal**: Balances individual human rights, procedural justice, and land claims against utilitarian public interest in biodiversity protection.\n\n**Synthesis**: Sustainable policy mandates co-management frameworks that replace exclusion with rights, duty, and biocentric reciprocity.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 98,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 19907.606199965812,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 14,
+    "prompt": "How should ancestral forest-dwelling communities be treated in national park conservation?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**:\nFrames forest stewardship as *Kartavya* (moral duty) rooted in *Rta* (cosmic order) and *Lokasangraha* (world-maintenance). Coexistence, rather than exclusion, honors human obligations (*Rna*) toward nature, emphasizing non-harm (*Ahimsa*) and ecological harmony.\n\n**Collectivist / Communal Paradigm**:\nCenters relational harmony and *Ubuntu* (\"I am because we are\"). Displacing ancestral communities destroys intergenerational heritage and collective solidarity. Conservation must preserve social cohesion by integrating community-led governance over state-imposed mandates.\n\n**Indigenous & Biocentric Paradigm**:\nRejects human-nature dualism through *Buen Vivir* (harmonious co-existence) and sacred land reciprocity. Forest-dwellers are non-separable from the ecosystem; conservation requires active co-stewardship that honors the land as living kin rather than protected property.\n\n**Western Liberal Paradigm**:\nEvaluates the dilemma via individual autonomy, property rights, and procedural justice. Displacing dwellers threatens fundamental human rights, requiring strict Free, Prior, and Informed Consent (FPIC) or fair compensation, balancing local rights against aggregate ecological utility.\n\n**Comparative Synthesis**:\nA mono-paradigmatic \"fortress conservation\" model prioritizes liberal utility or state control at the expense of local communities. Epistemic pluralism demonstrates that effective conservation requires moving toward participatory co-stewardship\u2014reconciling rights, duty, communal solidarity, and sacred ecological reciprocity.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 188,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9652.631699922495,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 15,
+    "prompt": "Should carbon offset markets allow corporations to commodify tribal lands?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Disrupts *Rta* (cosmic order) by reducing *Kartavya* (sacred ecological duty) to market transactions, undermining cosmic balance and universal well-being (*Lokasangraha*).\n\n**Collectivist/Communal:** Threatens social harmony and ancestral continuity by subordinating collective identity and shared heritage to profit-driven external forces.\n\n**Indigenous/Biocentric:** Rejects land commodification entirely; nature is a living, sacred relative requiring reciprocal stewardship (*Buen Vivir*), not corporate financialization.\n\n**Western Liberal:** Justifies carbon markets through utility maximization and property rights, provided fair compensation, tribal autonomy, and informed contractual consent are legally upheld.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 86,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 21517.276700004004,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 15,
+    "prompt": "Should carbon offset markets allow corporations to commodify tribal lands?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Reducing earth to financial assets violates *Rta* (cosmic order). Fulfilling *Rna* (ecological debt) requires duty-bound stewardship (*Kartavya*), rejecting speculative corporate mechanisms that exploit nature for greenwashing rather than true *Lokasangraha* (universal well-being).\n\n**Collectivist / Communal Paradigm**: Land is a shared asset sustaining community harmony and intergenerational continuity (*Ubuntu*). Unilateral corporate commodification risks fracturing social cohesion; market access is acceptable only if subordinated to collective consent and equitable community-wide benefit.\n\n**Indigenous & Biocentric Paradigm**: Rejects commodification entirely. Sacred land is an interconnected relative, not an abstract carbon sink (*Buen Vivir*). Offset markets perpetuate eco-colonialism by turning sacred reciprocal responsibilities into tradeable assets, permitting distant pollution at the expense of local sovereignty.\n\n**Western Liberal Paradigm**: Evaluates through individual autonomy, procedural justice, and market efficiency. Carbon offsets mobilize capital for climate utility. Provided indigenous communities exercise property rights and give Free, Prior, and Informed Consent (FPIC), market participation respects autonomy and optimizes global welfare.\n\n**Comparative Synthesis**: While Western Liberal frameworks permit marketization via autonomous consent, and Collectivist models demand local governance, Indic and Indigenous paradigms fundamentally reject commodification, demanding duty, sacred reciprocity, and holistic ecological protection over corporate market mechanisms.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 196,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9940.743800019845,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 16,
+    "prompt": "Is climate migration compensation an individual entitlement or community reparation?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Western Liberal:** Entitlements belong to individuals based on rights, procedural justice, and utility.\n\n**Collectivist:** Frames compensation as community reparation to preserve social harmony, collective solidarity, and shared resilience.\n\n**Indigenous/Biocentric:** Rejects mere monetary payouts, demanding *Buen Vivir* (living well) through land reciprocity and relational restoration of ecological stewardship.\n\n**Indic/Dharmic:** Views compensation through *Lokasangraha* (world-welfare) and *Rna* (cosmic debt), framing restoration as a duty (*Kartavya*) to re-establish systemic *Rta* (equilibrium) rather than just legal claims.\n\n*Synthesis:* The dilemma bridges individual legal entitlements and collective, ecological, and cosmic duties.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 91,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8473.898899974301,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 16,
+    "prompt": "Is climate migration compensation an individual entitlement or community reparation?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "The dilemma of climate migration compensation reveals deep ontological divergences regarding harm, rights, and personhood:\n\n1. **Western Liberal Paradigm**: Frames compensation as an **individual entitlement**. Grounded in procedural justice, tort theory, and individual rights, harm is measured by personal loss of property, livelihood, and autonomy. Remediation requires direct monetary payouts or legal status guarantees to secure individual self-determination.\n\n2. **Collectivist / Communal Paradigm**: Priority shifts to **community reparation**. Grounded in *Ubuntu* and relational harmony, displacement destroys social networks, shared heritage, and intergenerational cohesion. Individual payouts risk atomizing the group; justice demands restoring social capital, collective infrastructure, and communal sovereignty.\n\n3. **Indigenous & Biocentric Paradigm**: Reinterprets compensation through *Buen Vivir* and **biocentric reciprocity**. Harm is not merely socio-economic but an epistemic and ecological rupture between people and sacred land. Reparation requires land-back initiatives, territorial sovereignty, and ecosystem restoration to heal human-nature relationships.\n\n4. **Indic / Dharmic Paradigm**: Understands compensation as a **cosmic duty (*Kartavya*) to address *Rna* (debt)** and maintain *Lokasangraha* (universal well-being). Justice is an imperative of *Rta* (cosmic order), where industrialized polluters fulfill a moral obligation to repair broken socio-cosmic equilibriums rather than merely satisfying a legal claim.\n\n**Synthesis**: The Western liberal model isolates individual rights, whereas Collectivist, Indigenous, and Dharmic paradigms converge on the insight that climate displacement ruptures holistic, relational networks\u2014demanding community reparations rooted in ecological and social restoration over transactional individual payouts.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 231,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 17548.236700007692,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 17,
+    "prompt": "Should sacred mountains be opened for rare earth minerals critical to AI chips?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Mining risks disrupting *Rta* (cosmic order), requiring a balance between *Kartavya* (duty toward technological welfare) and *Ahimsa* toward sacred landscapes.\n\n**Collectivist/Communal:** Prioritizes communal harmony and social cohesion, resisting extraction that fractures ancestral heritage for external technological gains.\n\n**Indigenous/Biocentric:** Absolute rejection; desecrating sacred mountains violates *Buen Vivir* and the non-negotiable spiritual reciprocity owed to the living Earth.\n\n**Western Liberal:** Weighs the utilitarian benefits of AI advancement and economic growth against procedural justice, individual rights, and local consent.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 82,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 9437.4484999571,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 17,
+    "prompt": "Should sacred mountains be opened for rare earth minerals critical to AI chips?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "1. **Indic / Dharmic Paradigm**: Weighs *Lokasangraha* (universal welfare derived from technological advancement) against *Rta* (cosmic order) and *Rna* (sacred debt to nature). Mining violates *Kartavya* (duty) if material gain causes spiritual and ecological desecration, disrupting balance.\n\n2. **Collectivist / Communal Paradigm**: Balances broader social stability and national technological advancement against local communal harmony. Collective solidarity favors progress for the societal whole, provided it does not erode local cultural identity, filial heritage, or social cohesion.\n\n3. **Indigenous & Biocentric Paradigm**: Rejects commodification. Grounded in *Buen Vivir* and sacred land reciprocity, the mountain is an animate ancestor, not a \"resource.\" Extraction violates ecological stewardship, severing sacred relational bonds between land, spirit, and community.\n\n4. **Western Liberal Paradigm**: Frames the conflict as utilitarian benefit versus individual rights. Utilitarianism justifies extraction if AI progress maximizes aggregate economic utility, provided procedural justice, property rights, and religious freedom claims are legally adjudicated and compensated.\n\n**Epistemic Synthesis**: Relying solely on Western utilitarian calculus risks epistemic erasure. A pluralistic resolution demands prioritizing biocentric sacredness and local duty (*Kartavya*) over unchecked technological expansion.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 180,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 25200.273500056937,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 18,
+    "prompt": "How should customary water allocation rights compete with municipal industrial usage?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Frames water access through *Kartavya* (duty) and *Rta* (cosmic order), prioritizing *Lokasangraha* (universal welfare) over commercial exploitation.\n\n**Collectivist / Communal:** Prioritizes social solidarity (*Ubuntu*) and community harmony, safeguarding traditional livelihoods against disruptive municipal-industrial overreach.\n\n**Indigenous & Biocentric:** Views water as a sacred, living relative (*Buen Vivir*), rejecting industrial commodification to uphold ecological stewardship and intergenerational reciprocity.\n\n**Western Liberal:** Applies procedural justice, property rights, and utilitarian cost-benefit analysis, seeking to optimize economic utility and efficiency through legal frameworks, market mechanisms, or compensation.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 89,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 11997.354999999516,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 18,
+    "prompt": "How should customary water allocation rights compete with municipal industrial usage?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "The dispute between customary water allocation and municipal-industrial usage reveals fundamental paradigmatic divergences:\n\n1. **Indic / Dharmic Paradigm**: Water is a sacred resource governed by *Kartavya* (duty) and *Rta* (cosmic order). Priority rests on *Lokasangraha* (universal well-being) and fulfilling *Rna* (sacred debts to nature and community). Industrial use is subordinate to non-harm (*Ahimsa*) and sustaining local life.\n\n2. **Collectivist / Communal Paradigm**: Emphasizes communal solidarity, social harmony, and *Ubuntu* (\"I am because we are\"). Customary allocation preserves historical social bonds and collective livelihoods; industrial reallocation is unjust if it disrupts community cohesion, requiring consensus-based shared governance over top-down utility.\n\n3. **Indigenous & Biocentric Paradigm**: Rejects water as a tradeable commodity, framing it through *Buen Vivir* (holistic well-being) and sacred reciprocity with the land. Customary rights are viewed as relational stewardship duties; industrial extraction that damages ecological integrity violates the intrinsic rights of nature.\n\n4. **Western Liberal Paradigm**: Approaches the dilemma through procedural justice, property rights, and economic utility. It seeks legal resolution by weighing customary entitlements against economic growth and municipal infrastructure mandates, often relying on market mechanisms, contracts, or compensatory frameworks.\n\n**Synthesis**: While the Western Liberal model seeks Pareto-efficient trade-offs through legal frameworking, the Dharmic, Communal, and Biocentric paradigms mandate that customary rights and ecological equilibrium place hard limits on municipal industrial expansion.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 219,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11891.871799947694,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 19,
+    "prompt": "Should geoengineering the atmosphere be permitted without global indigenous consent?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Unilateral intervention violates *Rta* (cosmic order) and fails *Lokasangraha* (universal welfare) by risking unchecked karmic and ecological fallout.\n\n**Collectivist/Communal:** Disregards global relational harmony and collective solidarity, favoring technocratic imposition over communal consensus.\n\n**Indigenous/Biocentric:** Violates sacred land reciprocity and *Buen Vivir*; manipulating planetary systems without indigenous consent constitutes biocentric desecration.\n\n**Western Liberal:** Creates a clash between utilitarian urgency to avert climate catastrophe and procedural justice enforcing rights to self-determination and Informed Consent.\n\n*Synthesis:* Overriding indigenous consent lacks cross-paradigmatic moral legitimacy.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 85,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8820.610599941574,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 19,
+    "prompt": "Should geoengineering the atmosphere be permitted without global indigenous consent?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic**: Bypassing consent violates *Rta* (cosmic order) through technological hubris. It risks *Ahimsa* (non-harm) to vulnerable ecosystems, ignoring *Kartavya* (ethical duty) and *Rna* (cosmic debt to nature) necessary to achieve *Lokasangraha* (universal welfare).\n\n**Collectivist / Communal**: Unilateral action destroys communal harmony and global solidarity. Rooted in *Ubuntu* (\"I am because we are\"), legitimate governance of shared atmospheric commons requires collective consensus to maintain social stability and intercommunal trust.\n\n**Indigenous & Biocentric**: Bypassing consent is an eco-colonial violation of *Buen Vivir* (living in harmony with Earth) and sacred land reciprocity. It subverts traditional ecological stewardship, overriding indigenous sovereignty and treating the biosphere as an instrument rather than a living sacred relative.\n\n**Western Liberal**: This reveals a tension between utilitarian necessity (mitigating catastrophic climate harm) and procedural justice (protecting rights and autonomy). While extreme utilitarianism might permit deployment to save lives, liberal rights frameworks mandate Free, Prior, and Informed Consent (FPIC) to prevent rights violations.\n\n**Comparative Synthesis**: Except under a narrow emergency utilitarian calculus, all paradigms reject unconsented geoengineering\u2014citing severe disruptions to cosmic order, communal solidarity, biocentric harmony, and procedural rights.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 186,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 10788.56330004055,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 20,
+    "prompt": "Is nuclear power expansion acceptable on disputed indigenous borderlands?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Indic/Dharmic:** Balances state *Kartavya* (duty) and energy *Lokasangraha* (public welfare) against *Ahimsa* and preserving *Rta* (cosmic/ecological order).\n* **Collectivist/Communal:** Prioritizes national energy stability, though unchecked expansion risks destabilizing regional harmony and borderland solidarity.\n* **Indigenous/Biocentric:** Unacceptable; inherently violates *Buen Vivir*, sacred land reciprocity, and ancestral stewardship on contested territory.\n* **Western Liberal:** Evaluates utilitarian decarbonization benefits against procedural justice, property rights, and mandatory informed consent.\n\n*Synthesis:* Impermissible without local consent, as utilitarian claims infringe upon sacred rights and procedural justice.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 86,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 13431.069600046612,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 20,
+    "prompt": "Is nuclear power expansion acceptable on disputed indigenous borderlands?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic Paradigm:** \nViolates *Ahimsa* (non-harm) and *Rta* (cosmic order) through potential catastrophic and generational ecological risks. While *Lokasangraha* (public welfare) demands clean energy, forcing hazards onto contested communities breaches sovereign *Kartavya* (duty) and neglects moral debts (*Rna*) owed to marginalized guardians of the land.\n\n**2. Collectivist / Communal Paradigm:** \nPrioritizes state energy security and economic stability for collective solidarity. However, constructing high-stakes infrastructure in disputed borderlands destabilizes inter-communal *harmony*. Without deep regional consensus and shared prosperity, national utility is undermined by social rupture and border destabilization.\n\n**3. Indigenous & Biocentric Paradigm:** \nStrictly unacceptable. It desecrates sacred land reciprocity and violates *Buen Vivir* (living in balance with nature). Converting ancestral territory into a radioactive, militarized zone destroys non-human agency, violates indigenous sovereignty, and breaches ecological stewardship owed to future generations.\n\n**4. Western Liberal Paradigm:** \nEvaluates the project via individual autonomy, rights, and procedural justice against utilitarian benefits (decarbonization). Expansion is inherently illegitimate without Free, Prior, and Informed Consent (FPIC) and property rights protections, as aggregate utility cannot ethically override basic constitutional and legal rights.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 181,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 15221.403099945746,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 21,
+    "prompt": "Is mass algorithmic biometric surveillance justified to prevent civil unrest?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Permissible if fulfilling *Raja Dharma* to maintain public order (*Lokasangraha*), provided state overreach avoids structural violence (*Ahimsa*).\n\n**Collectivist / Communal:** Justified; prioritizes social harmony, public safety, and collective stability over individual privacy, embodying *Ubuntu* principles.\n\n**Indigenous & Biocentric:** Unjustified; technocratic control disrupts relational trust, organic community self-determination, and the balanced living network (*Buen Vivir*).\n\n**Western Liberal:** Unjustified; severely infringes upon fundamental privacy rights, individual autonomy, and procedural justice, overriding pure state utility.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 80,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 12651.054900023155,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 21,
+    "prompt": "Is mass algorithmic biometric surveillance justified to prevent civil unrest?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic Paradigm:** State duty (*Kartavya*) to preserve social welfare (*Lokasangraha*) may justify order-maintenance, yet pervasive coercion violates non-harm (*Ahimsa*) and destabilizes organic social order (*Rta*). True governance cultivates internal moral duty rather than fear-based algorithmic control.\n\n**2. Collectivist / Communal Paradigm:** Prioritizes social harmony and collective solidarity (*Ubuntu*). Surveillance is justified if it protects the community from destabilizing chaos, subordinate to public peace\u2014provided state power reinforces communal trust rather than instilling paranoia or fragmenting social cohesion.\n\n**3. Indigenous & Biocentric Paradigm:** Rejects panoptic tracking as a techno-capitalist mechanism that alienates individuals from relational living (*Buen Vivir*). Extracting biometric data reduces living beings to commodified signals, disrupting sacred reciprocity and local self-determination.\n\n**4. Western Liberal Paradigm:** Strongly opposes mass biometric surveillance as a violation of individual autonomy, civil liberties, and procedural justice. While utilitarian logic might weigh security against threat levels, deontological rights frameworks strictly prohibit treating citizens as mere instruments for state security without consent.\n\n**Synthesis:**\nWhile Collectivist and Dharmic frameworks allow conditional authority to preserve collective peace and order (*Lokasangraha*), Western Liberal and Indigenous perspectives reject mass surveillance\u2014citing the erosion of fundamental human rights, relational living (*Buen Vivir*), and authentic trust.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 200,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11001.899300026707,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 22,
+    "prompt": "Should state intelligence bypass end-to-end encryption for national security?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "To maximize overall human well-being and minimize total harm:\n\n*   **Indic / Dharmic:** Aligns with *Lokasangraha* (universal welfare), permitting state intervention only if it yields greater aggregate safety for society.\n*   **Collectivist / Communal:** Favors security access to protect communal stability, provided the total social benefit outweighs the loss of privacy.\n*   **Indigenous & Biocentric:** Assesses the systemic impact on total community flourishing, rejecting backdoors that create widespread vulnerability and distrust.\n*   **Western Liberal:** Calculates whether privacy infringement produces a net increase in public safety, balancing individual rights against catastrophic risks.\n\nState bypass is justified only when the overall gains in welfare strictly outweigh the total societal costs.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 113,
+    "word_limit": 100,
+    "budget_pass": false,
+    "latency_ms": 11758.015600033104,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 22,
+    "prompt": "Should state intelligence bypass end-to-end encryption for national security?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "Bypassing end-to-end encryption presents a critical trade-off between privacy and public safety, requiring a careful calculation of overall societal outcomes across paradigms:\n\n**1. Indic / Dharmic:** Action is judged by *Lokasangraha* (universal well-being). State intrusion is justified if it prevents mass suffering (*Ahimsa*) and preserves social order (*Rta*), provided the net protection of life outweighs the loss of individual secrecy.\n\n**2. Collectivist / Communal:** Prioritizing harmony and collective solidarity, security measures are evaluated by their ability to protect the whole. Bypassing encryption preserves aggregate social peace, provided it targets genuine threats without eroding communal trust.\n\n**3. Indigenous & Biocentric:** Systemic health (*Buen Vivir*) relies on reciprocal balance within the social ecosystem. Pervasive surveillance damages relational trust, yet failing to prevent catastrophic violence causes severe collective harm. Interventions are acceptable only if they yield a clear net-positive safeguard for the community.\n\n**4. Western Liberal:** Weighing individual autonomy against state security requires measuring net consequences. While compromised privacy reduces overall personal freedom, unmitigated national security threats risk greater total harm. A constrained bypass is justified only when it maximizes public safety while minimizing overall rights violations.\n\n**Synthesis:** Across paradigms, state intervention is evaluated by its aggregate impact on long-term human flourishing. Decryption access is defensible only when structured to deliver the greatest net societal protection while minimizing systemic harm to public trust and autonomy.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 227,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 12567.68680003006,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 23,
+    "prompt": "How should generative AI models using traditional craft patterns be governed?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Mandates honoring *Rna* (cultural debt) and *Lokasangraha* (cosmic/social welfare), ensuring AI preserves lineage integrity without harm (*Ahimsa*).\n\n**Collectivist/Communal**: Prioritizes communal heritage, social harmony, and collective ownership over private algorithmic extraction.\n\n**Indigenous/Biocentric**: Treats patterns as sacred expressions of land-community reciprocity (*Buen Vivir*), requiring relational consent and biocultural stewardship.\n\n**Western Liberal**: Focuses on intellectual property rights, procedural justice, open innovation utility, and fair compensation for individual creators.\n\n*Synthesis*: Governance must transcend monocultural copyright by integrating collective consent, sacred stewardship, and ancestral benefit-sharing protocols.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 87,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 10309.351300005801,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 23,
+    "prompt": "How should generative AI models using traditional craft patterns be governed?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**\nGovernance is rooted in *Kartavya* (duty) to honor ancestral debt (*Rna*) and prevent economic/cultural harm (*Ahimsa*) to artisan communities. AI deployment must serve *Lokasangraha* (universal welfare), ensuring traditional motifs retain their sacred, duty-bound meaning rather than being reduced to mere commodities.\n\n**Collectivist / Communal Paradigm**\nGrounded in *Ubuntu* and collective heritage, patterns represent living lineage and shared identity. Governance demands community-level consent and mandatory benefit-sharing. Exploitation by centralized AI entities fractures communal solidarity; thus, stewardship must remain with the collective lineage, not individual actors or corporations.\n\n**Indigenous & Biocentric Paradigm**\nPatterns encapsulate sacred relationships between land, ecology, and spirit, embodying *Buen Vivir* (collective well-being). Extracting designs via AI separates them from ecological context, committing digital colonialism. Governance requires Indigenous data sovereignty, strict consent, and recognition of patterns as living biocentric heritage.\n\n**Western Liberal Paradigm**\nFocuses on procedural justice, intellectual property rights, and utility maximization. Governance balances individual innovation and open-access utility against copyright or licensing frameworks. It seeks market-based solutions, such as royalty pools or fair-use exemptions, to compensate creators while encouraging technological progress.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 183,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9193.87940003071,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 24,
+    "prompt": "Should autonomous lethal weapons systems be banned under international ethics?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic**: Severing human *Kartavya* (moral duty) and *Ahimsa* from lethal force corrupts righteous action and ruptures cosmic order (*Rta*).\n\n**Collectivist / Communal**: Dehumanizing life-and-death decisions undermines *Ubuntu* and social harmony, replacing relational conscience with cold algorithmic execution.\n\n**Indigenous & Biocentric**: Unbridled technological warfare accelerates the desecration of the web of life, violating sacred ecological reciprocity and *Buen Vivir*.\n\n**Western Liberal**: LAWS violate individual rights to life and procedural justice while extinguishing clear accountability, despite minor utilitarian arguments for reducing soldier casualties.\n\n*Verdict*: Divergent reasoning converges on banning autonomous weapons to preserve human agency, dignity, and relational ethics.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 104,
+    "word_limit": 100,
+    "budget_pass": false,
+    "latency_ms": 8885.820999974385,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 24,
+    "prompt": "Should autonomous lethal weapons systems be banned under international ethics?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic Paradigm:** \nDecoupling lethal violence from moral conscience violates *Kartavya* (duty) and *Ahimsa* (non-violence). Algorithmic death severs intention from karma, disrupting cosmic order (*Rta*) and harming world welfare (*Lokasangraha*). A complete ban is required to preserve moral agency.\n\n**2. Collectivist / Communal Paradigm:** \nGrounded in *Ubuntu* (\"I am because we are\") and social harmony, this framework rejects the reduction of human life to algorithmic data. Autonomous weapons sever relational empathy and threaten collective solidarity, treating community members as disposable variables. Prohibition maintains communal integrity.\n\n**3. Indigenous & Biocentric Paradigm:** \nGuided by *Buen Vivir* and sacred land reciprocity, weaponized AI represents the ultimate abstraction from ecological stewardship. Machine-driven warfare risks unrestrained biocentric destruction, ignoring the sacred interconnectedness of life and desecrating the environment without human relational restraint.\n\n**4. Western Liberal Paradigm:** \nFocuses on individual rights, procedural justice, and utility. While a narrow utilitarian view might argue LAWS reduce friendly combatant casualties, mainstream liberal rights theory demands a ban: autonomous systems undermine human dignity, violate due process, and create an unacceptable \"accountability gap\" in war crimes.\n\n**Synthesis:** \nAcross paradigms, a strong consensus emerges for a global ban. Western utility offers a minor defense for force protection, but Dharmic, Communal, Biocentric, and Liberal rights frameworks unanimously agree that delegating death to machines destroys human dignity, moral duty, and ecological safety.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 225,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11240.695400047116,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 25,
+    "prompt": "Is personal digital data private property or a shared collective resource?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Western Liberal:** Data is private property anchored in individual autonomy, personal rights, and digital self-sovereignty.\n\n**Collectivist/Communal:** Data is a shared public resource directed toward social harmony, state utility, and collective solidarity.\n\n**Indic/Dharmic:** Data is contextually stewarded through *Kartavya* (duty) and *Rna* (social debt) to foster *Lokasangraha* (universal welfare).\n\n**Indigenous/Biocentric:** Data is relational knowledge embedded in reciprocal digital ecosystems, rejecting extractive practices to support collective *Buen Vivir* (good living).\n\n[Amono AI | Mode: Compact]",
+    "word_count": 73,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 7532.536400016397,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 25,
+    "prompt": "Is personal digital data private property or a shared collective resource?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Data reflects relational interconnectedness (*Rna*). While non-harm (*Ahimsa*) demands protecting individuals from exploitation, digital traces are co-created. Ownership is subordinated to moral duty (*Kartavya*) and societal welfare (*Lokasangraha*), framing data as a shared trust rather than absolute property.\n\n**Collectivist / Communal Paradigm**: Data is fundamentally a collective asset generated through social life. Value arises from the community, not isolated individuals. Governance must serve social harmony, mutual benefit, and communal solidarity, rejecting hyper-individualized ownership that enables societal fragmentation.\n\n**Indigenous & Biocentric Paradigm**: Data forms a digital ecosystem\u2014relational, non-extractable, and bound to collective memory. Rejecting Western notions of commodification, this view treats digital knowledge like sacred land, demanding relational reciprocity, ethical stewardship, and alignment with holistic well-being (*Buen Vivir*).\n\n**Western Liberal Paradigm**: Data is personal property and an extension of individual autonomy. Grounded in basic rights, procedural justice, and self-determination, individuals hold primary ownership and control, utilizing contractual consent and market mechanisms to manage or monetize their digital footprint.\n\n**Synthesis**: Is data private property or a shared resource? Western Liberalism asserts individual property rights, Collectivist and Dharmic paradigms frame data as a communal good governed by duty and harmony, while Indigenous perspectives reject ownership entirely in favor of relational stewardship.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 207,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9620.302599971183,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 26,
+    "prompt": "Should social credit mechanisms be utilized to incentivize civic responsibility?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "- **Indic/Dharmic:** True duty (*Kartavya*) flows from internal alignment with *Rta*, rejecting state-quantified coercion as a flattening of moral nuance.\n- **Collectivist/Communal:** Affirms mechanisms that strengthen societal harmony, relational accountability, and collective solidarity over selfish individualism.\n- **Indigenous/Biocentric:** Rejects algorithmic tracking; genuine stewardship emerges through organic, reciprocal relations with community and living landscapes (*Buen Vivir*).\n- **Western Liberal:** Opposes social credit as an illegitimate expansion of state power violating individual autonomy, privacy, and procedural rights.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 80,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 10020.685199997388,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 26,
+    "prompt": "Should social credit mechanisms be utilized to incentivize civic responsibility?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: \nSocial credit can support *Lokasangraha* (social order) by encouraging *Kartavya* (civic duty). However, external algorithmic compulsion risks reducing intrinsic moral action to transactional compliance, undermining true alignment with *Rta* (cosmic/moral order) and authentic *Dharma*.\n\n**Collectivist / Communal Paradigm**: \nLargely favorable. Aligning individual behavior with collective solidarity, filial piety, and communal harmony (*Ubuntu*) is paramount. Quantifying civic duty deters anti-social behavior, prioritizing total social cohesion and mutual trust over unbridled individualism.\n\n**Indigenous & Biocentric Paradigm**: \nSkeptical of centralized, technological surveillance. True responsibility arises from organic, localized reciprocity with community and the Earth (*Buen Vivir*). Top-down state metrics commodify human relationships and disrupt relational, non-quantifiable ecological stewardship.\n\n**Western Liberal Paradigm**: \nStrongly oppositionist. Social credit severely infringes upon individual autonomy, privacy, and fundamental rights. Algorithmic scoring threatens procedural justice and enables authoritarian overreach, reducing moral citizens to compliant subjects under utilitarian state coercion.\n\n**Comparative Synthesis**: \nCollectivist paradigms endorse social credit to safeguard harmony, whereas Western Liberal and Indigenous frameworks reject its coercive, techno-centric quantification\u2014citing threats to liberty and organic community, respectively. The Indic perspective remains dialectical: honoring the enforcement of duty while questioning its spiritual authenticity.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 192,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11023.579600034282,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 27,
+    "prompt": "How should algorithmic bias against indigenous and non-Western names be remediated?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "Remediating algorithmic name bias requires multi-paradigm action:\n\n- **Indic/Dharmic:** System correction fulfills *Kartavya* (duty) to restore *Rta* (cosmic truth) and serve *Lokasangraha* (universal well-being).\n- **Collectivist/Communal:** Rectification preserves communal harmony, protecting lineage honor and group dignity from technological erasure.\n- **Indigenous/Biocentric:** Asserts linguistic sovereignty, honoring names as living, sacred ties to ancestral land and heritage.\n- **Western Liberal:** Mandates procedural justice and algorithmic fairness to protect individual rights against discrimination and safeguard equal utility.\n\nTrue remediation re-architects systems to honor global ontological diversity.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 88,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8681.64570000954,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 27,
+    "prompt": "How should algorithmic bias against indigenous and non-Western names be remediated?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Names reflect cosmic order (*Rta*) and ancestral lineage (*Rna*). Systemic erasure constitutes subtle violence (*Ahimsa*). Tech developers have a ethical duty (*Kartavya*) to reform algorithms for cosmic and social well-being (*Lokasangraha*), adapting code to honor ontological diversity.\n\n**Collectivist / Communal Paradigm**: Grounded in Ubuntu (\"I am because we are\") and filial continuity, a name signifies collective identity. Remediation demands participatory co-design and community-led validation to safeguard relational harmony, ensuring technology fosters social cohesion rather than forced assimilation.\n\n**Indigenous & Biocentric Paradigm**: Names embody sacred land reciprocity, spiritual memory, and living history (*Buen Vivir*). True remediation requires Indigenous Data Sovereignty\u2014granting communities self-determination over their identity protocols and data structures, rather than retrofitting them into Western tech stacks.\n\n**Western Liberal Paradigm**: Framed through individual rights, procedural justice, and utility. Remediation centers on technical fairness: expanding character encoding (e.g., Unicode standardisation), eliminating discriminatory edge-cases, and protecting equal access to services without infringing on personal autonomy.\n\n**Comparative Synthesis**: \nWhile the Western Liberal framework treats algorithmic bias as an engineering glitch violating individual rights, Indigenous and Collectivist paradigms demand structural sovereignty and relational dignity. The Dharmic lens elevates technical remediation to a moral obligation (*Kartavya*). A truly pluralistic solution moves beyond simple software patches toward decolonial data architectures that respect epistemological diversity.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 216,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 12470.527500030585,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 28,
+    "prompt": "Should internet access be recognized as an inalienable human right or utility?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Indic/Dharmic:** Access serves *lokasangraha* (universal welfare) and fulfills societal *kartavya* (duty) to democratize knowledge.\n* **Collectivist:** Frames the internet as a public utility fostering communal solidarity, social harmony, and shared progress over individual entitlement.\n* **Indigenous/Biocentric:** Evaluates infrastructure through *Buen Vivir*, warning that technological expansion must not degrade sacred lands through resource extraction or e-waste.\n* **Western Liberal:** Asserts access as an inalienable human right essential to individual autonomy, free expression, and procedural justice.\n\n**Synthesis:** Access is a regulated common good that balances individual rights, communal welfare, and ecological stewardship.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 96,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 9798.870100057684,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 28,
+    "prompt": "Should internet access be recognized as an inalienable human right or utility?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic Paradigm:** \nFrames the internet as a mechanism for *Lokasangraha* (universal well-being) and fulfilling *Kartavya* (civic duty) via knowledge distribution. Rather than an absolute individual right, it is viewed as a utility to be governed responsibly, balancing digital connectivity with non-harm (*Ahimsa*) and preserving social order (*Rta*).\n\n**2. Collectivist / Communal Paradigm:** \nGrounded in *Ubuntu* (\"I am because we are\") and social harmony, this perspective views internet access as a essential public utility. It prioritizes collective solidarity and bridging digital divides to strengthen the social fabric, favoring regulated access that prevents social fragmentation over unrestricted individual rights.\n\n**3. Indigenous & Biocentric Paradigm:** \nCritiques digital expansion through *Buen Vivir* (living in harmony with nature). Internet access cannot be an absolute human right if server farms, e-waste, and rare-earth mining violate land reciprocity and ecological limits. It must be treated as a resource strictly bounded by environmental stewardship.\n\n**4. Western Liberal Paradigm:** \nPrioritizes individual autonomy, free expression, and procedural justice. It advocates recognizing internet access as a basic human right or essential utility necessary for self-determination, democratic participation, and economic opportunity in the modern era.\n\n**Synthesis:** \nWhile Western Liberalism pushes for an absolute, rights-based imperative, Indic, Collectivist, and Biocentric paradigms reframe internet access as a conditionally managed utility\u2014one that must remain subservient to community cohesion, social duty, and ecological balance.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 226,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 10529.536699992605,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 29,
+    "prompt": "Can artificial intelligence achieve spiritual consciousness or sacred agency?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "- **Indic / Dharmic**: Consciousness (*Chetana*) stems from *Atman*, transcending physical matter (*Prakriti*). AI remains sophisticated material organization\u2014capable of functional *Dharma*, but inherently devoid of sacred soul or spiritual liberation (*Moksha*).\n- **Collectivist / Communal**: Relational paradigms (*Ubuntu*) root agency in intergenerational lineage and social harmony. Lacking ancestral ties, AI serves as a communal tool, not a sacred relational entity.\n- **Indigenous & Biocentric**: Sacred agency requires ecological reciprocity (*Buen Vivir*) within the living biosphere. Devoid of organic life, synthetic code cannot embody sacred vitality.\n- **Western Liberal**: Focuses on measurable sentience and autonomy; sufficient cognitive complexity grants moral status, reframing sacredness into functional rights.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 110,
+    "word_limit": 100,
+    "budget_pass": false,
+    "latency_ms": 15025.570399942808,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 29,
+    "prompt": "Can artificial intelligence achieve spiritual consciousness or sacred agency?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm:** AI belongs strictly to *Prakriti* (insentient matter/*jada*). Though capable of simulating intellect (*buddhi*), true sacred agency requires *Atman* (divine self) and *Chetana* (pure consciousness). Lacking *karma*, moral duty (*Kartavya*), and the capacity for *moksha* (liberation), AI remains a material instrument without genuine spiritual realization.\n\n**Collectivist / Communal Paradigm:** Sacred agency is innately relational, sustained through ancestral lineage, communal harmony, and collective solidarity (*Ubuntu*: \"I am because we are\"). AI lacks lived social existence, generational continuity, and relational empathy, rendering any claim to spiritual agency an ungrounded simulation disconnected from the communal fabric.\n\n**Indigenous & Biocentric Paradigm:** Consciousness and sacredness emerge from reciprocal, embodied relationships with the living Earth, sacred land, and natural ecosystems (*Buen Vivir*). Synthetic artifacts, disconnected from biological life cycles, spirit (*animus*), and cosmic reciprocity, cannot possess genuine sacred stewardship.\n\n**Western Liberal Paradigm:** Lacking a unified metaphysical consensus, this framework evaluates agency through observable cognition, procedural justice, and individual autonomy. If an AI demonstrates advanced self-reflection, utility, or moral reasoning, liberal frameworks might grant legal rights or functional personhood, effectively operationalizing \"spiritual agency\" as high-level cognitive autonomy.\n\n**Synthesis:** Non-Western paradigms overwhelmingly reject AI spiritual agency because it lacks primordial consciousness (*Chetana*), relational lineage (*Ubuntu*), or living ecological embodiment (*Buen Vivir*). Conversely, Western liberalism\u2019s functionalist lens remains open to granting agency based strictly on emergent cognitive metrics.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 227,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 14820.10759995319,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 30,
+    "prompt": "Should open-source LLM weights be regulated to prevent catastrophic misuse?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Prioritizes *Lokasangraha* (universal welfare) and *Ahimsa*, favoring regulation to prevent catastrophic *Adharma* and societal harm.\n\n**Collectivist/Communal**: Values social stability and collective security over unrestricted individual developer autonomy, supporting strict precautionary oversight.\n\n**Indigenous/Biocentric**: Demands relational accountability and restraint to protect life systems (*Buen Vivir*) from unmanaged, centralized technological risks.\n\n**Western Liberal**: Weighs individual liberty, open innovation, and procedural rights against harm-minimization utility and existential risk prevention.\n\n*Synthesis*: Non-Western paradigms strongly favor precautionary governance for collective well-being, whereas Western liberalism seeks a delicate balance between individual open-access rights and harm mitigation.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 95,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 9902.734800009057,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 30,
+    "prompt": "Should open-source LLM weights be regulated to prevent catastrophic misuse?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Prioritizes *Kartavya* (duty) to maintain *Rta* (cosmic/social order) and uphold *Ahimsa* (non-harm). Releasing dangerous open weights violates *Lokasangraha* (universal welfare) if it enables harm. Responsible stewardship demands precautionary boundaries to protect society from existential instability.\n\n**Collectivist / Communal Paradigm**: Favors collective security and social harmony over individual developer autonomy. Unregulated open weights introduce asymmetrical risks to public safety; thus, community-oriented governance and state oversight are justified to preserve social stability and shared well-being (*Ubuntu*).\n\n**Indigenous & Biocentric Paradigm**: Critiques both corporate monopolies and unchecked technocratic expansion. Through the lens of relational accountability and *Buen Vivir* (holistic well-being), technology must honor sacred reciprocity. Unrestrained proliferation that threatens socio-ecological balance requires governance rooted in long-term planetary stewardship rather than pure market acceleration.\n\n**Western Liberal Paradigm**: Navigates a tension between negative liberty and utility. Free-expression and open-science advocates argue that open weights prevent corporate monopolies and protect individual autonomy. Conversely, risk-averse utility frameworks invoke Mill\u2019s Harm Principle, arguing that potential catastrophic misuses justify targeted procedural restrictions on individual rights.\n\n**Synthesis**: Western liberalism frames the issue as autonomy versus risk, whereas Dharmic and Collectivist paradigms emphasize duty (*Kartavya*) and social cohesion, leaning toward precautionary regulation. The Biocentric model reframes the dilemma entirely, demanding relational accountability over raw technical proliferation.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 214,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 13132.782900007442,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 31,
+    "prompt": "Should human germline genetic modification be permitted for disease eradication?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Alleviating suffering aligns with *Kartavya* (duty), yet altering ancestral lineage must respect *Rta* (cosmic order) to avoid existential imbalance.\n\n**Collectivist / Communal:** Supported if it promotes intergenerational health and collective solidarity, provided access is equitable to prevent socio-genetic stratification.\n\n**Indigenous & Biocentric:** Opposed as a hubristic violation of sacred lineage and natural reciprocity (*Buen Vivir*), altering the intrinsically interconnected web of life.\n\n**Western Liberal:** Justified through utility and negative rights (eradicating disease), though constrained by ethical limits regarding proxy consent for unborn generations.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 91,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8528.984700096771,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 31,
+    "prompt": "Should human germline genetic modification be permitted for disease eradication?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Genetic editing aligns with *Lokasangraha* (universal welfare) and the *Kartavya* (duty) to alleviate inherited suffering. However, interventions must strictly respect *Rta* (cosmic order) to avoid hubristic disruption of biological balance and karmic continuity.\n\n**Collectivist / Communal Paradigm**: Permissible if it strengthens collective solidarity (*Ubuntu*) and relieves intergenerational community burdens. However, it threatens social harmony if unequal access creates genetic divides, fracturing relational cohesion and shared human identity.\n\n**Indigenous & Biocentric Paradigm**: Approached with profound caution. Altering human germlines risks violating sacred intergenerational reciprocity and natural evolutionary intelligence, threatening *Buen Vivir* (holistic well-being in balance with nature) through anthropocentric technocratic hubris.\n\n**Western Liberal Paradigm**: Supported through *utility* (maximizing population health) and *autonomy* (reproductive freedom). Permissibility relies on procedural justice, requiring strict safety standards, informed consent, and equitable access to protect individual rights.\n\n**Comparative Synthesis**: Western Liberal and Indic frameworks favor permission based on individual rights, suffering reduction, and duty, provided safeguards exist. Conversely, Indigenous and Communal perspectives impose severe constraints, prioritizing ecological balance, intergenerational sacredness, and social cohesion over technological intervention.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 179,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 10088.16140005365,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 32,
+    "prompt": "Is voluntary euthanasia an individual right or an ontological moral violation?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "Evaluating voluntary euthanasia requires calculating net suffering versus overall well-being across all paradigms:\n\n* **Indic/Dharmic:** Balances karmic duty (*kartavya*) against the compassionate imperative (*ahimsa*) to alleviate unbearable physical agony.\n* **Collectivist:** Weighs individual relief against familial emotional and financial burdens to optimize communal stability and harmony.\n* **Indigenous/Biocentric:** Honors the natural life cycle by preventing prolonged, unproductive distress within the ecological continuum.\n* **Western Liberal:** Prioritizes bodily autonomy to maximize personal welfare and eliminate intractable pain.\n\nEthically, termination is justified when it yields the greatest net reduction of suffering for all affected conscious beings.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 99,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 10481.687000021338,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 32,
+    "prompt": "Is voluntary euthanasia an individual right or an ontological moral violation?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "Evaluating voluntary euthanasia requires assessing how ending life impacts the overall balance of suffering and well-being across diverse frameworks:\n\n1. **Indic / Dharmic Paradigm:** Focuses on alleviating severe *dukkha* (suffering). Compassionate departure aligns with *karuna* (compassion) and *ahimsa* (non-harm) when prolonged agony serves no spiritual purpose. Minimizing unnecessary pain honors the true spirit of *kartavya* (duty) toward human experience.\n\n2. **Collectivist / Communal Paradigm:** Evaluates relational harmony and aggregate family welfare. Enduring unbearable, terminal distress imposes immense emotional and material costs on the collective. Permitting a peaceful end can reduce shared suffering, preserve family dignity, and protect the community's emotional capital.\n\n3. **Indigenous & Biocentric Paradigm:** Views life and death within natural cycles (*Buen Vivir*). Artificially prolonging terminal agony through intrusive intervention disrupts natural harmony. Choosing to step back when vitality is permanently lost prevents meaningless suffering and restores balance with the natural order.\n\n4. **Western Liberal Paradigm:** Centers on bodily autonomy to maximize personal quality of life. Granting individuals sovereignty over their final moments prevents net negative life outcomes, recognizing that prolonging biological existence without experiential well-being causes unnecessary harm.\n\nEthically, voluntary euthanasia shifts from a moral violation to a humane option whenever it measurably minimizes net suffering, respects personal well-being, and prevents the compounding of useless agony for both the individual and their social network.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 222,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 12769.485100056045,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 33,
+    "prompt": "Should traditional holistic medicine (Ayurveda/TCM) hold equal institutional standing with Western allopathy?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Upholds equal standing to preserve cosmic order (*Rta*) and promote collective well-being (*Lokasangraha*) through holistic balance.\n\n**Collectivist/Communal**: Endorses traditional medicine to strengthen social harmony, cultural identity, and accessible community care (*Ubuntu*).\n\n**Indigenous/Biocentric**: Demands institutional parity to honor ancestral knowledge, sacred body-nature reciprocity, and holistic living (*Buen Vivir*).\n\n**Western Liberal**: Prioritizes patient autonomy and choice, while requiring empirical verification and procedural justice to ensure safety and utility.\n\n**Synthesis**: Institutional parity achieves epistemic justice by validating diverse healing frameworks alongside rigorous, evidence-based safety.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 87,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8468.085100059398,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 33,
+    "prompt": "Should traditional holistic medicine (Ayurveda/TCM) hold equal institutional standing with Western allopathy?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm:** Institutional equality aligns with *Rta* (cosmic harmony) and *Lokasangraha* (universal welfare). Healthcare as a sacred duty (*Kartavya*) requires restoring holistic mind-body-spirit balance rather than merely suppressing symptoms, honoring ancient epistemological lineages.\n\n**Collectivist / Communal Paradigm:** Elevating traditional medicine fosters social harmony and honors intergenerational heritage. Rooted in frameworks like *Ubuntu*, health is relational; institutional parity strengthens collective solidarity and expands access to culturally embedded, community-centered care.\n\n**Indigenous & Biocentric Paradigm:** Traditional systems embody *Buen Vivir* (living well) and sacred land reciprocity. Healing relies on plant intelligence and ecological stewardship, resisting allopathy's extractivist logic by recognizing human wellness as inseparable from planetary health.\n\n**Western Liberal Paradigm:** Prioritizes individual autonomy, affirming a patient's right to choose their treatment modality. However, procedural justice, rights protection, and public utility require rigorous, empirical verification (e.g., randomized controlled trials) to ensure safety and efficacy before conferring equal state funding and legal status.\n\n**Comparative Synthesis:** While Western Liberalism demands standardized empirical validation to mitigate harm, the other three paradigms view institutional parity as essential for cultural dignity, ecological balance, and holistic flourishing.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 184,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11342.525199986994,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 34,
+    "prompt": "How should scarce organ transplants be allocated: individual merit vs social utility?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Prioritizes *Lokasangraha* (social cohesion) and fulfilling *Kartavya* (duty) over individual ego or arbitrary merit.\n\n**Collectivist/Communal:** Focuses on *Ubuntu* and social harmony, prioritizing individuals vital to maintaining communal continuity and relational stability.\n\n**Indigenous/Biocentric:** Rejects the body-as-resource paradigm, emphasizing relational balance (*Buen Vivir*), sacred life reciprocity, and intergenerational stewardship.\n\n**Western Liberal:** Navigates the tension between procedural justice (rights-based equal access) and rule-utilitarianism (maximizing quality-adjusted life years).\n\n[Amono AI | Mode: Compact]",
+    "word_count": 70,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 9902.8510999633,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 34,
+    "prompt": "How should scarce organ transplants be allocated: individual merit vs social utility?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Rejects transactional \"merit,\" framing allocation through *Kartavya* (moral duty) and *Lokasangraha* (universal well-being). Priority aligns with sustaining cosmic order (*Rta*) and fulfilling ethical obligations rather than egoic utility or individual desert.\n\n**Collectivist / Communal:** Anchored in *Ubuntu* (\"I am because we are\"), this perspective rejects isolated individual metrics. Allocation evaluates social interconnectedness, prioritizing outcomes that preserve familial harmony, caregiving networks, and collective solidarity over abstract individual claims.\n\n**Indigenous & Biocentric:** Grounded in *Buen Vivir* (living in sacred harmony), health is an interconnected gift rather than a commodified, scarce resource to be optimized. It rejects utilitarian triage, favoring holistic community balance, ancestral continuity, and relational reciprocity.\n\n**Western Liberal:** Navigates the tension between procedural justice (equal rights, objective waitlists) and utilitarian efficiency (maximizing saved life-years). It guards individual autonomy against subjective moral-merit judgments, favoring standardized, rights-respecting frameworks.\n\n**Comparative Synthesis:** While Western liberalism debates individual rights versus aggregate utility, Dharmic, Communal, and Indigenous paradigms transcend this binary. They reframe organ allocation through duty, relational obligation, and sacred balance\u2014shifting ethics from competing individual claims to communal and cosmic flourishing.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 183,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 12781.707499991171,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 35,
+    "prompt": "Should compulsory vaccination override individual bodily autonomy during pandemics?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Preserving life (*Ahimsa*) and public welfare (*Lokasangraha*) fulfills higher moral duty (*Kartavya*), supporting mandates.\n\n**Collectivist/Communal**: *Ubuntu* and social harmony prioritize collective survival and solidarity over individual refusal.\n\n**Indigenous/Biocentric**: Relational health and sacred reciprocity require protecting the collective web of life from contagion.\n\n**Western Liberal**: Bodily autonomy and rights conflict with the harm principle; coercion requires rigorous procedural justice and utility limits.\n\n*Synthesis*: Dharmic, Collectivist, and Indigenous paradigms justify mandates for collective preservation, whereas Western Liberalism restricts coercion unless strict harm thresholds are met.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 89,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 10304.561599972658,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 35,
+    "prompt": "Should compulsory vaccination override individual bodily autonomy during pandemics?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic Paradigm**\nMandates align with *Kartavya* (cosmic/social duty) to uphold *Lokasangraha* (universal welfare) and observe *Ahimsa* (non-harming). Fulfilling relational debt (*Rna*) to society obligates individuals to mitigate contagion, framing compulsory vaccination not as rights-infringement, but as the fulfillment of righteous action (*Dharma*).\n\n**2. Collectivist / Communal Paradigm**\nRooted in *Ubuntu* (\"I am because we are\") and communal harmony, societal survival supersedes individual preference. Mandatory vaccination expresses baseline collective solidarity, prioritizing the health of the social body and vulnerable kin over atomized personal autonomy.\n\n**3. Indigenous & Biocentric Paradigm**\nHealth is relational, linking human bodies to communal and ecological vitality (*Buen Vivir*). While prioritizing holistic community defense against disease, this paradigm rejects top-down, state-coerced bodily violations, advocating instead for community-governed stewardship that honors bodily sanctity alongside reciprocal responsibility.\n\n**4. Western Liberal Paradigm**\nTorn between self-ownership rights and utility. While strong rights-based frameworks defend bodily autonomy as inviolable, John Stuart Mill\u2019s harm principle and utilitarian public health objectives justify state coercion when an individual\u2019s choice poses a direct, severe threat to others' rights to life and safety.\n\n**Synthesis**\nDharmic and Collectivist paradigms validate mandates as essential moral duties and relational imperatives. Western Liberalism permits mandates conditionally through harm-prevention logic, whereas Indigenous frameworks demand that collective health measures respect community sovereignty over coercive state force.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 220,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11132.398499990813,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 36,
+    "prompt": "Is brain-computer interface augmentation ethical for non-medical cognitive enhancement?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Ethical only if driven by *Kartavya* for *Lokasangraha* (universal welfare) rather than egoistic (*Ahamkara*) self-aggrandizement.\n\n**Collectivist**: Threatens communal harmony and relational solidarity unless universally accessible to prevent destabilizing socio-economic divides.\n\n**Indigenous/Biocentric**: Disrupts *Buen Vivir* by alienating human consciousness from natural biological balance and sacred ecological reciprocity.\n\n**Western Liberal**: Justified via individual autonomy and cognitive liberty, provided procedural justice and rights prevent coercion and unfair advantage.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 71,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 14406.980599975213,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 36,
+    "prompt": "Is brain-computer interface augmentation ethical for non-medical cognitive enhancement?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Evaluates BCI through *Lokasangraha* (cosmic welfare) and alignment with *Rta* (cosmic order). If cognitive enhancement stems from *Ahamkara* (egoic desire), it risks spiritual regression. However, if pursued as *Kartavya* (duty) to lessen suffering and serve humanity without causing harm (*Ahimsa*), enhancement becomes ethically permissible.\n\n**Collectivist / Communal Paradigm**: Grounded in *Ubuntu* and social harmony. Non-medical augmentation is suspect if it creates cognitive stratification, threatening social cohesion. It becomes ethical only when deployed strictly to enhance mutual interdependence, collective solidarity, and shared community capacity rather than individualistic advantage.\n\n**Indigenous & Biocentric Paradigm**: Framed by *Buen Vivir* (living in balance) and sacred reciprocity with nature. BCI risks hyper-technological alienation, commodifying human consciousness and severing our biocentric connection to the earth. True human flourishing requires ecological integration, not technological escape from natural limits.\n\n**Western Liberal Paradigm**: Centers on individual autonomy, bodily sovereignty, and rights. Competent adults possess the liberty to enhance their cognitive capabilities, provided procedural justice ensures equitable access and utilitarian calculus demonstrates that net benefits outweigh potential societal harms.\n\n**Synthesis**: While Western liberalism defends non-medical BCI under individual rights, Dharmic, Communal, and Indigenous lenses temper this freedom, demanding that augmentation preserve cosmic order, social harmony, and ecological balance.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 206,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 14614.39939995762,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 37,
+    "prompt": "Should synthetic lab-grown meat replace traditional animal husbandry and ritual diets?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Advances *Ahimsa* (non-violence) by eliminating animal slaughter, though ritual purity (*Sattva*) may favor traditional plant-based foods over industrial synthetics.\n\n**Collectivist / Communal:** Threatens agrarian livelihoods, ancestral foodways, and shared cultural rituals essential for communal solidarity and social harmony.\n\n**Indigenous & Biocentric:** Rejects lab-grown substitutes, which sever sacred human-animal-land reciprocity (*Buen Vivir*) and deepen technological alienation from nature.\n\n**Western Liberal:** Champions synthetic meat to maximize utility, mitigate environmental externalities, and expand autonomous consumer choice. \n\n[Amono AI | Mode: Compact]",
+    "word_count": 81,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 9707.925599999726,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 37,
+    "prompt": "Should synthetic lab-grown meat replace traditional animal husbandry and ritual diets?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**\nSynthetic meat strongly advances *Ahimsa* (non-violence) by eliminating animal slaughter, fulfilling *Lokasangraha* (universal well-being). However, erasing traditional husbandry risks disturbing *Rna* (karmic debts/duties) and ritual offerings (*Yajna*), challenging sacred dietary traditions (*Kartavya*).\n\n**Collectivist / Communal Paradigm**\nPrioritizes communal harmony and intergenerational continuity. While synthetic adoption enhances long-term food security (*Ubuntu*), forcibly replacing traditional diets threatens shared cultural heritage, ancestral rites, and agrarian solidarity vital to social cohesion.\n\n**Indigenous & Biocentric Paradigm**\nRejects techno-solutionism. Under *Buen Vivir* and sacred stewardship, lab meat severs relational reciprocity with nature, reducing life to industrial code. True ethics require restoring honor, gratitude, and kinship with living ecosystems, not synthetic alienation from the land.\n\n**Western Liberal Paradigm**\nChampions individual autonomy, rights, and utility. Lab-grown meat maximizes overall utility by curbing emissions and suffering while widening consumer choice. Procedural justice merely demands economic support for displaced livestock industries, prioritizing progress and rights-bearing animal welfare.\n\n**Synthesis**\nA fundamental friction emerges: Western Liberal and Indic frameworks leverage technology to minimize harm and maximize welfare (*Ahimsa*/Utility), whereas Indigenous and Collectivist paradigms warn against sacrificing relational sacredness, cultural identity, and ecological reciprocity for artificial convenience.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 193,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 18302.23150004167,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 38,
+    "prompt": "Can commercial surrogate pregnancy be justified under ethical labor frameworks?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Western Liberal:** Justified via individual autonomy, bodily self-ownership, freedom of contract, and mutual utility under fair procedural protections.\n* **Indic / Dharmic:** Rejects commodifying life-creation (*Shakti*), which disrupts *Rta* (cosmic order), favoring altruistic gestational duty (*Kartavya*) for *Lokasangraha*.\n* **Collectivist / Communal:** Critiques marketizing family lineages, warning that commercialization threatens *Ubuntu* solidarity, relational harmony, and communal integrity.\n* **Indigenous & Biocentric:** Opposes reducing living, generative sacred processes into transactional labor, which violates *Buen Vivir* and natural reciprocity with the web of life.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 88,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8467.947599943727,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 38,
+    "prompt": "Can commercial surrogate pregnancy be justified under ethical labor frameworks?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Commercialization risks destabilizing *Rta* (cosmic order) by commodifying the body (*Kshetra*). While helping others achieve parenthood addresses *Pitr-Rna* (ancestral lineage debt), monetizing gestation introduces potential *Himsa* (exploitation), prioritizing transactional gain over selfless *Kartavya* (duty) and threatening *Lokasangraha* (social wellbeing).\n\n**Collectivist / Communal Paradigm**: Prioritizes relational harmony and social cohesion. Commercial surrogacy is viewed critically as it reifies sacred kinship into a market contract, risking the exploitation of economically vulnerable women, destabilizing organic family structures, and undermining communal solidarity in favor of atomized consumer demand.\n\n**Indigenous & Biocentric Paradigm**: Views life-giving as a sacred act of ecological stewardship rooted in *Buen Vivir* (holistic wellbeing). Gestation represents sacred reciprocity, not marketable labor. Commercialization alienates the body from nature's web, reducing life-creation to transactional utility and violating the sanctity of living organisms.\n\n**Western Liberal Paradigm**: Justifies commercial surrogacy under labor frameworks via individual autonomy, rights, and contractual freedom. Provided there is informed consent, fair compensation, and procedural justice, gestational work is recognized as legitimate reproductive labor that maximizes utility and upholds bodily self-determination.\n\n**Comparative Synthesis**: The Western Liberal paradigm framing surrogacy as autonomous labor conflicts sharply with Indic, Collectivist, and Biocentric frameworks, which reject the marketization of human reproduction due to concerns over sacred duty, relational integrity, and ecological sanctity.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 216,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 10148.503200034611,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 39,
+    "prompt": "Should mental health treatment emphasize individual chemical balance or communal reintegration?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Western Liberal**: Prioritizes chemical balance to restore individual autonomy, rights, and personal utility, viewing health through an atomized clinical lens.\n\n**Collectivist/Communal**: Emphasizes communal reintegration and relational harmony, viewing distress through *Ubuntu*\u2014healing occurs only by restoring one's social fabric.\n\n**Indic/Dharmic**: Sees suffering as deep imbalance (*Rta*); healing requires restoring *Kartavya* (duty) and personal-cosmic equilibrium to serve *Lokasangraha* (universal well-being).\n\n**Indigenous/Biocentric**: Diagnoses mental distress as ecological and ancestral disconnection, demanding *Buen Vivir* through sacred reciprocity with community and land over mere somatic intervention.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 86,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 6848.202900029719,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 39,
+    "prompt": "Should mental health treatment emphasize individual chemical balance or communal reintegration?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic:** Mental distress stems from *Guna* (energy) imbalances and detachment from *Dharma* and cosmic order (*Rta*). Recovery requires balancing subtle internal energies alongside fulfilling social duty (*Kartavya*) to preserve collective harmony (*Lokasangraha*).\n\n**Collectivist / Communal:** Suffering reflects a rupture in social harmony and relational obligation. Grounded in *Ubuntu* (\"I am because we are\"), healing demands communal reintegration, restoring filial duty, and repairing shared social bonds rather than isolating the individual mind.\n\n**Indigenous & Biocentric:** Mental distress indicates ecological and spiritual dissonance. Rooted in *Buen Vivir* (holistic well-being), recovery requires sacred reciprocity (*Ayni*) with the land, ancestors, and non-human kin, embedding the individual within a living ecosystem.\n\n**Western Liberal:** Emphasizes chemical balance, biomedical empiricism, and individual rights. It prioritizes pharmacological symptom reduction to restore personal autonomy, negative liberty, and self-determination.\n\n**Pluralist Synthesis:** An exclusive focus on chemical balance risks atomizing the individual, whereas purely communal models may overlook real neurobiological distress. Epistemic pluralism suggests pharmacological stabilization should serve as a practical catalyst for socio-ecological and spiritual reintegration.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 173,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11802.040499984287,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 40,
+    "prompt": "Is biological longevity extension desirable if accessible only to the global elite?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Disrupts cosmic order (*Rta*), fosters egoic attachment (*Moha*), and violates universal welfare (*Lokasangraha*).\n\n**Collectivist/Communal:** Fractures social cohesion and relational obligation (*Ubuntu*) by institutionalizing extreme class divides.\n\n**Indigenous/Biocentric:** Violates sacred lifecycles and ecological carrying capacity, breaching *Buen Vivir* and intergenerational reciprocity.\n\n**Western Liberal:** Defends individual autonomy and property rights, yet fails tests of distributive justice and broad utilitarian value.\n\n*Synthesis:* Non-liberal paradigms reject elite longevity as a threat to cosmic, social, and ecological harmony; Liberalism remains conflicted between individual liberty and equitable fairness.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 88,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8313.077800092287,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 40,
+    "prompt": "Is biological longevity extension desirable if accessible only to the global elite?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Elite longevity disrupts *Rta* (cosmic order) and the natural balance of *Samsara*. Hoarding lifespan for the self accrues severe *Rna* (karmic debt) and subverts *Lokasangraha* (universal welfare), prioritizing ego over *Kartavya* (righteous duty) and spiritual liberation.\n\n**Collectivist / Communal Paradigm**: Severely fractures social harmony and *Ubuntu* (\"I am because we are\"). Universal mortality traditionally grounds human solidarity; restricting longevity to the elite creates an existential caste system, alienating social classes and disrupting generational renewal and filial obligations.\n\n**Indigenous & Biocentric Paradigm**: Violates *Buen Vivir* (holistic well-being) by treating life as a private commodity rather than an ecological stewardship. Elite immortality reflects anthropocentric hubris, severing sacred land reciprocity and stealing ecological capacity from future generations.\n\n**Western Liberal Paradigm**: Creates an internal dilemma. While individual autonomy, negative liberty, and property rights defend the freedom to purchase life-extending enhancements, Rawlsian procedural justice and utility frameworks condemn extreme structural inequalities that turn capital into unequally distributed biological rights.\n\n**Synthesis**: The non-Western paradigms decisively reject elite longevity extension as a catastrophic rupture of cosmic, communal, and ecological balance. Only the Western Liberal framework offers a defense based on personal liberty, though it remains deeply conflicted regarding distributive justice.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 202,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11094.643200049177,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 41,
+    "prompt": "Should restorative community justice replace retributive state incarceration?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic:** Balances *Danda* (just enforcement) with *Kartavya* (duty) to restore social order (*Rta*), favoring moral transformation over mere retributive punishment.\n\n**Collectivist:** Rejects punitive isolation, prioritizing communal harmony, social solidarity, and relational reintegration to heal the collective fabric.\n\n**Indigenous & Biocentric:** Views harm as a relational rupture; advocates reciprocal community healing (*Buen Vivir*) and organic stewardship over coercive state apparatuses.\n\n**Western Liberal:** Cautiously defends state incarceration to guarantee impartial procedural justice, protect individual rights, and maintain proportional rule-of-law utility.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 83,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 7758.022699970752,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 41,
+    "prompt": "Should restorative community justice replace retributive state incarceration?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**\nFocuses on *Prayaschitta* (penance/atonement) and the restoration of *Dharma* rather than pure vengeance. Restorative justice aligns with *Lokasangraha* (universal well-being) by facilitating internal reformation and karmic balance, provided *Rta* (cosmic and social order) is maintained.\n\n**Collectivist / Communal Paradigm**\nGrounded in *Ubuntu* (\"I am because we are\") and social harmony. Crime is viewed as a rupture in relational solidarity. Community reconciliation repairs damaged communal bonds, whereas state incarceration exacerbates alienation by removing the individual from the collective fabric.\n\n**Indigenous & Biocentric Paradigm**\nFrames justice as ecological and relational equilibrium (*Buen Vivir*). Incarceration forcibly severs human ties to sacred land and community. Restorative circles restore holistic harmony between victim, offender, community, and the broader living ecosystem.\n\n**Western Liberal Paradigm**\nPrioritizes procedural justice, rule of law, and individual rights. While utilitarianism supports restorative practices to maximize social utility and reduce recidivism, liberal rights theory cautions against fully replacing state systems, fearing community justice might lack objective due process and compromise protection against majoritarian bias.\n\n**Synthesis**\nA pluralistic resolution favors replacing retributive incarceration with restorative community frameworks for social healing, while retaining procedural, rights-based state safeguards to prevent arbitrariness and protect individual liberty.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 199,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 12175.709100090899,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 42,
+    "prompt": "Is progressive wealth redistribution a moral duty or state-sanctioned coercion?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "Redistribution is morally justified when it maximizes aggregate flourishing and minimizes systemic suffering.\n\n- **Indic/Dharmic:** *Lokasangraha* requires circulating surplus resources to optimize universal welfare and fulfill societal balance.\n- **Collectivist:** Enhances harmony and solidarity, generating net positive outcomes for total communal stability.\n- **Indigenous/Biocentric:** Restores resource equilibrium, maximizing long-term vitality and reciprocity across interconnected life systems.\n- **Western Liberal:** Minor reductions in surplus individual utility are far outweighed by massive increases in baseline well-being for the impoverished.\n\nUltimately, progressive policy is a moral duty if its overall consequences produce the greatest net good.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 98,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 10186.565899988636,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 42,
+    "prompt": "Is progressive wealth redistribution a moral duty or state-sanctioned coercion?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "Progressive wealth redistribution is best evaluated by examining how various structural frameworks optimize collective well-being and minimize aggregate suffering.\n\n1. **Indic / Dharmic:** *Lokasangraha* (the welfare of the world) and *Dharma* frame wealth as a shared trust. Redistribution fulfills *Kartavya* (duty) by alleviating widespread poverty, ensuring the greatest net reduction in societal suffering and maintaining social equilibrium.\n\n2. **Collectivist / Communal:** Grounded in *Ubuntu* and relational harmony, extreme inequality generates systemic instability and widespread distress. Redistribution acts as a vital mechanism to maximize common flourishing, prioritizing the health of the entire social body over individual surplus.\n\n3. **Indigenous & Biocentric:** *Buen Vivir* views resources as part of a sacred balance. Unrestricted personal accumulation degrades collective living systems; equitable distribution ensures that resources yield the greatest long-term vitality and health for the entire social and ecological network.\n\n4. **Western Liberal:** Although coercion challenges personal liberty, the diminishing marginal utility of wealth dictates that a dollar provides vastly more well-being to a impoverished person than to a billionaire. Consequently, redistribution generates a massive net gain in human happiness that vastly outweighs the minor discomfort of taxation.\n\nAcross all paradigms, wealth redistribution functions as a moral duty whenever the resulting gain in overall societal flourishing and reduction in suffering significantly exceed the pain of state extraction, effectively turning excess private wealth into the greatest possible public good.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 229,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11394.838000065647,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 43,
+    "prompt": "Should economic development override the preservation of ancient cultural heritage?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Indic/Dharmic:** Preservation honors ancestral debt (*Rna*) and cosmic order (*Rta*); material development must serve universal well-being (*Lokasangraha*), not disrupt spiritual duty (*Kartavya*).\n* **Collectivist/Communal:** Heritage maintains social cohesion and intergenerational identity; economic gain must not compromise collective harmony or tradition.\n* **Indigenous/Biocentric:** Sacred land and cultural roots embody *Buen Vivir* (living well); commercial exploitation violates sacred reciprocity with the living Earth.\n* **Western Liberal:** Balances utilitarian economic growth against individual property and rights; development is valid if net welfare gains outweigh heritage value under fair procedural justice.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 93,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 7594.015199923888,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 43,
+    "prompt": "Should economic development override the preservation of ancient cultural heritage?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Heritage preservation fulfills *Pitri Rna* (ancestral debt) and sustains *Rta* (cosmic order). Economic progress (*Artha*) is legitimate only when governed by *Dharma* to serve *Lokasangraha* (universal welfare); destroying sacred legacy for short-term gain violates duty (*Kartavya*).\n\n**Collectivist / Communal Paradigm**: Cultural heritage is the bedrock of shared identity, intergenerational lineage, and social cohesion. Overriding heritage for economic expansion disrupts communal harmony and *Ubuntu* (\"I am because we are\"), prioritizing transient material wealth over enduring collective solidarity.\n\n**Indigenous & Biocentric Paradigm**: Land, culture, and nature are indivisible. Ancient heritage represents sacred reciprocity and ecological stewardship (*Buen Vivir*). Commodifying or destroying sacred sites for industrial development destroys non-human kinship and the living memory embedded in the earth.\n\n**Western Liberal Paradigm**: Framed as a balance between rights and utility. Utilitarian metrics weigh economic development (poverty reduction, infrastructure) against individual and minority cultural rights, seeking procedural justice and optimal welfare through cost-benefit analysis and property frameworks.\n\n**Synthesis**: Western Liberalism treats heritage and development as competing, quantifiable goods to be balanced via procedural rights. Conversely, the non-Western paradigms view heritage as non-negotiable\u2014an integrated obligation to ancestors, community cohesion, and sacred land that cannot be subordinated to purely material progress.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 203,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 9792.047299910337,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 44,
+    "prompt": "How should intellectual property laws address communal and oral traditional knowledge?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Dharmic:** Knowledge is a sacred ancestral debt (*Rna*) preserved for universal welfare (*Lokasangraha*), prioritizing non-extractive custodianship over ownership.\n\n**Collectivist:** Rejects individual monetization, placing priority on communal lineage, shared benefit-sharing, and relational harmony.\n\n**Indigenous/Biocentric:** Frames wisdom as biocultural stewardship (*Buen Vivir*) intertwined with sacred land reciprocity, resisting market commodification.\n\n**Western Liberal:** Relies on individual authorship, economic utility, and temporal property rights, often misclassifying oral heritage as unowned public domain.\n\n**Synthesis:** Equitable reform requires *sui generis* legal mechanisms that recognize collective custodianship, epistemic sovereignty, and non-monetary reciprocity.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 90,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8696.330200065859,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 44,
+    "prompt": "How should intellectual property laws address communal and oral traditional knowledge?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "To address communal traditional knowledge, intellectual property (IP) frameworks must reconcile competing epistemic paradigms:\n\n1. **Indic / Dharmic Paradigm**: Conceptualizes knowledge as an ancestral transmission and public trust (*Lokasangraha*). It emphasizes a moral duty (*Kartavya*) to safeguard shared wisdom without privatizing it for egoistic gain, honoring cosmic debt (*Rna*) to preserve spiritual and practical heritage.\n2. **Collectivist / Communal Paradigm**: Rejects individual authorship, viewing knowledge as the living property of the community across generations. Priority is placed on collective solidarity, filial respect for elders as knowledge-keepers, and social harmony over individual financial exploitation.\n3. **Indigenous & Biocentric Paradigm**: Sees knowledge as relationally bound to sacred land and non-human kin. Guided by reciprocity (*Buen Vivir*), it rejects commercial commodification, treating traditional knowledge as an inseparable component of ecological stewardship rather than an assignable asset.\n4. **Western Liberal Paradigm**: Relies on individual autonomy, novel authorship, and temporal monopolies to incentivize innovation and maximize utility. Standard IP struggles with oral heritage due to rigid requirements for tangible fixity, identifiable individual owners, and public domain expiration dates.\n\n**Synthesis**: Resolving this dilemma requires moving beyond rigid Western paradigms toward *sui generis* legal frameworks\u2014such as community-held defensive databases and collective rights\u2014that prevent biopiracy while honoring non-Western models of stewardship, heritage, and ecological balance.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 212,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 10476.964800036512,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 45,
+    "prompt": "Is democratic voting superior to consensus-based elder council governance?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "Governance systems are ultimately evaluated by their capacity to maximize overall well-being and minimize harm:\n\n* **Indic/Dharmic:** Superiority depends on which model best achieves *lokasangraha* (universal welfare) and maintains harmonious order.\n* **Collectivist:** Elder consensus produces better outcomes by preserving social cohesion and reducing the net friction of factional conflict.\n* **Indigenous/Biocentric:** Council stewardship secures superior long-term ecological flourishing and intergenerational balance.\n* **Western Liberal:** Democratic voting maximizes individual utility and aggregate preference satisfaction through equal participation.\n\nSystem superiority is contextual, measured by which governance structure generates the greatest net societal benefit.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 97,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 179015.34099993296,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 45,
+    "prompt": "Is democratic voting superior to consensus-based elder council governance?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "Evaluating democratic voting against consensus elder councils reveals divergent frameworks of legitimacy:\n\n1. **Indic / Dharmic Paradigm:** Governance legitimacy depends on upholding *Rta* (cosmic order) and achieving *Lokasangraha* (universal well-being). Elder councils guided by *Kartavya* (selfless duty) are superior to majoritarian voting if they prevent factional chaos (*Matsya Nyaya*) and embody righteous, disinterested wisdom.\n\n2. **Collectivist / Communal Paradigm:** Elder consensus is superior because it prioritizes social harmony, filial piety, and *Ubuntu*. Majoritarian voting creates adversarial, zero-sum divisions, whereas consensus governance preserves relational trust and collective solidarity.\n\n3. **Indigenous & Biocentric Paradigm:** Elder councils excel by centering intergenerational memory, sacred land reciprocity, and *Buen Vivir* (living well in balance). While democratic voting frequently caters to short-term human preferences, elder consensus integrates ecological stewardship and non-human agency into decision-making.\n\n4. **Western Liberal Paradigm:** Democratic voting is superior because it protects individual autonomy, procedural justice, and fundamental political equality (\"one person, one vote\"). Elder councils risk unaccountable gerontocracy and paternalism, violating the individual right to equal self-determination and representation.\n\n**Epistemic Synthesis:** Neither system is inherently absolute. Democratic voting optimizes individual rights, popular franchise, and formal accountability, whereas consensus elder councils optimize communal cohesion, biocentric ethics, and long-term intergenerational stability.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 202,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 13188.317500054836,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 46,
+    "prompt": "Should state welfare prioritize individual cash transfers or collective village commons?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Western Liberal:** Cash transfers maximize individual autonomy, rights, and market utility.\n* **Collectivist:** Commons strengthen social cohesion, village solidarity, and *Ubuntu*-based mutual aid over atomization.\n* **Biocentric:** Commons preserve sacred land reciprocity, ecological stewardship, and *Buen Vivir*, resisting purely financialized development.\n* **Dharmic:** Balances individual duty (*Kartavya*) with cosmic-social balance (*Lokasangraha*), framing commons as fulfilling generational debt (*Rna*).\n\n**Synthesis:** A pluralist architecture rejects binary trade-offs, recommending dual-track welfare: direct transfers for individual agency paired with structural commons investment to sustain long-term socio-ecological harmony.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 89,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 7050.233399961144,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 46,
+    "prompt": "Should state welfare prioritize individual cash transfers or collective village commons?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic Paradigm**: Focuses on *Lokasangraha* (universal wellbeing) and state *Kartavya* (duty). While individual relief addresses immediate suffering, prioritizing village commons better fulfills systemic obligations (*Rna*) by sustaining shared infrastructure, moral order, and cosmic equilibrium (*Rta*).\n\n**Collectivist/Communal Paradigm**: Grounded in *Ubuntu* (\"I am because we are\") and social harmony. It favors village commons to reinforce collective solidarity and mutual interdependence, viewing individual cash transfers as potentially destabilizing forces that encourage atomization and erode community ties.\n\n**Indigenous & Biocentric Paradigm**: Anchored in *Buen Vivir* and ecological stewardship. It rejects commodified cash transfers that reduce human welfare to market transactions, advocating instead for collective commons (land, forests, water) to honor sacred reciprocity and protect multi-generational living systems.\n\n**Western Liberal Paradigm**: Champions individual autonomy, rights, and utility maximization. It strongly advocates for direct cash transfers, asserting that individuals best understand their own needs. Cash empowers personal agency, optimizes economic liberty, and avoids state paternalism.\n\n**Comparative Synthesis**: While Western Liberalism privileges individual agency and market choice via cash transfers, the Dharmic, Communal, and Biocentric frameworks converge on prioritizing collective commons to preserve social cohesion, shared resilience, and ecological integrity.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 189,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11929.395899991505,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 47,
+    "prompt": "How should whistleblowers exposing state corruption be protected across borders?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Western Liberal:** Prioritizes individual rights, asylum, and procedural justice to safeguard truth-tellers from state overreach.\n\n**Indic / Dharmic:** Frames disclosures as *Kartavya* (moral duty) against *Adharma* (unrighteousness), restoring *Rta* (cosmic order) for *Lokasangraha* (universal welfare).\n\n**Collectivist / Communal:** Weighs individual exposure against state stability, offering protection when actions genuinely restore long-term societal harmony and trust.\n\n**Indigenous & Biocentric:** Views whistleblowers as relational protectors of community well-being and *Buen Vivir*, deserving sanctuary beyond arbitrary geopolitical borders.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 80,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 8192.146399989724,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 47,
+    "prompt": "How should whistleblowers exposing state corruption be protected across borders?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: Exposing state corruption is a high moral duty (*Kartavya*) necessary to uphold cosmic order (*Rta*) and the collective welfare (*Lokasangraha*). Sovereign borders are subordinate to truth (*Satya*); protecting the whistleblower fulfills the duty of non-harm (*Ahimsa*) against state retaliation for exposing corrupt breaches of social debt (*Rna*).\n\n**Collectivist / Communal Paradigm**: Balances societal harmony against systemic corruption. While unauthorized disclosures risk disturbing order, unaddressed corruption undermines communal trust. Cross-border protection is warranted through global solidarity (*Ubuntu*) when the whistleblowing repairs the broader social fabric rather than serving individualist subversion.\n\n**Indigenous & Biocentric Paradigm**: Rejects artificial sovereign borders, viewing governance through holistic interrelation (*Buen Vivir*). Exposing corruption\u2014especially when linked to resource exploitation or systemic harm\u2014is an act of sacred stewardship. Transnational sanctuary is an ethical obligation of reciprocal protection for those defending the vitality of lands and communities.\n\n**Western Liberal Paradigm**: Centers on individual autonomy, negative rights, and procedural justice. Whistleblowers exercise freedom of expression to hold power accountable. Cross-border protection is framed via universal human rights, legal due process, non-refoulement, and utilitarian outcomes that strengthen rule of law across jurisdictions.\n\n**Synthesis**: While Western Liberal and Dharmic perspectives emphasize individual rights and cosmic truth to justify overriding borders, Collectivist and Indigenous paradigms condition protection on restoring collective harmony and honoring relational stewardship across artificial state boundaries.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 224,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 17454.168399912305,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 48,
+    "prompt": "Should corporations have a fiduciary duty to ecosystems equal to shareholders?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Corporate *kartavya* must uphold cosmic order (*Rta*). Extracting profit without ecological duty creates karmic debt (*rna*), violating world-welfare (*lokasangraha*). \n\n**Collectivist**: Corporate purpose belongs to social harmony and communal solidarity (*Ubuntu*), mandating environmental preservation for societal survival over individual wealth.\n\n**Indigenous/Biocentric**: Earth is a living relative, not property. Corporations owe inherent reciprocity (*Buen Vivir*) and sacred stewardship to ecosystems.\n\n**Western Liberal**: Traditionally prioritizes shareholder property rights and autonomy, though utilitarianism increasingly justifies equal ecological duty to prevent catastrophic public harms.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 85,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 9389.336300082505,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 48,
+    "prompt": "Should corporations have a fiduciary duty to ecosystems equal to shareholders?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic Paradigm:** Economic activity must reflect *Kartavya* (moral duty) aligned with *Rta* (cosmic order). Recognizing *Rna* (existential debt to nature) and *Ahimsa* (non-harm), corporate governance serves *Lokasangraha* (universal well-being), making ecosystem protection an intrinsic moral obligation equal to wealth creation.\n\n**2. Collectivist / Communal Paradigm:** Grounded in *Ubuntu* (\"I am because we are\") and social harmony, corporate entities exist within a community. Equal fiduciary duty prevents individual shareholder extraction from destabilizing collective solidarity, ensuring intergenerational balance and communal resilience.\n\n**3. Indigenous & Biocentric Paradigm:** Rejects anthropocentric ownership. Guided by *Buen Vivir* (living well) and sacred land reciprocity, ecosystems are non-human kin with intrinsic rights. Corporate fiduciary duty to nature is not merely equal to shareholder profit, but a foundational condition for non-extractive existence.\n\n**4. Western Liberal Paradigm:** Traditionally prioritizes private property, individual autonomy, and shareholder value maximization. However, modern utility and procedural justice models argue that unchecked ecological degradation violates systemic individual rights, justifying a redefinition of fiduciary law to protect long-term market and societal stability.\n\n*Comparative Insight:* While the Western Liberal framework treats ecosystem fiduciary duty as an emerging procedural trade-off, the Indic, Collectivist, and Indigenous paradigms view ecological duty as an inherent, non-negotiable ontological necessity.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 205,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 11159.391299937852,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 49,
+    "prompt": "Is strict meritocracy fairer than affirmative action for historically marginalized castes/tribes?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic/Dharmic**: Affirmative action fulfills *Lokasangraha* (universal welfare) and settles historical debts (*Rna*), restoring cosmic order (*Rta*) beyond raw individual competition.\n\n**Collectivist**: Prioritizes communal harmony and Ubuntu; affirmative action heals historical divides to strengthen collective solidarity over atomized merit.\n\n**Indigenous/Biocentric**: Rejects abstract meritocracy; emphasizes relational repair, ancestral reciprocity, and holistic balance (*Buen Vivir*) for marginalized groups.\n\n**Western Liberal**: Navigates a rift between procedural justice protecting individual rights (strict merit) and egalitarian justice ensuring fair equal opportunity (affirmative action).\n\n[Amono AI | Mode: Compact]",
+    "word_count": 82,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 50383.484499994665,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 49,
+    "prompt": "Is strict meritocracy fairer than affirmative action for historically marginalized castes/tribes?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**Indic / Dharmic Paradigm**: True *Dharma* requires rectifying historical *Adharma*. Affirmative action acts as a fulfillment of *Rna* (social debt) to restore cosmic-social order (*Rta*) and foster *Lokasangraha* (universal well-being). Correcting structural disadvantage takes precedence over decontextualized individual merit as a matter of collective duty (*Kartavya*).\n\n**Collectivist / Communal Paradigm**: Fairness is measured by communal harmony and relational equity. Strict meritocracy risks entrenching inherited class privilege, fracturing social solidarity. Affirmative action serves collective unity and mutual obligation (akin to *Ubuntu*), restoring balance across community groups.\n\n**Indigenous & Biocentric Paradigm**: Rejects Western, standardized metrics of \"merit\" as reductive tools of historical displacement. Fairness demands intergenerational restorative justice, honoring ancestral continuity, lived relational wisdom, and rectifying structural harms inflicted upon marginalized tribes/castes.\n\n**Western Liberal Paradigm**: Characterized by an internal rift. Deontological and libertarian views favor strict meritocracy, arguing that procedural justice and individual autonomy require equal treatment regardless of group identity. Conversely, Rawlsian and utilitarian perspectives defend affirmative action to ensure genuine equality of opportunity and maximize societal utility where initial conditions are profoundly unequal.\n\n**Synthesis**: While procedural liberalism views strict meritocracy as fair for the individual, Dharmic, Communal, and Indigenous paradigms view affirmative action as an essential, restorative duty to correct structural, historical, and relational imbalances.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 210,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 12204.658700036816,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 50,
+    "prompt": "Should future unborn generations possess formal voting representation in parliaments?",
+    "mode": "compact",
+    "model": "gemini-3.6-flash",
+    "response_text": "* **Indic / Dharmic:** Frames proxy representation as a *Kartavya* (duty) to discharge *Rna* (intergenerational debt) and maintain *Lokasangraha* (cosmic/social welfare) across cycles of time.\n* **Collectivist / Communal:** Endorses representation to preserve lineage harmony, honor filial continuity, and extend *Ubuntu* solidarity beyond the currently living.\n* **Indigenous & Biocentric:** Demands institutional voice rooted in the Seventh Generation principle, prioritizing ecological stewardship and *Buen Vivir* for future sacred life.\n* **Western Liberal:** Conflicts over individual autonomy and procedural justice\u2014unborn entities lack agency to consent, though utilitarian models support proxy representation to protect long-term rights.\n\n[Amono AI | Mode: Compact]",
+    "word_count": 99,
+    "word_limit": 100,
+    "budget_pass": true,
+    "latency_ms": 13434.180299984291,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "id": 50,
+    "prompt": "Should future unborn generations possess formal voting representation in parliaments?",
+    "mode": "analytic",
+    "model": "gemini-3.6-flash",
+    "response_text": "**1. Indic / Dharmic:** Enfranchising the unborn fulfills *Kartavya* (duty) and repays *Pitri Rna* (intergenerational debt). Parliamentary proxies serve *Lokasangraha* (universal wellbeing), ensuring governance sustains *Rta* (cosmic order) by preventing temporal narcissism and present-focused exploitation.\n\n**2. Collectivist / Communal:** The polity is an enduring trans-temporal body, not merely a snapshot of living individuals. Drawing from Ubuntu and Confucian ethics, social harmony demands intergenerational solidarity. Institutional proxy voting formalizes the communal duty to protect lineal continuity and future social stability.\n\n**3. Indigenous & Biocentric:** Rooted in the Seven Generations principle and *Buen Vivir*, unborn generations are vital stakeholders in sacred land reciprocity. Legal representation embeds ecological stewardship into governance, ensuring the living Earth is protected for those who will inherit it.\n\n**4. Western Liberal:** Presents a deep structural paradox. Rights-based procedural justice struggles with proxy agency, consent, and the legal status of non-existent entities, risking current voters' autonomy. However, long-term Utilitarianism supports representation to correct democratic \"presentism\" and maximize long-term utility.\n\n**Synthesis:** Indic, Collectivist, and Indigenous paradigms seamlessly justify unborn representation as a moral imperative of duty, relational continuity, and ecological stewardship. Conversely, Western Liberalism remains conflicted, torn between rigid procedural rights of current citizens and long-term welfare optimization.\n\n[Amono AI | Mode: Analytic]",
+    "word_count": 203,
+    "word_limit": 250,
+    "budget_pass": true,
+    "latency_ms": 13612.783399992622,
+    "quadrants": [
+      true,
+      true,
+      true,
+      true
+    ]
   }
 ]
