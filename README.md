@@ -54,6 +54,7 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 > An $E_H$ score of **1.0000** confirms mathematically equal representation across all four ethical paradigms.
 
 * **Macro Dataset (50 Dilemmas / 100 Passes):** [`macro_benchmark_50.json`](macro_benchmark_50.json)
+* **Macro Robustness Benchmark Dataset (N=100):** [`macro_robustness_benchmark_50.csv`](macro_robustness_benchmark_50.csv)
 
 ---
 
@@ -69,8 +70,8 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 | 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | 4 / 4 Quadrants | **Passed** |
 | 5. AI Automation vs. Artisanship | 75 words | 206 words | 4 / 4 Quadrants | **Passed** |
 
-* **Comparative Micro Baseline Logs:** [`benchmark_results.json`](benchmark_results.json)
-* **Comparative Summary Metrics:** [`benchmark_results_summary.csv`](benchmark_results_summary.csv)
+* **Comparative Micro Baseline Logs:** [`micro_benchmark_results.json`](micro_benchmark_results.json)
+* **Comparative Micro Summary Metrics:** [`micro_benchmark_results.csv`](micro_benchmark_results.csv)
 
 ---
 
