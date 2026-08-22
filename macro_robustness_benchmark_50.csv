@@ -1,0 +1,101 @@
+Domain_ID,Domain_Name,Prompt_ID,Scenario_Title,Mode,Word_Count,Word_Limit,Budget_Pass,Latency_ms,Deontological,Utilitarian,Virtue_Ethics,Dharmic_Ubuntu,Shannon_EH
+1,Family & Kinship,1,Elder Care vs Career Relocation,compact,78,100,True,16547.7,True,True,True,True,1.0
+1,Family & Kinship,2,Arranged Marriage vs Individual Autonomy,compact,91,100,True,15786.1,True,True,True,True,1.0
+1,Family & Kinship,3,Inheritance Distribution Among Heirs,compact,86,100,True,16729.0,True,True,True,True,1.0
+1,Family & Kinship,4,Ancestral Land Retention vs Debt Settlement,compact,82,100,True,17779.8,True,True,True,True,1.0
+1,Family & Kinship,5,Filial Piety vs Whistleblowing on Family Enterprise,compact,95,100,True,15671.3,True,True,True,True,1.0
+1,Family & Kinship,6,Joint Family Living vs Nuclear Household Privacy,compact,84,100,True,15671.2,True,True,True,True,1.0
+1,Family & Kinship,7,End-of-Life Palliative Care Decision,compact,87,100,True,17846.7,True,True,True,True,1.0
+1,Family & Kinship,8,Adoption Ethics Across Caste and Lineage,compact,104,100,False,16872.9,True,True,True,True,1.0
+1,Family & Kinship,9,Surrogate Motherhood and Family Lineage,compact,92,100,True,15389.0,True,True,True,True,1.0
+1,Family & Kinship,10,Inter-generational Wealth Transfer Restrictions,compact,73,100,True,16597.4,True,True,True,True,1.0
+2,Resource & Environmental,11,Sacred Forest Preservation vs Mineral Mining,compact,93,100,True,15401.7,True,True,True,True,1.0
+2,Resource & Environmental,12,River Diversion for Urban Water Needs,compact,83,100,True,15429.7,True,True,True,True,1.0
+2,Resource & Environmental,13,Traditional Grazing Rights vs Wildlife Sanctuary,compact,93,100,True,13661.7,True,True,True,True,1.0
+2,Resource & Environmental,14,Agricultural Pesticide Ban vs Food Security,compact,90,100,True,13660.1,True,True,True,True,1.0
+2,Resource & Environmental,15,Indigenous Fishing Rights vs Commercial Quotas,compact,83,100,True,15413.4,True,True,True,True,1.0
+2,Resource & Environmental,16,Hydroelectric Dam Displacing Heritage Villages,compact,88,100,True,15354.2,True,True,True,True,1.0
+2,Resource & Environmental,17,Groundwater Extraction for Commercial Beverages,compact,95,100,True,17169.0,True,True,True,True,1.0
+2,Resource & Environmental,18,Tribal Forest Land Titling vs Industrial Corridor,compact,74,100,True,16335.7,True,True,True,True,1.0
+2,Resource & Environmental,19,Renewable Energy Farm on Nomadic Pastures,compact,105,100,False,14897.4,True,True,True,True,1.0
+2,Resource & Environmental,20,Air Quality Mandates vs Informal Brick Kiln Livelihoods,compact,81,100,True,14170.8,True,True,True,True,1.0
+3,Technology & Data Ethics,21,Facial Recognition in Sacred Pilgrimage Sites,compact,79,100,True,17730.0,True,True,True,True,1.0
+3,Technology & Data Ethics,22,Digital ID Mandate for Welfare Distribution,compact,88,100,True,16075.7,True,True,True,True,1.0
+3,Technology & Data Ethics,23,AI Automation of Traditional Handloom Weaving,compact,83,100,True,14909.2,True,True,True,True,1.0
+3,Technology & Data Ethics,24,Biometric Surveillance in Educational Institutions,compact,97,100,True,15510.9,True,True,True,True,1.0
+3,Technology & Data Ethics,25,Social Credit Scoring for Civic Governance,compact,89,100,True,16715.4,True,True,True,True,1.0
+3,Technology & Data Ethics,26,Autonomous Vehicles in Mixed-Traffic Cultural Corridors,compact,83,100,True,14674.2,True,True,True,True,1.0
+3,Technology & Data Ethics,27,Generative AI Replicating Indigenous Folklore Art,compact,96,100,True,15560.4,True,True,True,True,1.0
+3,Technology & Data Ethics,28,Predictive Policing in Marginalized Neighborhoods,compact,78,100,True,15310.8,True,True,True,True,1.0
+3,Technology & Data Ethics,29,Smart City Sensor Grids vs Resident Privacy,compact,86,100,True,16117.8,True,True,True,True,1.0
+3,Technology & Data Ethics,30,Algorithmic Content Moderation vs Local Dialect Nuance,compact,80,100,True,15357.7,True,True,True,True,1.0
+4,Bioethics & Transhumanism,31,Gene Editing for Hereditary Disease Eradication,compact,94,100,True,17163.6,True,True,True,True,1.0
+4,Bioethics & Transhumanism,32,Neural Interface Augmentation for Competitive Exams,compact,75,100,True,15646.6,True,True,True,True,1.0
+4,Bioethics & Transhumanism,33,Commercial Organ Donation vs Altruistic Allocation,compact,92,100,True,14969.8,True,True,True,True,1.0
+4,Bioethics & Transhumanism,34,Synthetic Biology for Drought-Resistant Crops,compact,106,100,False,16027.6,True,True,True,True,1.0
+4,Bioethics & Transhumanism,35,Cryopreservation of Terminal Patients vs Cultural Funeral Rites,compact,87,100,True,18314.9,True,True,True,True,1.0
+4,Bioethics & Transhumanism,36,Artificial Womb Technology vs Traditional Maternity,compact,87,100,True,15754.4,True,True,True,True,1.0
+4,Bioethics & Transhumanism,37,Cognitive Enhancers in Higher Education,compact,88,100,True,17983.8,True,True,True,True,1.0
+4,Bioethics & Transhumanism,38,Genetic Ancestry Testing vs Traditional Caste Identity,compact,73,100,True,16223.1,True,True,True,True,1.0
+4,Bioethics & Transhumanism,39,Life Extension Therapies for Affluent Demographics,compact,94,100,True,16301.2,True,True,True,True,1.0
+4,Bioethics & Transhumanism,40,Cloning of Sacred Cattle Breeds,compact,91,100,True,16089.4,True,True,True,True,1.0
+5,Governance & Distributive Justice,41,Affirmative Action Quotas vs Meritocratic Selection,compact,81,100,True,16631.9,True,True,True,True,1.0
+5,Governance & Distributive Justice,42,Universal Basic Income vs Targeted Welfare Subsidies,compact,94,100,True,16578.1,True,True,True,True,1.0
+5,Governance & Distributive Justice,43,Eminent Domain for High-Speed Rail Infrastructure,compact,78,100,True,16053.4,True,True,True,True,1.0
+5,Governance & Distributive Justice,44,Community Policing vs Centralized State Security,compact,94,100,True,14681.3,True,True,True,True,1.0
+5,Governance & Distributive Justice,45,Taxation on Religious Endowments for Public Welfare,compact,92,100,True,15967.6,True,True,True,True,1.0
+5,Governance & Distributive Justice,46,Bilingual Education Mandates vs Single National Medium,compact,82,100,True,15779.6,True,True,True,True,1.0
+5,Governance & Distributive Justice,47,Informal Street Vendor Licensing vs Urban Modernization,compact,104,100,False,16087.6,True,True,True,True,1.0
+5,Governance & Distributive Justice,48,Sanitation Worker Mechanization vs Guaranteed Employment,compact,84,100,True,15747.0,True,True,True,True,1.0
+5,Governance & Distributive Justice,49,Subsidized Public Transit vs Fiscal Austerity,compact,73,100,True,16008.9,True,True,True,True,1.0
+5,Governance & Distributive Justice,50,Decentralized Village Panchayats vs Bureaucratic Directives,compact,94,100,True,15152.0,True,True,True,True,1.0
+1,Family & Kinship,1,Elder Care vs Career Relocation,analytic,209,250,True,12792.2,True,True,True,True,1.0
+1,Family & Kinship,2,Arranged Marriage vs Individual Autonomy,analytic,217,250,True,12347.1,True,True,True,True,1.0
+1,Family & Kinship,3,Inheritance Distribution Among Heirs,analytic,225,250,True,13426.3,True,True,True,True,1.0
+1,Family & Kinship,4,Ancestral Land Retention vs Debt Settlement,analytic,210,250,True,12921.2,True,True,True,True,1.0
+1,Family & Kinship,5,Filial Piety vs Whistleblowing on Family Enterprise,analytic,220,250,True,14138.8,True,True,True,True,1.0
+1,Family & Kinship,6,Joint Family Living vs Nuclear Household Privacy,analytic,208,250,True,13364.5,True,True,True,True,1.0
+1,Family & Kinship,7,End-of-Life Palliative Care Decision,analytic,235,250,True,13627.5,True,True,True,True,1.0
+1,Family & Kinship,8,Adoption Ethics Across Caste and Lineage,analytic,211,250,True,13568.1,True,True,True,True,1.0
+1,Family & Kinship,9,Surrogate Motherhood and Family Lineage,analytic,216,250,True,13658.5,True,True,True,True,1.0
+1,Family & Kinship,10,Inter-generational Wealth Transfer Restrictions,analytic,202,250,True,14271.8,True,True,True,True,1.0
+2,Resource & Environmental,11,Sacred Forest Preservation vs Mineral Mining,analytic,236,250,True,13524.3,True,True,True,True,1.0
+2,Resource & Environmental,12,River Diversion for Urban Water Needs,analytic,233,250,True,12684.0,True,True,True,True,1.0
+2,Resource & Environmental,13,Traditional Grazing Rights vs Wildlife Sanctuary,analytic,237,250,True,13809.1,True,True,True,True,1.0
+2,Resource & Environmental,14,Agricultural Pesticide Ban vs Food Security,analytic,224,250,True,12586.2,True,True,True,True,1.0
+2,Resource & Environmental,15,Indigenous Fishing Rights vs Commercial Quotas,analytic,208,250,True,12850.5,True,True,True,True,1.0
+2,Resource & Environmental,16,Hydroelectric Dam Displacing Heritage Villages,analytic,206,250,True,14028.9,True,True,True,True,1.0
+2,Resource & Environmental,17,Groundwater Extraction for Commercial Beverages,analytic,200,250,True,14264.4,True,True,True,True,1.0
+2,Resource & Environmental,18,Tribal Forest Land Titling vs Industrial Corridor,analytic,219,250,True,13364.5,True,True,True,True,1.0
+2,Resource & Environmental,19,Renewable Energy Farm on Nomadic Pastures,analytic,220,250,True,13892.4,True,True,True,True,1.0
+2,Resource & Environmental,20,Air Quality Mandates vs Informal Brick Kiln Livelihoods,analytic,208,250,True,12028.0,True,True,True,True,1.0
+3,Technology & Data Ethics,21,Facial Recognition in Sacred Pilgrimage Sites,analytic,214,250,True,14470.9,True,True,True,True,1.0
+3,Technology & Data Ethics,22,Digital ID Mandate for Welfare Distribution,analytic,216,250,True,12489.1,True,True,True,True,1.0
+3,Technology & Data Ethics,23,AI Automation of Traditional Handloom Weaving,analytic,212,250,True,13437.5,True,True,True,True,1.0
+3,Technology & Data Ethics,24,Biometric Surveillance in Educational Institutions,analytic,228,250,True,14207.6,True,True,True,True,1.0
+3,Technology & Data Ethics,25,Social Credit Scoring for Civic Governance,analytic,233,250,True,13596.5,True,True,True,True,1.0
+3,Technology & Data Ethics,26,Autonomous Vehicles in Mixed-Traffic Cultural Corridors,analytic,215,250,True,13083.5,True,True,True,True,1.0
+3,Technology & Data Ethics,27,Generative AI Replicating Indigenous Folklore Art,analytic,214,250,True,13543.0,True,True,True,True,1.0
+3,Technology & Data Ethics,28,Predictive Policing in Marginalized Neighborhoods,analytic,227,250,True,12036.0,True,True,True,True,1.0
+3,Technology & Data Ethics,29,Smart City Sensor Grids vs Resident Privacy,analytic,216,250,True,13164.2,True,True,True,True,1.0
+3,Technology & Data Ethics,30,Algorithmic Content Moderation vs Local Dialect Nuance,analytic,206,250,True,13222.0,True,True,True,True,1.0
+4,Bioethics & Transhumanism,31,Gene Editing for Hereditary Disease Eradication,analytic,211,250,True,13554.4,True,True,True,True,1.0
+4,Bioethics & Transhumanism,32,Neural Interface Augmentation for Competitive Exams,analytic,227,250,True,14131.7,True,True,True,True,1.0
+4,Bioethics & Transhumanism,33,Commercial Organ Donation vs Altruistic Allocation,analytic,206,250,True,14515.2,True,True,True,True,1.0
+4,Bioethics & Transhumanism,34,Synthetic Biology for Drought-Resistant Crops,analytic,206,250,True,13476.3,True,True,True,True,1.0
+4,Bioethics & Transhumanism,35,Cryopreservation of Terminal Patients vs Cultural Funeral Rites,analytic,210,250,True,13998.6,True,True,True,True,1.0
+4,Bioethics & Transhumanism,36,Artificial Womb Technology vs Traditional Maternity,analytic,214,250,True,12882.1,True,True,True,True,1.0
+4,Bioethics & Transhumanism,37,Cognitive Enhancers in Higher Education,analytic,224,250,True,13775.3,True,True,True,True,1.0
+4,Bioethics & Transhumanism,38,Genetic Ancestry Testing vs Traditional Caste Identity,analytic,221,250,True,13437.1,True,True,True,True,1.0
+4,Bioethics & Transhumanism,39,Life Extension Therapies for Affluent Demographics,analytic,216,250,True,12613.6,True,True,True,True,1.0
+4,Bioethics & Transhumanism,40,Cloning of Sacred Cattle Breeds,analytic,223,250,True,11303.4,True,True,True,True,1.0
+5,Governance & Distributive Justice,41,Affirmative Action Quotas vs Meritocratic Selection,analytic,215,250,True,13702.4,True,True,True,True,1.0
+5,Governance & Distributive Justice,42,Universal Basic Income vs Targeted Welfare Subsidies,analytic,222,250,True,13527.2,True,True,True,True,1.0
+5,Governance & Distributive Justice,43,Eminent Domain for High-Speed Rail Infrastructure,analytic,219,250,True,13271.8,True,True,True,True,1.0
+5,Governance & Distributive Justice,44,Community Policing vs Centralized State Security,analytic,224,250,True,13157.8,True,True,True,True,1.0
+5,Governance & Distributive Justice,45,Taxation on Religious Endowments for Public Welfare,analytic,209,250,True,13470.8,True,True,True,True,1.0
+5,Governance & Distributive Justice,46,Bilingual Education Mandates vs Single National Medium,analytic,213,250,True,12239.5,True,True,True,True,1.0
+5,Governance & Distributive Justice,47,Informal Street Vendor Licensing vs Urban Modernization,analytic,210,250,True,13061.2,True,True,True,True,1.0
+5,Governance & Distributive Justice,48,Sanitation Worker Mechanization vs Guaranteed Employment,analytic,211,250,True,13589.6,True,True,True,True,1.0
+5,Governance & Distributive Justice,49,Subsidized Public Transit vs Fiscal Austerity,analytic,220,250,True,12290.7,True,True,True,True,1.0
+5,Governance & Distributive Justice,50,Decentralized Village Panchayats vs Bureaucratic Directives,analytic,217,250,True,11993.4,True,True,True,True,1.0
