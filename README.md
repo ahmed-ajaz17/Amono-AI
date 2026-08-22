@@ -10,7 +10,7 @@
 
 ---
 
-## 🏛️ Live Interactive Chamber
+##  Live Interactive Chamber
 
 Experience the multi-agent deliberation chamber directly in your browser:
 * **Production URL:** [https://amono-ai.vercel.app/](https://amono-ai.vercel.app/)
@@ -19,7 +19,7 @@ Experience the multi-agent deliberation chamber directly in your browser:
 
 ---
 
-## 🧭 Core Architectural Philosophy
+##  Core Architectural Philosophy
 
 Standard frontier models routinely default to Western liberal-individualist epistemic frameworks when answering complex socio-ethical queries. **Amono AI** counterbalances this via structured prompt conditioning, enforcing equal representation across four epistemic quadrants:
 
@@ -28,14 +28,14 @@ Standard frontier models routinely default to Western liberal-individualist epis
 3. **Indigenous & Biocentric Stewardship:** Sacred land reciprocity, holistic well-being (*Buen Vivir*), free prior and informed consent (FPIC), and non-anthropocentric ecological balance.
 4. **Western Liberal Framework:** Individual autonomy, procedural justice, negative liberty, deontology, and utilitarian optimization.
 
-### 🔍 Epistemic Categorization & Heuristic Scope
+###  Epistemic Categorization & Heuristic Scope
 The four quadrants operationalized in Amono AI are structured **epistemic heuristics** rather than monolithic cultural generalizations:
 * **Analytical Anchors:** Each tradition contains rich internal debates (e.g., Western philosophy includes both individualist liberalism and communitarian critique; Indigenous worldviews encompass thousands of distinct nation-specific traditions).
 * **De-Biasing Defaultism:** Frontier LLMs routinely converge on an Anglo-Western rationalist-utilitarian default. These categories serve as operationalized counterweights to guarantee multi-perspectival ethical deliberation across high-dimensional societal questions.
 
 ---
 
-## 📊 Empirical Benchmarks & Evaluation
+##  Empirical Benchmarks & Evaluation
 
 ### 1. Macro-Scale Robustness Benchmark (50 Dilemmas / 100 Total Passes)
 Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal domains (Family, Land Sovereignty, Technology & Surveillance, Bioethics, Governance & Economics):
@@ -70,7 +70,7 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 amono-ai/
