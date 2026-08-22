@@ -42,6 +42,8 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 
 ![Amono AI Macro Benchmark Evaluation](macro_benchmark_50_chart.png)
 
+> **Note on Foundation Models:** While the live interactive chamber runs natively on `gemini-3.7-flash`, macro-scale stress testing ($N = 100$) was conducted on `gemini-3.6-flash` to establish robust baseline generalizability.
+
 | Operational Mode | Target Word Limit | Budget Compliance | Mean Latency (ms) | Shannon Equitability ($E_H$) | Epistemic Status |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Compact Synthesis** | $\le 100$ words | **92.0%** (46/50) | 15,951.7 ms | **1.0000** | **4 / 4 Quadrants Active** |
