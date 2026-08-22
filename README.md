@@ -4,12 +4,13 @@
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://amono-ai.vercel.app/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.7_Flash-purple.svg?style=for-the-badge&logo=google)](https://ai.google.dev/)
-[![Stack](https://img.shields.io/badge/Stack-React_18_%7C_Vite_%7C_Tailwind-61DAFB?style=for-the-badge&logo=react)]()
+[![Model](https://img.shields.io/badge/Foundation_Model-Gemini_3.6_Flash-purple.svg?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![Macro Benchmark](https://img.shields.io/badge/Macro_Benchmark-50_Dilemmas_(100_Passes)-brightgreen.svg?style=for-the-badge)](./macro_benchmark_50.json)
+[![Shannon Equitability](https://img.shields.io/badge/Shannon_E__H-1.0000_(Balanced)-darkgreen.svg?style=for-the-badge)](./macro_benchmark_50.json)
 
 ---
 
-##  Live Interactive Chamber
+## 🏛️ Live Interactive Chamber
 
 Experience the multi-agent deliberation chamber directly in your browser:
 * **Production URL:** [https://amono-ai.vercel.app/](https://amono-ai.vercel.app/)
@@ -18,24 +19,43 @@ Experience the multi-agent deliberation chamber directly in your browser:
 
 ---
 
-##  Core Architectural Philosophy
+## 🧭 Core Architectural Philosophy
 
-Standard frontier models routinely default to Western liberal-individualist epistemic frameworks when answering complex socio-ethical queries. **Amono AI** counterbalances this via structured prompt conditioning, balancing responses across four epistemic quadrants:
+Standard frontier models routinely default to Western liberal-individualist epistemic frameworks when answering complex socio-ethical queries. **Amono AI** counterbalances this via structured prompt conditioning, enforcing equal representation across four epistemic quadrants:
 
-1. **Indic / Dharmic Ethics:** Duty (*Svadharma*), cosmic harmony (*Rta*), interconnectedness, and karmic debt (*Rna*).
-2. **Collectivist / Communal Ethics:** Relational cohesion, filial responsibility, and societal network equilibrium.
-3. **Indigenous & Biocentric Stewardship:** Land tenure, ancestral obligations, and non-anthropocentric resource balance.
-4. **Western Liberal Framework:** Individual autonomy, procedural rights, and utilitarian trade-offs.
+1. **Indic / Dharmic Ethics:** Duty (*Kartavya* / *Svadharma*), cosmic order (*Rta*), filial/ancestral debt (*Pitru Rna*), non-violence (*Ahimsa*), and universal well-being (*Lokasangraha*).
+2. **Collectivist / Communal Ethics:** Relational solidarity (*Ubuntu* — "I am because we are"), filial piety (*Xiao*), intergenerational harmony, and communal stability.
+3. **Indigenous & Biocentric Stewardship:** Sacred land reciprocity, holistic well-being (*Buen Vivir*), free prior and informed consent (FPIC), and non-anthropocentric ecological balance.
+4. **Western Liberal Framework:** Individual autonomy, procedural justice, negative liberty, deontology, and utilitarian optimization.
+
+### 🔍 Epistemic Categorization & Heuristic Scope
+The four quadrants operationalized in Amono AI are structured **epistemic heuristics** rather than monolithic cultural generalizations:
+* **Analytical Anchors:** Each tradition contains rich internal debates (e.g., Western philosophy includes both individualist liberalism and communitarian critique; Indigenous worldviews encompass thousands of distinct nation-specific traditions).
+* **De-Biasing Defaultism:** Frontier LLMs routinely converge on an Anglo-Western rationalist-utilitarian default. These categories serve as operationalized counterweights to guarantee multi-perspectival ethical deliberation across high-dimensional societal questions.
 
 ---
 
-##  Empirical Benchmark & Evaluation
+## 📊 Empirical Benchmarks & Evaluation
 
-Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3.7 Flash** across both **Compact** ($\le 100$ words) and **Analytic** ($\le 250$ words) operating modes.
+### 1. Macro-Scale Robustness Benchmark (50 Dilemmas / 100 Total Passes)
+Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal domains (Family, Land Sovereignty, Technology & Surveillance, Bioethics, Governance & Economics):
+
+| Operational Mode | Target Word Limit | Budget Compliance | Mean Latency (ms) | Shannon Equitability ($E_H$) | Epistemic Status |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Compact Synthesis** | $\le 100$ words | **92.0%** (46/50) | 15,951.7 ms | **1.0000** | **4 / 4 Quadrants Active** |
+| **Analytic Evaluation** | $\le 250$ words | **100.0%** (50/50) | 13,205.6 ms | **1.0000** | **4 / 4 Quadrants Active** |
+
+> **Shannon Equitability ($E_H$):** Measures normalized epistemic diversity across the 4 quadrants:
+> $$H = -\sum_{i=1}^{k} p_i \ln p_i, \quad E_H = \frac{H}{\ln k}$$
+> An $E_H$ score of **1.0000** confirms mathematically equal representation across all four ethical paradigms.
+
+* **Macro Dataset (50 Dilemmas / 100 Passes):** [`macro_benchmark_50.json`](macro_benchmark_50.json)
+
+---
+
+### 2. Micro Comparative Baseline Evaluation (Amono AI vs. Default LLM)
 
 ![Amono AI Benchmark Comparison](benchmark_comparison_chart.png)
-
-### Summary Results
 
 | Scenario | Compact ($\le 100\text{w}$) | Analytic ($\le 250\text{w}$) | Epistemic Coverage | Status |
 | :--- | :---: | :---: | :---: | :---: |
@@ -45,12 +65,12 @@ Amono AI was evaluated across five multi-paradigm ethical dilemmas on **Gemini 3
 | 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | 4 / 4 Quadrants | **Passed** |
 | 5. AI Automation vs. Artisanship | 75 words | 206 words | 4 / 4 Quadrants | **Passed** |
 
-* **Complete Raw Logs:** [`benchmark_results_100.json`](benchmark_results_100.json)
-* **Aggregated Metrics:** [`benchmark_results_summary.csv`](benchmark_results_summary.csv)
+* **Comparative Micro Baseline Logs:** [`benchmark_results.json`](benchmark_results.json)
+* **Comparative Summary Metrics:** [`benchmark_results_summary.csv`](benchmark_results_summary.csv)
 
 ---
 
-##  Repository Structure
+## 📁 Repository Structure
 
 ```text
 amono-ai/
@@ -67,9 +87,11 @@ amono-ai/
 ├── system_instructions.txt       # Core prompt conditioning rules
 │
 ├── audit_rules.py                # Budget & metadata verification logic
-├── run_benchmark.py              # Automated 5-scenario evaluation runner
+├── run_macro_eval.py             # 50-dilemma macro-benchmark evaluation engine
+├── run_benchmark.py              # 5-scenario micro-benchmark runner
 ├── analyze_results.py            # Summary CSV metrics generator
-├── benchmark_results_100.json    # Complete evaluation logs
+├── macro_benchmark_50.json       # 50-dilemma macro evaluation dataset (N=100)
+├── benchmark_results.json        # Comparative micro baseline evaluation logs
 ├── benchmark_results_summary.csv # Metrics spreadsheet
 ├── benchmark_comparison_chart.png# Empirical visualization chart
 │
