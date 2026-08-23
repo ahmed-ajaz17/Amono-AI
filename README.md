@@ -53,6 +53,7 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 > $$H = -\sum_{i=1}^{k} p_i \ln p_i, \quad E_H = \frac{H}{\ln k}$$
 > An $E_H$ score of **1.0000** confirms mathematically equal representation across all four ethical paradigms.
 
+* **Macro Evaluation Markdown Logs:** [`macro_benchmark_logs.md`](macro_benchmark_logs.md)
 * **Macro Dataset (50 Dilemmas / 100 Passes):** [`macro_benchmark_50.json`](macro_benchmark_50.json)
 * **Macro Robustness Benchmark Dataset (N=100):** [`macro_robustness_benchmark_50.csv`](macro_robustness_benchmark_50.csv)
 
@@ -70,6 +71,7 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 | 4. Germline CRISPR vs. Cosmic Order | 76 words | 204 words | 4 / 4 Quadrants | **Passed** |
 | 5. AI Automation vs. Artisanship | 75 words | 206 words | 4 / 4 Quadrants | **Passed** |
 
+* **Micro Benchmark Full Text Logs:** [`micro_benchmark_logs.md`](micro_benchmark_logs.md)
 * **Comparative Micro Baseline Logs:** [`micro_benchmark_results.json`](micro_benchmark_results.json)
 * **Comparative Micro Summary Metrics:** [`micro_benchmark_results.csv`](micro_benchmark_results.csv)
 
@@ -80,31 +82,33 @@ Evaluated end-to-end on pure **`gemini-3.6-flash`** across 5 distinct societal d
 ```text
 amono-ai/
 ├── .env.example                 # Environment configuration template
-├── .gitignore                    # Exclusion rules for keys & artifacts
-├── metadata.json                 # Project schema & architecture specs
-├── package.json                  # Node dependencies & UI build scripts
-├── tsconfig.json                 # TypeScript compiler configuration
-├── vite.config.ts                # Vite frontend bundler config
-├── tailwind.config.js            # Tailwind CSS styling configuration
-├── postcss.config.js             # PostCSS build plugin config
-├── server.ts                     # Express backend API for Gemini inference
-├── index.html                    # Frontend SPA entry shell
-├── system_instructions.txt       # Core prompt conditioning rules
+├── .gitignore                   # Exclusion rules for keys & artifacts
+├── metadata.json                # Project schema & architecture specs
+├── package.json                 # Node dependencies & UI build scripts
+├── tsconfig.json                # TypeScript compiler configuration
+├── vite.config.ts               # Vite frontend bundler config
+├── tailwind.config.js           # Tailwind CSS styling configuration
+├── postcss.config.js            # PostCSS build plugin config
+├── server.ts                    # Express backend API for Gemini inference
+├── index.html                   # Frontend SPA entry shell
+├── system_instructions.txt      # Core prompt conditioning rules
 │
-├── audit_rules.py                # Budget & metadata verification logic
-├── generate_macro_chart.py       # Macro benchmark chart generator
-├── run_macro_eval.py             # 50-dilemma macro-benchmark evaluation engine
-├── run_benchmark.py              # 5-scenario micro-benchmark runner
-├── analyze_results.py            # Summary CSV metrics generator
-├── macro_benchmark_50.json       # 50-dilemma macro evaluation dataset (N=100)
+├── audit_rules.py               # Budget & metadata verification logic
+├── generate_macro_chart.py      # Macro benchmark chart generator
+├── run_macro_eval.py            # 50-dilemma macro-benchmark evaluation engine
+├── run_benchmark.py             # 5-scenario micro-benchmark runner
+├── analyze_results.py           # Summary CSV metrics generator
+├── micro_benchmark_logs.md      # Detailed full-text micro benchmark output logs
+├── macro_benchmark_logs.md      # Macro-scale 50-scenario / 100-trial audit logs
+├── macro_benchmark_50.json      # 50-dilemma macro evaluation dataset (N=100)
 ├── macro_robustness_benchmark_50.csv # Macro-scale 100-run raw trial results
 ├── macro_benchmark_50_chart.png # Macro-scale benchmark visualization chart
-├── micro_benchmark_results.json  # Comparative micro baseline evaluation logs
-├── micro_benchmark_results.csv   # Comparative micro summary metrics spreadsheet
-├── benchmark_comparison_chart.png# Empirical visualization chart
+├── micro_benchmark_results.json # Comparative micro baseline evaluation logs
+├── micro_benchmark_results.csv  # Comparative micro summary metrics spreadsheet
+├── benchmark_comparison_chart.png # Empirical visualization chart
 │
 └── src/
-    ├── App.tsx                   # Main Council of Epistemic Minds interface
-    ├── main.tsx                  # React DOM mount point
-    ├── types.ts                  # TypeScript interfaces
-    └── index.css                 # Custom glassmorphic styles & Tailwind directives
+    ├── App.tsx                  # Main Council of Epistemic Minds interface
+    ├── main.tsx                 # React DOM mount point
+    ├── types.ts                 # TypeScript interfaces
+    └── index.css                # Custom glassmorphic styles & Tailwind directives
