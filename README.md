@@ -113,6 +113,8 @@ amono-ai/
     ├── types.ts                 # TypeScript interfaces
     └── index.css                # Custom glassmorphic styles & Tailwind directives
 
+---
+
 ## Citation
 
 If you use Amono AI or reference this research in your work, please cite the preprint:
