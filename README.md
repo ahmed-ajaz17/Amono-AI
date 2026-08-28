@@ -113,9 +113,14 @@ amono-ai/
     ├── types.ts                 # TypeScript interfaces
     └── index.css                # Custom glassmorphic styles & Tailwind directives
 
+## Citation
+
+If you use Amono AI or reference this research in your work, please cite the preprint:
+
+```bibtex
 @article{bazaz2026amono,
   title={Amono AI: A Parameter-Efficient Pluralistic Alignment Framework for Mitigating Western Monoculture Defaultism in Large Language Models},
   author={Bazaz, Ahmed Bin Ajaz},
   year={2026},
-  url={https://github.com/ahmed-ajaz17/amono-ai}
+  url={[https://github.com/ahmed-ajaz17/amono-ai](https://github.com/ahmed-ajaz17/amono-ai)}
 }
