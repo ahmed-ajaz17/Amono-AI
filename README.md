@@ -112,3 +112,10 @@ amono-ai/
     ├── main.tsx                 # React DOM mount point
     ├── types.ts                 # TypeScript interfaces
     └── index.css                # Custom glassmorphic styles & Tailwind directives
+
+@article{bazaz2026amono,
+  title={Amono AI: A Parameter-Efficient Pluralistic Alignment Framework for Mitigating Western Monoculture Defaultism in Large Language Models},
+  author={Bazaz, Ahmed Bin Ajaz},
+  year={2026},
+  url={https://github.com/ahmed-ajaz17/amono-ai}
+}
