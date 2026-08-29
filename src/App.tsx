@@ -15,9 +15,9 @@ import {
   Check,
   MessageSquare
 } from 'lucide-react';
-const AmonoLogo = ({ className = "w-10 h-10" }: { className?: string }) => (
+const AmonoLogo = ({ className = "w-9 h-9" }: { className?: string }) => (
   <svg 
-    viewBox="0 0 800 800" 
+    viewBox="140 140 520 520" 
     className={className}
     fill="none" 
     xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +46,8 @@ const AmonoLogo = ({ className = "w-10 h-10" }: { className?: string }) => (
       <path d="M 470 450 C 430 480, 370 480, 330 450 C 300 425, 315 380, 370 360 C 410 345, 440 380, 470 450 Z" fill="url(#arcUbuntu)" opacity="0.95" />
       <path d="M 275 395 C 245 355, 245 295, 275 255 C 300 225, 345 240, 365 295 C 380 335, 345 365, 275 395 Z" fill="url(#arcIndig)" opacity="0.95" />
     </g>
-    <circle cx="400" cy="325" r="20" fill="#080C14" stroke="#475569" strokeWidth="3" />
-    <circle cx="400" cy="325" r="8" fill="#F8FAFC" />
+    <circle cx="400" cy="325" r="28" fill="#080C14" stroke="#475569" strokeWidth="4" />
+    <circle cx="400" cy="325" r="11" fill="#F8FAFC" />
   </svg>
 );
 
@@ -173,8 +173,8 @@ export const App: React.FC = () => {
       <header className="border-b border-white/[0.08] bg-[#07090e]/80 backdrop-blur-xl sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#080C14] border border-white/10 flex items-center justify-center p-1 shadow-lg shadow-indigo-500/20">
-  <AmonoLogo className="w-8 h-8" />
+            <div className="w-11 h-11 rounded-xl bg-slate-900/90 border border-white/10 flex items-center justify-center p-1.5 shadow-lg shadow-indigo-500/20">
+  <AmonoLogo className="w-full h-full" />
 </div>
             <div>
               <div className="flex items-center gap-2">
