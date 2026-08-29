@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Dark Minimal Canvas -->
+    <rect id="bg" width="800" height="800" rx="160" fill="#080C14"/>
+
+    <!-- Quadrant Gradients -->
+    <linearGradient id="arcIndic" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+
+    <linearGradient id="arcWest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+
+    <linearGradient id="arcUbuntu" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+
+    <linearGradient id="arcIndig" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Crisp Soft Ambient Depth -->
+    <filter id="crispShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Background Canvas (No Grid / No Orbit Lines) -->
+  <use href="#bg"/>
+
+  <!-- Four Interlocking Woven Epistemic Arcs -->
+  <g filter="url(#crispShadow)">
+    <!-- Top Arc: Indic / Dharmic Order -->
+    <path d="M 330 200 C 370 170, 430 170, 470 200 C 500 225, 485 270, 430 290 C 390 305, 360 270, 330 200 Z" 
+          fill="url(#arcIndic)" opacity="0.95"/>
+
+    <!-- Right Arc: Western Liberal Autonomy & Justice -->
+    <path d="M 525 255 C 555 295, 555 355, 525 395 C 500 425, 455 410, 435 355 C 420 315, 455 285, 525 255 Z" 
+          fill="url(#arcWest)" opacity="0.95"/>
+
+    <!-- Bottom Arc: Collectivist / Relational Ubuntu -->
+    <path d="M 470 450 C 430 480, 370 480, 330 450 C 300 425, 315 380, 370 360 C 410 345, 440 380, 470 450 Z" 
+          fill="url(#arcUbuntu)" opacity="0.95"/>
+
+    <!-- Left Arc: Indigenous Biocentric Reciprocity -->
+    <path d="M 275 395 C 245 355, 245 295, 275 255 C 300 225, 345 240, 365 295 C 380 335, 345 365, 275 395 Z" 
+          fill="url(#arcIndig)" opacity="0.95"/>
+  </g>
+
+  <!-- Central Chamber Focal Pivot -->
+  <circle cx="400" cy="325" r="16" fill="#080C14" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="400" cy="325" r="6" fill="#F8FAFC"/>
+
+  <!-- Four Precision Calibration Points -->
+  <circle cx="400" cy="180" r="3" fill="#FCD34D"/>
+  <circle cx="545" cy="325" r="3" fill="#38BDF8"/>
+  <circle cx="400" cy="470" r="3" fill="#FB7185"/>
+  <circle cx="255" cy="325" r="3" fill="#34D399"/>
+
+  <!-- Refined Editorial Typography -->
+  <text x="400" y="630" 
+        font-family="system-ui, -apple-system, 'Inter', 'SF Pro Display', sans-serif" 
+        font-size="44" 
+        font-weight="800" 
+        letter-spacing="0.34em" 
+        fill="#FFFFFF" 
+        text-anchor="middle">
+    AMONO
+  </text>
+
+  <text x="400" y="672" 
+        font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
+        font-size="12" 
+        font-weight="600" 
+        letter-spacing="0.42em" 
+        fill="#64748B" 
+        text-anchor="middle">
+    PLURALISTIC ALIGNMENT
+  </text>
+</svg>
