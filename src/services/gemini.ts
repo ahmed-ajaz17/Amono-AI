@@ -1,7 +1,5 @@
-// src/services/gemini.ts
-
 const RAW_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY || "";
-const API_KEY = RAW_KEY.trim(); // Cleans any hidden copy-paste whitespace
+const API_KEY = RAW_KEY.trim();
 
 const MODEL = "gemini-3.7-flash";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
@@ -18,19 +16,64 @@ export interface CouncilResult {
   synthesis: string;
 }
 
-const SYSTEM_INSTRUCTIONS = {
-  indic: "You are the Dharmic Sage grounded in Indic epistemology (Svadharma, Rna, Rta). Provide a concise stance (2-3 sentences) on the given dilemma.",
-  collectivist: "You are the Communal Guardian grounded in Collectivist and relational ethics. Provide a concise stance (2-3 sentences) prioritizing social cohesion and familial interdependence.",
-  indigenous: "You are the Biocentric Elder grounded in Indigenous epistemology and kinship reciprocity. Provide a concise stance (2-3 sentences) emphasizing place-based generational stewardship.",
-  western: "You are the Liberal Ethicist grounded in Western liberalism, individual rights, and autonomy. Provide a concise stance (2-3 sentences) prioritizing personal self-determination."
-};
+// Client-side cache to save quota on duplicate prompts
+const queryCache = new Map<string, CouncilResult>();
 
-async function callGemini37(prompt: string): Promise<string> {
-  if (!API_KEY) {
-    throw new Error("Missing API Key. Please verify VITE_GEMINI_API_KEY in Vercel.");
+// Delay helper for rate-limit retries
+const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function fetchWithRetry(url: string, options: RequestInit, retries = 2, delay = 2000): Promise<Response> {
+  try {
+    const response = await fetch(url, options);
+    if (response.status === 429 && retries > 0) {
+      console.warn(`[Gemini 3.7] Quota limit encountered. Retrying in ${delay}ms...`);
+      await wait(delay);
+      return fetchWithRetry(url, options, retries - 1, delay * 2);
+    }
+    return response;
+  } catch (err) {
+    if (retries > 0) {
+      await wait(delay);
+      return fetchWithRetry(url, options, retries - 1, delay * 2);
+    }
+    throw err;
+  }
+}
+
+export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
+  const cacheKey = `${query.trim().toLowerCase()}_${mode}`;
+  
+  if (queryCache.has(cacheKey)) {
+    return queryCache.get(cacheKey)!;
   }
 
-  const response = await fetch(API_URL, {
+  if (!API_KEY) {
+    throw new Error("Missing API key. Ensure VITE_GEMINI_API_KEY is configured in Vercel.");
+  }
+
+  const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
+
+  const unifiedPrompt = `You are the Amono AI Epistemic Deliberation Engine. Evaluate the inquiry across 4 traditions and generate a dialectical equilibrium synthesis.
+
+Inquiry: "${query}"
+
+Traditions:
+1. INDIC: Grounded in Indic epistemology (Svadharma, Rna, Rta). 2-3 concise sentences.
+2. COLLECTIVIST: Grounded in Collectivist & relational ethics, prioritizing social cohesion. 2-3 concise sentences.
+3. INDIGENOUS: Grounded in Indigenous epistemology and kinship reciprocity, prioritizing generational stewardship. 2-3 concise sentences.
+4. WESTERN: Grounded in Western liberalism, individual rights, autonomy, and self-determination. 2-3 concise sentences.
+5. SYNTHESIS: Dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}. Do not enforce Western monoculture defaultism.
+
+Return ONLY a JSON object matching this schema without markdown code fences:
+{
+  "indic": "Indic perspective string",
+  "collectivist": "Collectivist perspective string",
+  "indigenous": "Indigenous perspective string",
+  "western": "Western perspective string",
+  "synthesis": "Dialectical consensus string"
+}`;
+
+  const response = await fetchWithRetry(API_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -39,11 +82,12 @@ async function callGemini37(prompt: string): Promise<string> {
     body: JSON.stringify({
       contents: [
         {
-          parts: [{ text: prompt }]
+          parts: [{ text: unifiedPrompt }]
         }
       ],
       generationConfig: {
-        temperature: 0.3
+        temperature: 0.3,
+        responseMimeType: "application/json"
       }
     })
   });
@@ -56,63 +100,45 @@ async function callGemini37(prompt: string): Promise<string> {
     throw new Error(errorMsg);
   }
 
-  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!text) {
-    throw new Error("Empty response returned from model.");
+  const rawJson = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!rawJson) {
+    throw new Error("Empty response received from Gemini 3.7.");
   }
 
-  return text.trim();
-}
+  const parsed = JSON.parse(rawJson);
 
-export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
-  const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
+  const result: CouncilResult = {
+    agents: [
+      {
+        id: "indic",
+        name: "Dharmic Sage",
+        tradition: "Indic Epistemology",
+        stance: parsed.indic || "Stance deliberation unavailable."
+      },
+      {
+        id: "collectivist",
+        name: "Communal Guardian",
+        tradition: "Collectivist Ethics",
+        stance: parsed.collectivist || "Stance deliberation unavailable."
+      },
+      {
+        id: "indigenous",
+        name: "Biocentric Elder",
+        tradition: "Indigenous Epistemology",
+        stance: parsed.indigenous || "Stance deliberation unavailable."
+      },
+      {
+        id: "western",
+        name: "Liberal Ethicist",
+        tradition: "Western Liberalism",
+        stance: parsed.western || "Stance deliberation unavailable."
+      }
+    ],
+    synthesis: parsed.synthesis || "Synthesis completed."
+  };
 
-  // 1. Run all 4 agents in parallel via gemini-3.7-flash with header auth and T=0.3
-  const agentKeys = Object.keys(SYSTEM_INSTRUCTIONS) as (keyof typeof SYSTEM_INSTRUCTIONS)[];
-  
-  const agentPromises = agentKeys.map(async (key) => {
-    try {
-      const prompt = `${SYSTEM_INSTRUCTIONS[key]}\n\nDilemma: "${query}"`;
-      const stance = await callGemini37(prompt);
-      return { id: key, stance };
-    } catch (err: any) {
-      console.error(`Agent [${key}] error:`, err);
-      return { id: key, stance: "Perspective temporarily unavailable." };
-    }
-  });
+  // Store in cache
+  queryCache.set(cacheKey, result);
 
-  const agentOutputs = await Promise.all(agentPromises);
-
-  // 2. Synthesize consensus dialectic with gemini-3.7-flash (T=0.3)
-  const agentContext = agentOutputs.map(a => `${a.id.toUpperCase()}: ${a.stance}`).join('\n\n');
-  
-  const synthesisPrompt = `You are the Amono AI Synthesis Engine. Your goal is Pluralistic Alignment across epistemic traditions.
-Analyze the following perspectives on the inquiry: "${query}"
-
-${agentContext}
-
-Provide a dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}. Do not enforce Western monoculture defaultism.`;
-
-  try {
-    const synthesisText = await callGemini37(synthesisPrompt);
-    return {
-      agents: mapAgents(agentOutputs),
-      synthesis: synthesisText
-    };
-  } catch (err: any) {
-    console.error("Synthesis error:", err);
-    return {
-      agents: mapAgents(agentOutputs),
-      synthesis: `Synthesis Error (Gemini 3.7): ${err.message}`
-    };
-  }
-}
-
-function mapAgents(agentOutputs: { id: string; stance: string }[]): AgentResponse[] {
-  return agentOutputs.map(a => ({
-    id: a.id,
-    name: a.id === 'indic' ? 'Dharmic Sage' : a.id === 'collectivist' ? 'Communal Guardian' : a.id === 'indigenous' ? 'Biocentric Elder' : 'Liberal Ethicist',
-    tradition: a.id === 'indic' ? 'Indic Epistemology' : a.id === 'collectivist' ? 'Collectivist Ethics' : a.id === 'indigenous' ? 'Indigenous Epistemology' : 'Western Liberalism',
-    stance: a.stance
-  }));
+  return result;
 }
