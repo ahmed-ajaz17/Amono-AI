@@ -15,6 +15,8 @@ import {
   Check,
   MessageSquare
 } from 'lucide-react';
+import { runAmonoCouncil, CouncilResult } from './services/gemini';
+
 const AmonoLogo = ({ className = "w-full h-full" }: { className?: string }) => (
   <svg 
     viewBox="235 160 330 330" 
@@ -40,16 +42,12 @@ const AmonoLogo = ({ className = "w-full h-full" }: { className?: string }) => (
         <stop offset="100%" stopColor="#047857" />
       </linearGradient>
     </defs>
-
-    {/* 4 Centered Epistemic Arcs */}
     <g>
       <path d="M 330 200 C 370 170, 430 170, 470 200 C 500 225, 485 270, 430 290 C 390 305, 360 270, 330 200 Z" fill="url(#arcIndic)" opacity="0.95" />
       <path d="M 525 255 C 555 295, 555 355, 525 395 C 500 425, 455 410, 435 355 C 420 315, 455 285, 525 255 Z" fill="url(#arcWest)" opacity="0.95" />
       <path d="M 470 450 C 430 480, 370 480, 330 450 C 300 425, 315 380, 370 360 C 410 345, 440 380, 470 450 Z" fill="url(#arcUbuntu)" opacity="0.95" />
       <path d="M 275 395 C 245 355, 245 295, 275 255 C 300 225, 345 240, 365 295 C 380 335, 345 365, 275 395 Z" fill="url(#arcIndig)" opacity="0.95" />
     </g>
-
-    {/* Center Core Pivot */}
     <circle cx="400" cy="325" r="22" fill="#080C14" stroke="#475569" strokeWidth="3" />
     <circle cx="400" cy="325" r="8" fill="#F8FAFC" />
   </svg>
@@ -134,35 +132,49 @@ export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'synthesis' | 'agents'>('synthesis');
   const [copied, setCopied] = useState(false);
   const [streamedSynthesis, setStreamedSynthesis] = useState('');
+  const [dynamicAgents, setDynamicAgents] = useState(COUNCIL_AGENTS);
 
-  const fullSynthesis = mode === 'compact'
-    ? "A balanced resolution rejects binary choices by instituting hybrid remote care structures. This honors the Indic and Indigenous mandate of filial debt (Svadharma) and communal reciprocity, while safeguarding the Western liberal entitlement to vocational agency without complete self-abnegation."
-    : "This inquiry manifests a fundamental tension between relational obligation and individual sovereignty. The Indic and Collectivist councilors correctly frame familial care as an inescapable cosmic debt (Rna) and network stabilizer. Concurrently, the Western Liberal stance validly defends personal mobility and self-actualization. Rather than enforcing monocultural supremacy, Amono AI synthesizes a dialectical equilibrium: structured caregiving distribution with remote vocational integration, protecting filial stewardship while preserving career trajectory.";
+  const handleStartCouncil = async () => {
+    if (!query.trim()) return;
 
-  const handleStartCouncil = () => {
     setPhase('deliberating');
     setStreamedSynthesis('');
     setActiveTab('agents');
 
-    setTimeout(() => {
+    try {
+      const result: CouncilResult = await runAmonoCouncil(query, mode);
+
+      setDynamicAgents(prev =>
+        prev.map(agent => {
+          const match = result.agents.find(a => a.id === agent.id);
+          return match
+            ? { ...agent, stanceCompact: match.stance, stanceAnalytic: match.stance }
+            : agent;
+        })
+      );
+
       setPhase('synthesizing');
       setActiveTab('synthesis');
 
       let i = 0;
       const interval = setInterval(() => {
-        if (i <= fullSynthesis.length) {
-          setStreamedSynthesis(fullSynthesis.slice(0, i));
+        if (i <= result.synthesis.length) {
+          setStreamedSynthesis(result.synthesis.slice(0, i));
           i += 4;
         } else {
           clearInterval(interval);
           setPhase('complete');
         }
-      }, 20);
-    }, 1600);
+      }, 15);
+    } catch (err) {
+      console.error("Deliberation error:", err);
+      setStreamedSynthesis("An error occurred connecting to the epistemic engine. Check your API key configuration.");
+      setPhase('complete');
+    }
   };
 
   const copySynthesis = () => {
-    navigator.clipboard.writeText(fullSynthesis);
+    navigator.clipboard.writeText(streamedSynthesis);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -177,9 +189,9 @@ export const App: React.FC = () => {
       <header className="border-b border-white/[0.08] bg-[#07090e]/80 backdrop-blur-xl sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-           <div className="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center p-1.5 shadow-lg shadow-indigo-500/20">
-  <AmonoLogo />
-</div>
+            <div className="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center p-1.5 shadow-lg shadow-indigo-500/20">
+              <AmonoLogo />
+            </div>
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="font-bold text-base md:text-lg tracking-tight text-white">
@@ -223,7 +235,7 @@ export const App: React.FC = () => {
         
         {/* Council Agent Roster Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {COUNCIL_AGENTS.map((agent) => {
+          {dynamicAgents.map((agent) => {
             const Icon = agent.icon;
             const isSpeaking = phase === 'deliberating';
             return (
@@ -368,29 +380,13 @@ export const App: React.FC = () => {
                   {streamedSynthesis}
                   {phase === 'synthesizing' && <span className="inline-block w-1.5 h-4 ml-1 bg-indigo-400 animate-pulse" />}
                 </p>
-
-                {/* Metric Strip */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 border-t border-white/[0.06]">
-                  <div className="text-xs text-slate-400">
-                    Word Budget: <span className="text-white font-bold">{mode === 'compact' ? '78 / 100w' : '206 / 250w'}</span>
-                  </div>
-                  <div className="text-xs text-slate-400">
-                    Latency: <span className="text-emerald-400 font-bold">{mode === 'compact' ? '540 ms' : '1180 ms'}</span>
-                  </div>
-                  <div className="text-xs text-slate-400">
-                    Traditions: <span className="text-white font-bold">4 / 4 Represented</span>
-                  </div>
-                  <div className="text-xs text-slate-400">
-                    Audit Status: <span className="text-emerald-400 font-bold">100% PASSED</span>
-                  </div>
-                </div>
               </div>
             )}
 
             {/* TAB 2: Individual Agent Cards */}
             {activeTab === 'agents' && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {COUNCIL_AGENTS.map((agent) => {
+                {dynamicAgents.map((agent) => {
                   const Icon = agent.icon;
                   return (
                     <div 
@@ -420,7 +416,7 @@ export const App: React.FC = () => {
 
       </main>
 
-      {/* PASTE THE FOOTER HERE */}
+      {/* Official Contact Footer */}
       <footer className="mt-12 py-6 text-center border-t border-slate-800 text-sm text-slate-400">
         <p className="mb-2">
           Have inquiries, feedback, or collaboration proposals?
