@@ -1,5 +1,6 @@
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent?key=${API_KEY}`;
+const MODEL = "gemini-3.7-flash";
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
 export interface AgentResponse {
   id: string;
@@ -23,6 +24,7 @@ const SYSTEM_INSTRUCTIONS = {
 export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
   const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
 
+  // 1. Fetch all 4 agent perspectives concurrently using 3.7 and temp = 0.3
   const agentKeys = Object.keys(SYSTEM_INSTRUCTIONS) as (keyof typeof SYSTEM_INSTRUCTIONS)[];
   
   const agentPromises = agentKeys.map(async (key) => {
@@ -35,7 +37,10 @@ export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic
             role: 'user',
             parts: [{ text: `${SYSTEM_INSTRUCTIONS[key]}\n\nDilemma: "${query}"` }]
           }
-        ]
+        ],
+        generationConfig: {
+          temperature: 0.3
+        }
       })
     });
     const data = await response.json();
@@ -45,6 +50,7 @@ export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic
 
   const agentOutputs = await Promise.all(agentPromises);
 
+  // 2. Synthesize all perspectives into equilibrium consensus using temp = 0.3
   const agentContext = agentOutputs.map(a => `${a.id.toUpperCase()}: ${a.stance}`).join('\n\n');
   
   const synthesisPrompt = `You are the Amono AI Synthesis Engine. Your goal is Pluralistic Alignment across epistemic traditions.
@@ -58,7 +64,10 @@ Provide a dialectical equilibrium synthesis resolving or balancing these values 
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: synthesisPrompt }] }]
+      contents: [{ role: 'user', parts: [{ text: synthesisPrompt }] }],
+      generationConfig: {
+        temperature: 0.3
+      }
     })
   });
 
