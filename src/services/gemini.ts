@@ -1,12 +1,8 @@
 // src/services/gemini.ts
 
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY;
-
-// Primary model is 3.7; fallback is 3.6
-export const PRIMARY_MODEL = "gemini-3.7-flash";
-export const FALLBACK_MODEL = "gemini-3.6-flash";
-
-const DEFAULT_MODEL = import.meta.env.VITE_GEMINI_MODEL || PRIMARY_MODEL;
+const MODEL = "gemini-3.7-flash";
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
 export interface AgentResponse {
   id: string;
@@ -27,58 +23,64 @@ const SYSTEM_INSTRUCTIONS = {
   western: "You are the Liberal Ethicist grounded in Western liberalism, individual rights, and autonomy. Provide a concise stance (2-3 sentences) prioritizing personal self-determination."
 };
 
-// Helper to execute generation with automatic 3.7 -> 3.6 fallback
-async function generateWithFallback(prompt: string, temp: number = 0.3): Promise<string> {
-  const models = [DEFAULT_MODEL, FALLBACK_MODEL];
-
-  for (const model of models) {
-    try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: prompt }] }],
-          generationConfig: { temperature: temp }
-        })
-      });
-
-      const data = await response.json();
-      if (response.ok && data?.candidates?.[0]?.content?.parts?.[0]?.text) {
-        return data.candidates[0].content.parts[0].text.trim();
-      }
-      console.warn(`[${model}] request failed, attempting fallback...`, data);
-    } catch (err) {
-      console.warn(`[${model}] network error, attempting fallback...`, err);
-    }
+async function callGemini37(prompt: string): Promise<string> {
+  if (!API_KEY) {
+    throw new Error("Missing Gemini API key. Ensure VITE_GEMINI_API_KEY or GEMINI_API_KEY is set in Vercel.");
   }
 
-  throw new Error("Deliberation failed across both Gemini 3.7 and 3.6 endpoints.");
+  const response = await fetch(API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      contents: [
+        {
+          parts: [{ text: prompt }]
+        }
+      ],
+      generationConfig: {
+        temperature: 0.3
+      }
+    })
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    const errorMsg = data?.error?.message || `HTTP ${response.status}`;
+    console.error("Gemini 3.7 API Error:", data);
+    throw new Error(errorMsg);
+  }
+
+  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!text) {
+    throw new Error("Empty response returned from Gemini 3.7.");
+  }
+
+  return text.trim();
 }
 
 export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
   const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
 
-  if (!API_KEY) {
-    throw new Error("Gemini API key is missing. Set VITE_GEMINI_API_KEY in environment variables.");
-  }
-
-  // 1. Deliberate 4 agent stances concurrently (T=0.3)
+  // 1. Run all 4 agents in parallel on gemini-3.7-flash with T=0.3
   const agentKeys = Object.keys(SYSTEM_INSTRUCTIONS) as (keyof typeof SYSTEM_INSTRUCTIONS)[];
   
   const agentPromises = agentKeys.map(async (key) => {
     try {
       const prompt = `${SYSTEM_INSTRUCTIONS[key]}\n\nDilemma: "${query}"`;
-      const stance = await generateWithFallback(prompt, 0.3);
+      const stance = await callGemini37(prompt);
       return { id: key, stance };
-    } catch {
-      return { id: key, stance: "Perspective temporarily unavailable." };
+    } catch (err: any) {
+      console.error(`Agent [${key}] error:`, err);
+      return { id: key, stance: `Perspective unavailable: ${err.message}` };
     }
   });
 
   const agentOutputs = await Promise.all(agentPromises);
 
-  // 2. Synthesize dialectical equilibrium across both paradigms (T=0.3)
+  // 2. Synthesize dialectical equilibrium on gemini-3.7-flash with T=0.3
   const agentContext = agentOutputs.map(a => `${a.id.toUpperCase()}: ${a.stance}`).join('\n\n');
   
   const synthesisPrompt = `You are the Amono AI Synthesis Engine. Your goal is Pluralistic Alignment across epistemic traditions.
@@ -89,15 +91,16 @@ ${agentContext}
 Provide a dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}. Do not enforce Western monoculture defaultism.`;
 
   try {
-    const synthesisText = await generateWithFallback(synthesisPrompt, 0.3);
+    const synthesisText = await callGemini37(synthesisPrompt);
     return {
       agents: mapAgents(agentOutputs),
       synthesis: synthesisText
     };
-  } catch (err) {
+  } catch (err: any) {
+    console.error("Synthesis error:", err);
     return {
       agents: mapAgents(agentOutputs),
-      synthesis: "Unable to generate consensus across epistemic streams."
+      synthesis: `Synthesis Error (Gemini 3.7): ${err.message}`
     };
   }
 }
