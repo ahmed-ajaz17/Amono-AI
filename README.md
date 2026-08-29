@@ -1,14 +1,6 @@
 <p align="center">
-  <img src="logo.svg" alt="Amono AI Logo" width="180" />
+  <img src="./src/logo.svg" alt="Amono AI Logo" width="180" />
 </p>
-
-<h1 align="center">Amono AI</h1>
-
-<p align="center">
-  <em>A Parameter-Efficient Pluralistic Alignment Framework for Mitigating Western Monoculture Defaultism in Large Language Models</em>
-</p>
-
----
 
 # Amono AI: Pluralistic Alignment Framework | Council of Epistemic Minds
 
