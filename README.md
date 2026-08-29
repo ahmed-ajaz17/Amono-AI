@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/logo.svg" alt="Amono AI Logo" width="180" />
+  <img ="./logo.svg" alt="Amono AI Logo" width="180" />
 </p>
 
 # Amono AI: Pluralistic Alignment Framework | Council of Epistemic Minds
