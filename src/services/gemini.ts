@@ -1,8 +1,10 @@
 // src/services/gemini.ts
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY;
+const RAW_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY || "";
+const API_KEY = RAW_KEY.trim(); // Cleans any hidden copy-paste whitespace
+
 const MODEL = "gemini-3.7-flash";
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
 export interface AgentResponse {
   id: string;
@@ -25,13 +27,14 @@ const SYSTEM_INSTRUCTIONS = {
 
 async function callGemini37(prompt: string): Promise<string> {
   if (!API_KEY) {
-    throw new Error("Missing Gemini API key. Ensure VITE_GEMINI_API_KEY or GEMINI_API_KEY is set in Vercel.");
+    throw new Error("Missing API Key. Please verify VITE_GEMINI_API_KEY in Vercel.");
   }
 
   const response = await fetch(API_URL, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      "x-goog-api-key": API_KEY
     },
     body: JSON.stringify({
       contents: [
@@ -49,13 +52,13 @@ async function callGemini37(prompt: string): Promise<string> {
 
   if (!response.ok) {
     const errorMsg = data?.error?.message || `HTTP ${response.status}`;
-    console.error("Gemini 3.7 API Error:", data);
+    console.error("Gemini 3.7 Error:", data);
     throw new Error(errorMsg);
   }
 
   const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!text) {
-    throw new Error("Empty response returned from Gemini 3.7.");
+    throw new Error("Empty response returned from model.");
   }
 
   return text.trim();
@@ -64,7 +67,7 @@ async function callGemini37(prompt: string): Promise<string> {
 export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
   const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
 
-  // 1. Run all 4 agents in parallel on gemini-3.7-flash with T=0.3
+  // 1. Run all 4 agents in parallel via gemini-3.7-flash with header auth and T=0.3
   const agentKeys = Object.keys(SYSTEM_INSTRUCTIONS) as (keyof typeof SYSTEM_INSTRUCTIONS)[];
   
   const agentPromises = agentKeys.map(async (key) => {
@@ -74,13 +77,13 @@ export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic
       return { id: key, stance };
     } catch (err: any) {
       console.error(`Agent [${key}] error:`, err);
-      return { id: key, stance: `Perspective unavailable: ${err.message}` };
+      return { id: key, stance: "Perspective temporarily unavailable." };
     }
   });
 
   const agentOutputs = await Promise.all(agentPromises);
 
-  // 2. Synthesize dialectical equilibrium on gemini-3.7-flash with T=0.3
+  // 2. Synthesize consensus dialectic with gemini-3.7-flash (T=0.3)
   const agentContext = agentOutputs.map(a => `${a.id.toUpperCase()}: ${a.stance}`).join('\n\n');
   
   const synthesisPrompt = `You are the Amono AI Synthesis Engine. Your goal is Pluralistic Alignment across epistemic traditions.
