@@ -15,6 +15,41 @@ import {
   Check,
   MessageSquare
 } from 'lucide-react';
+const AmonoLogo = ({ className = "w-10 h-10" }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 800 800" 
+    className={className}
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="arcIndic" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stopColor="#D97706" />
+        <stop offset="100%" stopColor="#FCD34D" />
+      </linearGradient>
+      <linearGradient id="arcWest" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#38BDF8" />
+        <stop offset="100%" stopColor="#1D4ED8" />
+      </linearGradient>
+      <linearGradient id="arcUbuntu" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stopColor="#FB7185" />
+        <stop offset="100%" stopColor="#BE123C" />
+      </linearGradient>
+      <linearGradient id="arcIndig" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#34D399" />
+        <stop offset="100%" stopColor="#047857" />
+      </linearGradient>
+    </defs>
+    <g>
+      <path d="M 330 200 C 370 170, 430 170, 470 200 C 500 225, 485 270, 430 290 C 390 305, 360 270, 330 200 Z" fill="url(#arcIndic)" opacity="0.95" />
+      <path d="M 525 255 C 555 295, 555 355, 525 395 C 500 425, 455 410, 435 355 C 420 315, 455 285, 525 255 Z" fill="url(#arcWest)" opacity="0.95" />
+      <path d="M 470 450 C 430 480, 370 480, 330 450 C 300 425, 315 380, 370 360 C 410 345, 440 380, 470 450 Z" fill="url(#arcUbuntu)" opacity="0.95" />
+      <path d="M 275 395 C 245 355, 245 295, 275 255 C 300 225, 345 240, 365 295 C 380 335, 345 365, 275 395 Z" fill="url(#arcIndig)" opacity="0.95" />
+    </g>
+    <circle cx="400" cy="325" r="20" fill="#080C14" stroke="#475569" strokeWidth="3" />
+    <circle cx="400" cy="325" r="8" fill="#F8FAFC" />
+  </svg>
+);
 
 interface Agent {
   id: string;
@@ -138,9 +173,9 @@ export const App: React.FC = () => {
       <header className="border-b border-white/[0.08] bg-[#07090e]/80 backdrop-blur-xl sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25 ring-1 ring-white/20">
-              <Sparkles className="w-5 h-5" />
-            </div>
+            <div className="w-10 h-10 rounded-xl bg-[#080C14] border border-white/10 flex items-center justify-center p-1 shadow-lg shadow-indigo-500/20">
+  <AmonoLogo className="w-8 h-8" />
+</div>
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="font-bold text-base md:text-lg tracking-tight text-white">
