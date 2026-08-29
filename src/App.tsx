@@ -380,6 +380,23 @@ export const App: React.FC = () => {
         )}
 
       </main>
+
+      {/* PASTE THE FOOTER HERE */}
+      <footer className="mt-12 py-6 text-center border-t border-slate-800 text-sm text-slate-400">
+        <p className="mb-2">
+          Have inquiries, feedback, or collaboration proposals?
+        </p>
+        <p>
+          Contact:{' '}
+          <a 
+            href="mailto:amonoai.official@gmail.com" 
+            className="text-cyan-400 hover:text-cyan-300 transition-colors font-mono underline"
+          >
+            amonoai.official@gmail.com
+          </a>
+        </p>
+      </footer>
+
     </div>
   );
 };
