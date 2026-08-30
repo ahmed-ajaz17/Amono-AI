@@ -166,9 +166,9 @@ export const App: React.FC = () => {
           setPhase('complete');
         }
       }, 15);
-    } catch (err) {
+    } catch (err: any) {
       console.error("Deliberation error:", err);
-      setStreamedSynthesis("An error occurred connecting to the epistemic engine. Check your API key configuration.");
+      setStreamedSynthesis(`Error: ${err?.message || "Unknown error occurred."}`);
       setPhase('complete');
     }
   };
