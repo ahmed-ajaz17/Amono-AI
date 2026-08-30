@@ -1,6 +1,14 @@
-import { AgentResponse, CouncilResult } from '../types';
+export interface AgentResponse {
+  id: string;
+  name: string;
+  tradition: string;
+  stance: string;
+}
 
-export { CouncilResult, AgentResponse };
+export interface CouncilResult {
+  agents: AgentResponse[];
+  synthesis: string;
+}
 
 const RAW_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY || "";
 const API_KEY = RAW_KEY.trim();
@@ -65,11 +73,9 @@ export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic
   let parsed: any;
 
   try {
-    // Attempt 3.7 first
     parsed = await callGemini('gemini-3.7-flash', query, mode);
   } catch (err: any) {
-    console.warn("Primary model 3.7 reached quota or failed. Falling back to 2.5-flash...", err);
-    // Automatic fallback if rate-limited (HTTP 429) or failed
+    console.warn("Falling back to gemini-2.5-flash due to rate limit/error:", err);
     parsed = await callGemini('gemini-2.5-flash', query, mode);
   }
 
