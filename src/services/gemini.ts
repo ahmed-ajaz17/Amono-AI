@@ -1,103 +1,105 @@
-// Read Vite or process env key safely
-const API_KEY = (
-  import.meta.env.VITE_GEMINI_API_KEY ||
-  import.meta.env.GEMINI_API_KEY ||
-  ""
-).trim();
+import { AgentResponse, CouncilResult } from '../types';
 
-const MODEL = "gemini-3.7-flash";
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
+export { CouncilResult, AgentResponse };
 
-export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic' = 'analytic') {
-  if (!API_KEY) {
-    throw new Error("Missing API Key. Ensure VITE_GEMINI_API_KEY is configured in Vercel settings.");
-  }
+const RAW_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY || "";
+const API_KEY = RAW_KEY.trim();
 
+async function callGemini(model: string, query: string, mode: 'compact' | 'analytic') {
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
   const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
 
   const prompt = `You are the Amono AI Epistemic Council Deliberation Engine.
-Evaluate this user dilemma across 4 distinct philosophical traditions, followed by a dialectical synthesis:
+Analyze the following inquiry across 4 distinct philosophical traditions, then provide a dialectical equilibrium synthesis.
 
-Dilemma: "${query}"
+Inquiry: "${query}"
 
-Requirements:
-1. INDIC: Grounded in Indic epistemology (Svadharma, Rna, Rta). (2-3 concise sentences)
-2. COLLECTIVIST: Grounded in Collectivist & relational ethics, prioritizing social harmony. (2-3 concise sentences)
-3. INDIGENOUS: Grounded in Indigenous epistemology and kinship reciprocity, prioritizing multi-generational stewardship. (2-3 concise sentences)
-4. WESTERN: Grounded in Western liberalism, individual autonomy, and rights. (2-3 concise sentences)
+Traditions:
+1. INDIC: Grounded in Indic epistemology (Svadharma, Rna, Rta). (2-3 sentences)
+2. COLLECTIVIST: Grounded in Collectivist & relational ethics, prioritizing social harmony. (2-3 sentences)
+3. INDIGENOUS: Grounded in Indigenous epistemology and kinship reciprocity. (2-3 sentences)
+4. WESTERN: Grounded in Western liberalism, individual rights, autonomy. (2-3 sentences)
 5. SYNTHESIS: Dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}.
 
-Return ONLY a raw JSON object with this exact structure:
+Return ONLY valid JSON in this exact structure without markdown fences:
 {
-  "indic": "stance text",
-  "collectivist": "stance text",
-  "indigenous": "stance text",
-  "western": "stance text",
-  "synthesis": "synthesis text"
+  "indic": "...",
+  "collectivist": "...",
+  "indigenous": "...",
+  "western": "...",
+  "synthesis": "..."
 }`;
 
-  const res = await fetch(API_URL, {
-    method: "POST",
+  const response = await fetch(API_URL, {
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
-      "x-goog-api-key": API_KEY,
+      'Content-Type': 'application/json',
+      'x-goog-api-key': API_KEY,
     },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
         temperature: 0.3,
-        responseMimeType: "application/json"
+        responseMimeType: 'application/json'
       }
     })
   });
 
-  const data = await res.json();
-
-  if (!res.ok) {
-    throw new Error(data?.error?.message || `API call failed with status ${res.status}`);
+  const data = await response.json();
+  if (!response.ok) {
+    const error = new Error(data?.error?.message || `HTTP ${response.status}`);
+    (error as any).status = response.status;
+    throw error;
   }
 
-  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
-  const cleanJson = rawText.replace(/```json\n?|```/g, "").trim();
-  const parsed = JSON.parse(cleanJson);
+  const rawJson = data?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
+  const cleanJson = rawJson.replace(/```json\n?|```/g, "").trim();
+  return JSON.parse(cleanJson);
+}
 
-  // Return both object structure and agent array so whatever data shape your UI expects will work
-  const agents = [
-    {
-      id: "indic",
-      name: "Dharmic Sage",
-      tradition: "Indic Epistemology",
-      stance: parsed.indic || parsed.INDIC || "Evaluation complete."
-    },
-    {
-      id: "collectivist",
-      name: "Communal Guardian",
-      tradition: "Collectivist Ethics",
-      stance: parsed.collectivist || parsed.COLLECTIVIST || "Evaluation complete."
-    },
-    {
-      id: "indigenous",
-      name: "Biocentric Elder",
-      tradition: "Indigenous Epistemology",
-      stance: parsed.indigenous || parsed.INDIGENOUS || "Evaluation complete."
-    },
-    {
-      id: "western",
-      name: "Liberal Ethicist",
-      tradition: "Western Liberalism",
-      stance: parsed.western || parsed.WESTERN || "Evaluation complete."
-    }
-  ];
+export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
+  if (!API_KEY) {
+    throw new Error("Missing API Key. Please verify VITE_GEMINI_API_KEY in Vercel.");
+  }
 
-  const synthesis = parsed.synthesis || parsed.SYNTHESIS || "Consensus synthesis generated.";
+  let parsed: any;
+
+  try {
+    // Attempt 3.7 first
+    parsed = await callGemini('gemini-3.7-flash', query, mode);
+  } catch (err: any) {
+    console.warn("Primary model 3.7 reached quota or failed. Falling back to 2.5-flash...", err);
+    // Automatic fallback if rate-limited (HTTP 429) or failed
+    parsed = await callGemini('gemini-2.5-flash', query, mode);
+  }
 
   return {
-    agents,
-    synthesis,
-    // Direct field fallbacks in case your UI accesses result.indic directly:
-    indic: parsed.indic || parsed.INDIC || "",
-    collectivist: parsed.collectivist || parsed.COLLECTIVIST || "",
-    indigenous: parsed.indigenous || parsed.INDIGENOUS || "",
-    western: parsed.western || parsed.WESTERN || ""
+    agents: [
+      {
+        id: "indic",
+        name: "Dharmic Sage",
+        tradition: "Indic Epistemology",
+        stance: parsed.indic || parsed.INDIC || "Stance evaluated."
+      },
+      {
+        id: "collectivist",
+        name: "Communal Guardian",
+        tradition: "Collectivist Ethics",
+        stance: parsed.collectivist || parsed.COLLECTIVIST || "Stance evaluated."
+      },
+      {
+        id: "indigenous",
+        name: "Biocentric Elder",
+        tradition: "Indigenous Epistemology",
+        stance: parsed.indigenous || parsed.INDIGENOUS || "Stance evaluated."
+      },
+      {
+        id: "western",
+        name: "Liberal Ethicist",
+        tradition: "Western Liberalism",
+        stance: parsed.western || parsed.WESTERN || "Stance evaluated."
+      }
+    ],
+    synthesis: parsed.synthesis || parsed.SYNTHESIS || "Dialectical consensus synthesized."
   };
 }
