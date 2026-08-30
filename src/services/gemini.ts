@@ -10,22 +10,18 @@ export interface CouncilResult {
   synthesis: string;
 }
 
-const RAW_KEY =
-  (typeof import.meta !== 'undefined' && import.meta.env && (import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY)) ||
-  "";
-const API_KEY = RAW_KEY.trim();
+const API_KEY = (
+  import.meta.env.VITE_GEMINI_API_KEY ||
+  import.meta.env.GEMINI_API_KEY ||
+  ""
+).trim();
 
-// Priority cascade: tries fast high-quota models first, falling back sequentially
-const MODELS_TO_TRY = [
-  'gemini-2.0-flash',
-  'gemini-1.5-flash',
-  'gemini-2.5-flash',
-  'gemini-3.7-flash'
-];
+export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
+  if (!API_KEY) {
+    throw new Error("Missing VITE_GEMINI_API_KEY. Verify your Vercel Environment Variables.");
+  }
 
-async function callSingleModel(modelName: string, query: string, mode: 'compact' | 'analytic') {
   const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${API_KEY}`;
 
   const prompt = `You are the Amono AI Epistemic Council Deliberation Engine.
 Analyze the following inquiry across 4 distinct philosophical traditions, then provide a dialectical equilibrium synthesis.
@@ -39,24 +35,30 @@ Traditions:
 4. WESTERN: Grounded in Western liberalism, individual rights, autonomy. (2-3 sentences)
 5. SYNTHESIS: Dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}.
 
-Return ONLY valid JSON matching this schema:
+Return ONLY valid JSON matching this schema without markdown fences:
 {
-  "indic": "stance text",
-  "collectivist": "stance text",
-  "indigenous": "stance text",
-  "western": "stance text",
-  "synthesis": "synthesis text"
+  "indic": "...",
+  "collectivist": "...",
+  "indigenous": "...",
+  "western": "...",
+  "synthesis": "..."
 }`;
 
-  const response = await fetch(url, {
+  // Using gemini-2.5-flash which has fresh free-tier request limits
+  const MODEL = "gemini-2.5-flash";
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
+
+  const response = await fetch(API_URL, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'x-goog-api-key': API_KEY,
     },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
-        temperature: 0.3
+        temperature: 0.3,
+        responseMimeType: 'application/json'
       }
     })
   });
@@ -64,44 +66,12 @@ Return ONLY valid JSON matching this schema:
   const data = await response.json();
 
   if (!response.ok) {
-    const errorMsg = data?.error?.message || `HTTP ${response.status}`;
-    const err = new Error(errorMsg);
-    (err as any).status = response.status;
-    throw err;
+    throw new Error(data?.error?.message || `Google API HTTP ${response.status}`);
   }
 
-  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
-  
-  // Safe JSON extraction using regex
-  const jsonMatch = rawText.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) {
-    throw new Error("Invalid response format from engine.");
-  }
-
-  return JSON.parse(jsonMatch[0]);
-}
-
-export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
-  if (!API_KEY) {
-    throw new Error("Missing API Key. Please verify VITE_GEMINI_API_KEY in Vercel.");
-  }
-
-  let parsed: any = null;
-  let lastError: any = null;
-
-  for (const model of MODELS_TO_TRY) {
-    try {
-      parsed = await callSingleModel(model, query, mode);
-      if (parsed) break; // Success
-    } catch (err: any) {
-      console.warn(`Model ${model} failed (${err?.message || err}). Trying next in cascade...`);
-      lastError = err;
-    }
-  }
-
-  if (!parsed) {
-    throw new Error(lastError?.message || "All epistemic models in the cascade failed.");
-  }
+  const rawJson = data?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
+  const cleanJson = rawJson.replace(/```json\n?|```/g, "").trim();
+  const parsed = JSON.parse(cleanJson);
 
   return {
     agents: [
