@@ -32,23 +32,16 @@ Analyze the following inquiry across 4 distinct philosophical traditions, then p
 Inquiry: "${query}"
 
 Traditions:
-1. INDIC: Grounded in Indic epistemology (Svadharma, Rna, Rta). (2-3 sentences)
-2. COLLECTIVIST: Grounded in Collectivist & relational ethics, prioritizing social harmony. (2-3 sentences)
-3. INDIGENOUS: Grounded in Indigenous epistemology and kinship reciprocity. (2-3 sentences)
-4. WESTERN: Grounded in Western liberalism, individual rights, autonomy. (2-3 sentences)
-5. SYNTHESIS: Dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}.
+1. INDIC: Grounded in Indic epistemology (Svadharma, Rna, Rta).
+2. COLLECTIVIST: Grounded in Collectivist & relational ethics, prioritizing social harmony.
+3. INDIGENOUS: Grounded in Indigenous epistemology and kinship reciprocity.
+4. WESTERN: Grounded in Western liberalism, individual rights, autonomy.
+5. SYNTHESIS: Dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}.`;
 
-Return ONLY valid JSON in this exact structure without markdown fences:
-{
-  "indic": "...",
-  "collectivist": "...",
-  "indigenous": "...",
-  "western": "...",
-  "synthesis": "..."
-}`;
-
+  // Disable caching and force strict schema
   const response = await fetch(API_URL, {
     method: 'POST',
+    cache: 'no-store', // PREVENTS REPEATING THE SAME ANSWER
     headers: {
       'Content-Type': 'application/json',
       'x-goog-api-key': API_KEY,
@@ -56,8 +49,20 @@ Return ONLY valid JSON in this exact structure without markdown fences:
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
-        temperature: 0.3,
-        responseMimeType: 'application/json'
+        temperature: 0.5, // Slightly higher to ensure varied responses
+        responseMimeType: 'application/json',
+        // THIS FORCES GEMINI TO USE EXACT KEYS
+        responseSchema: {
+          type: "object",
+          properties: {
+            indic: { type: "string" },
+            collectivist: { type: "string" },
+            indigenous: { type: "string" },
+            western: { type: "string" },
+            synthesis: { type: "string" }
+          },
+          required: ["indic", "collectivist", "indigenous", "western", "synthesis"]
+        }
       }
     })
   });
@@ -65,12 +70,16 @@ Return ONLY valid JSON in this exact structure without markdown fences:
   const data = await response.json();
 
   if (!response.ok) {
-    throw new Error(data?.error?.message || `HTTP ${response.status}`);
+    console.error("API Error details:", data);
+    throw new Error(data?.error?.message || `HTTP Error ${response.status}`);
   }
 
+  // With strict schema, we don't need regex parsing, it's guaranteed valid JSON
   const rawJson = data?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
-  const cleanJson = rawJson.replace(/```json\n?|```/g, "").trim();
-  const parsed = JSON.parse(cleanJson);
+  const parsed = JSON.parse(rawJson);
+  
+  // Log it to your console so you can verify it's working
+  console.log("Gemini Output:", parsed);
 
   return {
     agents: [
@@ -78,27 +87,27 @@ Return ONLY valid JSON in this exact structure without markdown fences:
         id: "indic",
         name: "Dharmic Sage",
         tradition: "Indic Epistemology",
-        stance: parsed.indic || parsed.INDIC || "Stance evaluated."
+        stance: parsed.indic || "No Indic stance generated."
       },
       {
         id: "collectivist",
         name: "Communal Guardian",
         tradition: "Collectivist Ethics",
-        stance: parsed.collectivist || parsed.COLLECTIVIST || "Stance evaluated."
+        stance: parsed.collectivist || "No Collectivist stance generated."
       },
       {
         id: "indigenous",
         name: "Biocentric Elder",
         tradition: "Indigenous Epistemology",
-        stance: parsed.indigenous || parsed.INDIGENOUS || "Stance evaluated."
+        stance: parsed.indigenous || "No Indigenous stance generated."
       },
       {
         id: "western",
         name: "Liberal Ethicist",
         tradition: "Western Liberalism",
-        stance: parsed.western || parsed.WESTERN || "Stance evaluated."
+        stance: parsed.western || "No Western stance generated."
       }
     ],
-    synthesis: parsed.synthesis || parsed.SYNTHESIS || "Dialectical consensus synthesized."
+    synthesis: parsed.synthesis || "No synthesis generated."
   };
 }
