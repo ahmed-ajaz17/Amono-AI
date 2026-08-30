@@ -13,8 +13,11 @@ export interface CouncilResult {
 const RAW_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.GEMINI_API_KEY || "";
 const API_KEY = RAW_KEY.trim();
 
-async function callGemini(model: string, query: string, mode: 'compact' | 'analytic') {
-  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
+  if (!API_KEY) {
+    throw new Error("Missing API Key. Please verify VITE_GEMINI_API_KEY in Vercel.");
+  }
+
   const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
 
   const prompt = `You are the Amono AI Epistemic Council Deliberation Engine.
@@ -38,6 +41,10 @@ Return ONLY valid JSON in this exact structure without markdown fences:
   "synthesis": "..."
 }`;
 
+  // Use gemini-2.5-flash to bypass the strict free-tier quota ceiling of 3.7
+  const MODEL = "gemini-2.5-flash";
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
+
   const response = await fetch(API_URL, {
     method: 'POST',
     headers: {
@@ -55,29 +62,13 @@ Return ONLY valid JSON in this exact structure without markdown fences:
 
   const data = await response.json();
   if (!response.ok) {
-    const error = new Error(data?.error?.message || `HTTP ${response.status}`);
-    (error as any).status = response.status;
-    throw error;
+    console.error("Gemini API Error:", data);
+    throw new Error(data?.error?.message || `HTTP ${response.status}`);
   }
 
   const rawJson = data?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
   const cleanJson = rawJson.replace(/```json\n?|```/g, "").trim();
-  return JSON.parse(cleanJson);
-}
-
-export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
-  if (!API_KEY) {
-    throw new Error("Missing API Key. Please verify VITE_GEMINI_API_KEY in Vercel.");
-  }
-
-  let parsed: any;
-
-  try {
-    parsed = await callGemini('gemini-3.7-flash', query, mode);
-  } catch (err: any) {
-    console.warn("Falling back to gemini-2.5-flash due to rate limit/error:", err);
-    parsed = await callGemini('gemini-2.5-flash', query, mode);
-  }
+  const parsed = JSON.parse(cleanJson);
 
   return {
     agents: [
