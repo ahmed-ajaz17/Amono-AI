@@ -21,3 +21,16 @@ export interface BenchmarkScenario {
   title: string;
   query: string;
 }
+
+// Interfaces required by App.tsx and gemini.ts for UI rendering
+export interface AgentResponse {
+  id: string;
+  name: string;
+  tradition: string;
+  stance: string;
+}
+
+export interface CouncilResult {
+  agents: AgentResponse[];
+  synthesis: string;
+}
