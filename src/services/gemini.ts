@@ -16,9 +16,12 @@ const API_KEY = (
   ""
 ).trim();
 
+const MODEL = "gemini-3.6-flash";
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
+
 export async function runAmonoCouncil(query: string, mode: 'compact' | 'analytic'): Promise<CouncilResult> {
   if (!API_KEY) {
-    throw new Error("Missing VITE_GEMINI_API_KEY. Verify your Vercel Environment Variables.");
+    throw new Error("Missing API Key. Please verify VITE_GEMINI_API_KEY in Vercel.");
   }
 
   const wordLimit = mode === 'compact' ? 'under 100 words' : 'under 250 words';
@@ -35,7 +38,7 @@ Traditions:
 4. WESTERN: Grounded in Western liberalism, individual rights, autonomy. (2-3 sentences)
 5. SYNTHESIS: Dialectical equilibrium synthesis resolving or balancing these values in ${wordLimit}.
 
-Return ONLY valid JSON matching this schema without markdown fences:
+Return ONLY valid JSON in this exact structure without markdown fences:
 {
   "indic": "...",
   "collectivist": "...",
@@ -43,10 +46,6 @@ Return ONLY valid JSON matching this schema without markdown fences:
   "western": "...",
   "synthesis": "..."
 }`;
-
-  // Using gemini-2.5-flash which has fresh free-tier request limits
-  const MODEL = "gemini-2.5-flash";
-  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
   const response = await fetch(API_URL, {
     method: 'POST',
@@ -66,7 +65,7 @@ Return ONLY valid JSON matching this schema without markdown fences:
   const data = await response.json();
 
   if (!response.ok) {
-    throw new Error(data?.error?.message || `Google API HTTP ${response.status}`);
+    throw new Error(data?.error?.message || `HTTP ${response.status}`);
   }
 
   const rawJson = data?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
